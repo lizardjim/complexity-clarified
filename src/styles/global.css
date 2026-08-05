@@ -1,0 +1,26 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html, body {
+  height: 100%;
+}
+.nav-small {
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.btn-primary:hover {
+    background-color: #F8F9FA;
+    border-color: #212529;
+    color:#212529;
+}
+
+.nav-link{color:#F8F9FA;}
+
+.form-control {
+    border-radius: 1rem;
+    padding: 0.7rem 1rem;
+}

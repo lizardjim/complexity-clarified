@@ -1,7 +1,8 @@
-export async function onRequestPost(context) {
+export async function onRequest(context) {
 
     return Response.json({
-        success: true
+        success: true,
+        message: "Cloudflare Functions are working!"
     });
 
 }

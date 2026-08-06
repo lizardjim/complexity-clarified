@@ -1,8 +1,23 @@
-export async function onRequest(context) {
+export async function onRequestPost(context) {
 
-    return Response.json({
-        success: true,
-        message: "Cloudflare Functions are working!"
-    });
+    try {
+
+        const body = await context.request.json();
+
+        return Response.json({
+            success: true,
+            received: body
+        });
+
+    } catch {
+
+        return Response.json({
+            success: false,
+            error: "Invalid JSON"
+        }, {
+            status: 400
+        });
+
+    }
 
 }

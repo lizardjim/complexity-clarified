@@ -49,7 +49,7 @@ export async function onRequestPost(context) {
         }
 
         // Send email
-        const { error } = await resend.emails.send({
+        const { data, error } = await resend.emails.send({
 
             from: "Complexity Clarified <noreply@send.complexityclarified.co.uk>",
 
@@ -80,14 +80,15 @@ ${cleanMessage}
 
             return Response.json({
                 success: false,
-                error: "Unable to send your message."
+                error: error.message ?? JSON.stringify(error)
             }, { status: 500 });
 
         }
 
         return Response.json({
             success: true,
-            message: "Message sent successfully."
+            message: "Message sent successfully.",
+            id: data?.id
         });
 
     } catch (error) {
@@ -96,7 +97,7 @@ ${cleanMessage}
 
         return Response.json({
             success: false,
-            error: "An unexpected error occurred."
+            error: error.message ?? String(error)
         }, { status: 500 });
 
     }

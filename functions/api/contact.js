@@ -1,4 +1,8 @@
+import { Resend } from "resend";
+
 export async function onRequestPost(context) {
+
+    const resend = new Resend(context.env.RESEND_API_KEY);
 
     try {
 
@@ -13,64 +17,87 @@ export async function onRequestPost(context) {
 
         // Required fields
         if (!cleanName || !cleanEmail || !cleanMessage) {
-
             return Response.json({
                 success: false,
                 error: "Please complete all fields."
             }, { status: 400 });
-
         }
 
         // Length validation
         if (cleanName.length > 100) {
-
             return Response.json({
                 success: false,
                 error: "Name is too long."
             }, { status: 400 });
-
         }
 
         if (cleanMessage.length > 5000) {
-
             return Response.json({
                 success: false,
                 error: "Message is too long."
             }, { status: 400 });
-
         }
 
         // Email validation
-        const emailRegex =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailRegex.test(cleanEmail)) {
-
             return Response.json({
                 success: false,
                 error: "Please enter a valid email address."
             }, { status: 400 });
+        }
+
+        // Send email
+        const { error } = await resend.emails.send({
+
+            from: "Complexity Clarified <noreply@send.complexityclarified.co.uk>",
+
+            to: "contact@complexityclarified.co.uk",
+
+            replyTo: cleanEmail,
+
+            subject: `New website enquiry from ${cleanName}`,
+
+            text: `A new message has been submitted via the Complexity Clarified website.
+
+Name:
+${cleanName}
+
+Email:
+${cleanEmail}
+
+Message:
+
+${cleanMessage}
+`
+
+        });
+
+        if (error) {
+
+            console.error("Resend Error:", error);
+
+            return Response.json({
+                success: false,
+                error: "Unable to send your message."
+            }, { status: 500 });
 
         }
 
-        // Ready for sending...
-
         return Response.json({
             success: true,
-            received: {
-                name: cleanName,
-                email: cleanEmail,
-                message: cleanMessage
-            }
+            message: "Message sent successfully."
         });
 
-    }
-    catch {
+    } catch (error) {
+
+        console.error("Server Error:", error);
 
         return Response.json({
             success: false,
-            error: "Invalid request."
-        }, { status: 400 });
+            error: "An unexpected error occurred."
+        }, { status: 500 });
 
     }
 

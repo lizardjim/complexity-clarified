@@ -5,6 +5,9 @@ node_modules/
 .astro/
 dist/
 
+# Obsidian
+.obsidian/
+
 # Environment variables
 .env
 .env.*

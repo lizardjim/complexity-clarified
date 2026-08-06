@@ -1,5 +1,60 @@
-<section>
-	<div class="container py-5">
-		
-	</div>
+---
+import { getCollection } from "astro:content";
+
+const articles = await getCollection("articles");
+
+const decisionArticles = articles
+    .filter(article => article.data.published)
+    .filter(article =>
+        article.data.pillar === "decisions" ||
+        article.data.tags.includes("decisions")
+    )
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<section class="container py-5">
+
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+        {decisionArticles.map((article) => (
+
+            <div class="col">
+
+                <a
+                    href={`/articles/${article.id}`}
+                    class="text-decoration-none text-reset"
+                >
+
+                    <div class="card article-card shadow-sm rounded-4 h-100 w-100">
+
+                        <div class="card-body p-4">
+
+                            <h3 class="card-title mb-3">
+                                {article.data.title}
+                            </h3>
+
+                            <p class="card-text mb-4">
+                                {article.data.description}
+                            </p>
+
+                            <small class="text-muted">
+                                {article.data.date.toLocaleDateString("en-GB", {
+                                    day: "numeric",
+                                    month: "long",
+                                    year: "numeric"
+                                })}
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        ))}
+
+    </div>
+
 </section>

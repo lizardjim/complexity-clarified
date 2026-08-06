@@ -21,11 +21,13 @@
 			<div class="col-lg-7">
 				<h3 class="mb-4">Get in touch.</h3>
 
-				<form action="" method="post" id="contact-form">
+				<form id="contact-form">
 
 					<div class="mb-3">
-						<label for="name" class="form-label">Name</label>
+						<label for="name" class="form-label">Name *</label>
 						<input
+							required
+							maxlength="100"
 							type="text"
 							class="form-control"
 							id="name"
@@ -34,8 +36,10 @@
 					</div>
 
 					<div class="mb-3">
-						<label for="email" class="form-label">Email Address</label>
+						<label for="email" class="form-label">Email Address *</label>
 						<input
+							required
+							maxlength="100"
 							type="email"
 							class="form-control"
 							id="email"
@@ -44,8 +48,10 @@
 					</div>
 
 					<div class="mb-4">
-						<label for="message" class="form-label">Message</label>
+						<label for="message" class="form-label">Message *</label>
 						<textarea
+							required
+							maxlength="5000"
 							class="form-control"
 							id="message"
 							name="message"

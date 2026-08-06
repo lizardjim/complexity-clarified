@@ -6,40 +6,71 @@ export async function onRequestPost(context) {
 
         const { name, email, message } = body;
 
-        if (!name || !email || !message) {
+        // Trim whitespace
+        const cleanName = name?.trim();
+        const cleanEmail = email?.trim().toLowerCase();
+        const cleanMessage = message?.trim();
 
-            return Response.json(
-                {
-                    success: false,
-                    error: "All fields are required."
-                },
-                {
-                    status: 400
-                }
-            );
+        // Required fields
+        if (!cleanName || !cleanEmail || !cleanMessage) {
+
+            return Response.json({
+                success: false,
+                error: "Please complete all fields."
+            }, { status: 400 });
 
         }
+
+        // Length validation
+        if (cleanName.length > 100) {
+
+            return Response.json({
+                success: false,
+                error: "Name is too long."
+            }, { status: 400 });
+
+        }
+
+        if (cleanMessage.length > 5000) {
+
+            return Response.json({
+                success: false,
+                error: "Message is too long."
+            }, { status: 400 });
+
+        }
+
+        // Email validation
+        const emailRegex =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(cleanEmail)) {
+
+            return Response.json({
+                success: false,
+                error: "Please enter a valid email address."
+            }, { status: 400 });
+
+        }
+
+        // Ready for sending...
 
         return Response.json({
             success: true,
             received: {
-                name,
-                email,
-                message
+                name: cleanName,
+                email: cleanEmail,
+                message: cleanMessage
             }
         });
 
-    } catch {
+    }
+    catch {
 
-        return Response.json(
-            {
-                success: false,
-                error: "Invalid request."
-            },
-            {
-                status: 400
-            }
-        );
+        return Response.json({
+            success: false,
+            error: "Invalid request."
+        }, { status: 400 });
 
     }
 

@@ -51,7 +51,7 @@ export async function onRequestPost(context) {
         // Send email
         const { data, error } = await resend.emails.send({
 
-            from: "Complexity Clarified <noreply@send.complexityclarified.co.uk>",
+            from: "Complexity Clarified <noreply@complexityclarified.co.uk>",
 
             to: "contact@complexityclarified.co.uk",
 

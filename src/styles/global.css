@@ -16,6 +16,7 @@ body{
         'opsz' 24;
 
     font-size: 1.2em;
+    opacity: .85;
     line-height: 1;
     vertical-align: middle;
 }

@@ -21,7 +21,7 @@
 			<div class="col-lg-7">
 				<h3 class="mb-4">Get in touch.</h3>
 
-				<form action="" method="post">
+				<form action="" method="post" id="contact-form">
 
 					<div class="mb-3">
 						<label for="name" class="form-label">Name</label>
@@ -52,9 +52,10 @@
 							rows="5"
 						></textarea>
 					</div>
-
+					<div id="form-message" class="mb-3"></div>
 					<input
 						type="submit"
+						id="submit-button"
 						class="btn btn-primary rounded-4 w-50"
 						value="Send Message"
 					>
@@ -65,3 +66,4 @@
 		</div>
 	</div>
 </section>
+<script src="/scripts/contact.js"></script>

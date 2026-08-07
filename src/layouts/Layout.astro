@@ -16,10 +16,25 @@ const {
 	description = 'Helping organisations navigate complexity through better decision-making, leadership and technology.',
 	canonical
 } = Astro.props;
+
+const pageUrl =
+	canonical ?? new URL(Astro.url.pathname, Astro.site!).href;
+
+const socialImage =
+	new URL('/images/social-preview.png', Astro.site!).href;
+
+const structuredData = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: 'Complexity Clarified',
+	url: Astro.site,
+	description
+};
 ---
 
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,8 +48,26 @@ const {
 
 	<link
 		rel="canonical"
-		href={canonical ?? new URL(Astro.url.pathname, Astro.site!).href}
+		href={pageUrl}
 	/>
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Complexity Clarified" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:image" content={socialImage} />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content={title} />
+	<meta property="og:locale" content="en_GB" />
+
+	<!-- JSON-LD -->
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify(structuredData)}
+	></script>
 
 	<!-- Google Tag Manager -->
 	<script is:inline>
@@ -48,6 +81,7 @@ const {
 </head>
 
 <body>
+
 	<!-- Google Tag Manager (noscript) -->
 	<noscript>
 		<iframe
@@ -73,5 +107,7 @@ const {
 	></script>
 
 	<script is:inline src="/scripts/scripts.js"></script>
+
 </body>
+
 </html>

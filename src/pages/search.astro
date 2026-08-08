@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Search | Complexity Clarified"
+	description="Search articles and ideas from Complexity Clarified."
+>
+	<section class="search-page py-5">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+
+					<h1 class="mb-3">Search</h1>
+
+					<p class="mb-4">
+						Search articles on decision-making, leadership, technology and change.
+					</p>
+
+					<form
+						id="search-form"
+						class="search-form"
+						role="search"
+					>
+						<div class="input-group input-group-lg">
+
+							<input
+								type="search"
+								id="search-input"
+								class="form-control"
+								placeholder="What are you looking for?"
+								aria-label="Search Complexity Clarified"
+								autocomplete="off"
+							/>
+
+							<button
+								class="btn btn-dark"
+								type="submit"
+							>
+								Search
+							</button>
+
+						</div>
+					</form>
+
+					<div
+						id="search-results"
+						class="mt-5"
+						aria-live="polite"
+					></div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+</Layout>

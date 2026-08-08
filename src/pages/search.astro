@@ -1,110 +1,210 @@
-<script>
-    interface SearchArticle {
-        title: string;
-        description: string;
-        pillar: string;
-        tags: string[];
-        url: string;
-    }
+---
+import Layout from '../layouts/Layout.astro';
+---
 
-    let searchIndex: SearchArticle[] = [];
+<Layout
+    title="Search | Complexity Clarified"
+    description="Search articles from Complexity Clarified."
+>
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
 
-    const input = document.querySelector<HTMLInputElement>('#searchInput');
-    const button = document.querySelector<HTMLButtonElement>('#searchButton');
-    const results = document.querySelector<HTMLElement>('#searchResults');
-    const status = document.querySelector<HTMLElement>('#searchStatus');
+                <h1 class="mb-4">Search</h1>
 
-    async function loadSearchIndex() {
-        try {
-            const response = await fetch('/search-index.json');
+                <div class="input-group input-group-lg mb-4">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        class="form-control"
+                        placeholder="Search articles..."
+                        aria-label="Search articles"
+                        autocomplete="off"
+                    />
 
-            if (!response.ok) {
-                throw new Error('Could not load search index');
+                    <button
+                        class="btn btn-dark"
+                        type="button"
+                        id="searchButton"
+                    >
+                        Search
+                    </button>
+                </div>
+
+                <p
+                    id="searchStatus"
+                    class="text-muted mb-4"
+                    aria-live="polite"
+                ></p>
+
+                <div id="searchResults"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        interface SearchArticle {
+            title: string;
+            description: string;
+            pillar: string;
+            tags: string[];
+            url: string;
+        }
+
+        let searchIndex: SearchArticle[] = [];
+
+        const input =
+            document.querySelector<HTMLInputElement>('#searchInput');
+
+        const button =
+            document.querySelector<HTMLButtonElement>('#searchButton');
+
+        const results =
+            document.querySelector<HTMLElement>('#searchResults');
+
+        const status =
+            document.querySelector<HTMLElement>('#searchStatus');
+
+        async function loadSearchIndex() {
+            try {
+                const response = await fetch('/search-index.json');
+
+                if (!response.ok) {
+                    throw new Error('Could not load search index');
+                }
+
+                searchIndex =
+                    await response.json() as SearchArticle[];
+
+            } catch (error) {
+                console.error(error);
+
+                if (status) {
+                    status.textContent =
+                        'Search is temporarily unavailable.';
+                }
+            }
+        }
+
+        function search() {
+            if (!input || !results || !status) return;
+
+            const query =
+                input.value.trim().toLowerCase();
+
+            results.innerHTML = '';
+            status.textContent = '';
+
+            if (!query) return;
+
+            const matches =
+                searchIndex.filter((article) => {
+
+                    const searchableText = [
+                        article.title,
+                        article.description,
+                        article.pillar,
+                        ...(article.tags || [])
+                    ]
+                        .join(' ')
+                        .toLowerCase();
+
+                    return searchableText.includes(query);
+                });
+
+            if (matches.length === 0) {
+                status.textContent =
+                    `No results found for "${input.value.trim()}".`;
+
+                return;
             }
 
-            searchIndex = await response.json() as SearchArticle[];
-        } catch (error) {
-            console.error(error);
+            status.textContent =
+                `${matches.length} ${
+                    matches.length === 1
+                        ? 'result'
+                        : 'results'
+                } found`;
 
-            if (status) {
-                status.textContent = 'Search is temporarily unavailable.';
+            matches.forEach((article) => {
+
+                const result =
+                    document.createElement('article');
+
+                result.className =
+                    'search-result border-bottom py-4';
+
+
+                const heading =
+                    document.createElement('h2');
+
+                heading.className = 'h4 mb-2';
+
+
+                const link =
+                    document.createElement('a');
+
+                link.href = article.url;
+                link.className =
+                    'text-decoration-none';
+
+                link.textContent = article.title;
+
+                heading.appendChild(link);
+
+
+                const description =
+                    document.createElement('p');
+
+                description.className = 'mb-2';
+                description.textContent =
+                    article.description;
+
+
+                const meta =
+                    document.createElement('div');
+
+                meta.className =
+                    'small text-muted';
+
+                const tags =
+                    article.tags.length
+                        ? ` · ${article.tags.join(' · ')}`
+                        : '';
+
+                meta.textContent =
+                    `${article.pillar}${tags}`;
+
+
+                result.appendChild(heading);
+                result.appendChild(description);
+                result.appendChild(meta);
+
+                results.appendChild(result);
+            });
+        }
+
+
+        button?.addEventListener(
+            'click',
+            search
+        );
+
+
+        input?.addEventListener(
+            'keydown',
+            (event) => {
+
+                if (event.key === 'Enter') {
+                    search();
+                }
+
             }
-        }
-    }
+        );
 
-    function search() {
-        if (!input || !results || !status) return;
 
-        const query = input.value.trim().toLowerCase();
+        loadSearchIndex();
+    </script>
 
-        results.innerHTML = '';
-        status.textContent = '';
-
-        if (!query) return;
-
-        const matches = searchIndex.filter((article) => {
-            const searchableText = [
-                article.title,
-                article.description,
-                article.pillar,
-                ...(article.tags || [])
-            ]
-                .join(' ')
-                .toLowerCase();
-
-            return searchableText.includes(query);
-        });
-
-        if (matches.length === 0) {
-            status.textContent = `No results found for "${input.value.trim()}".`;
-            return;
-        }
-
-        status.textContent =
-            `${matches.length} ${matches.length === 1 ? 'result' : 'results'} found`;
-
-        matches.forEach((article) => {
-            const result = document.createElement('article');
-            result.className = 'search-result border-bottom py-4';
-
-            const heading = document.createElement('h2');
-            heading.className = 'h4 mb-2';
-
-            const link = document.createElement('a');
-            link.href = article.url;
-            link.className = 'text-decoration-none';
-            link.textContent = article.title;
-
-            heading.appendChild(link);
-
-            const description = document.createElement('p');
-            description.className = 'mb-2';
-            description.textContent = article.description;
-
-            const meta = document.createElement('div');
-            meta.className = 'small text-muted';
-
-            const tags = article.tags.length
-                ? ` · ${article.tags.join(' · ')}`
-                : '';
-
-            meta.textContent = `${article.pillar}${tags}`;
-
-            result.appendChild(heading);
-            result.appendChild(description);
-            result.appendChild(meta);
-
-            results.appendChild(result);
-        });
-    }
-
-    button?.addEventListener('click', search);
-
-    input?.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            search();
-        }
-    });
-
-    loadSearchIndex();
-</script>
+</Layout>

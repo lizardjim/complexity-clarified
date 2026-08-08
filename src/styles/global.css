@@ -24,10 +24,6 @@ body{
     font-size: 0.9rem;
 }
 
-.site-navigation {
-	z-index: 1030;
-}
-
 .btn-primary {
     background-color: #212529;
     border-color: #212529;

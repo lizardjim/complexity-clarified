@@ -5,10 +5,12 @@ function updateGoogleConsent() {
 
 	window.dataLayer = window.dataLayer || [];
 
-	window.dataLayer.push(function () {
-		this.gtag('consent', 'update', {
-			analytics_storage: analyticsAllowed ? 'granted' : 'denied'
-		});
+	function gtag() {
+		window.dataLayer.push(arguments);
+	}
+
+	gtag('consent', 'update', {
+		analytics_storage: analyticsAllowed ? 'granted' : 'denied'
 	});
 }
 

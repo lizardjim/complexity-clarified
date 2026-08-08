@@ -103,7 +103,7 @@ const structuredData = {
 	<!-- End Google Tag Manager -->
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
 
 	<!-- Google Tag Manager (noscript) -->
 	<noscript>
@@ -116,15 +116,17 @@ const structuredData = {
 	</noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-	<div class="site-navigation sticky-top">
-		<Navigation />
+	<div class="d-flex flex-column min-vh-100">
+		<div class="site-navigation sticky-top">
+			<Navigation />
+		</div>
+
+		<main class="flex-grow-1">
+			<slot />
+		</main>
+
+		<Footer />
 	</div>
-
-	<main class="flex-grow-1">
-		<slot />
-	</main>
-
-	<Footer />
 
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

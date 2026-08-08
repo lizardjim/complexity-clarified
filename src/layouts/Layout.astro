@@ -74,6 +74,24 @@ const structuredData = {
 		set:html={JSON.stringify(structuredData)}
 	></script>
 
+	<!-- Google Consent Mode - Default -->
+	<script is:inline>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
+		gtag('consent', 'default', {
+			analytics_storage: 'granted',
+			ad_storage: 'denied',
+			ad_user_data: 'denied',
+			ad_personalization: 'denied',
+			functionality_storage: 'granted',
+			security_storage: 'granted'
+		});
+	</script>
+
 	<!-- Google Tag Manager -->
 	<script is:inline>
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

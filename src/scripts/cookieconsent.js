@@ -1,7 +1,27 @@
 import * as CookieConsent from 'vanilla-cookieconsent';
 
+function updateGoogleConsent() {
+	const analyticsAllowed = CookieConsent.acceptedCategory('analytics');
+
+	window.dataLayer = window.dataLayer || [];
+
+	window.dataLayer.push(function () {
+		this.gtag('consent', 'update', {
+			analytics_storage: analyticsAllowed ? 'granted' : 'denied'
+		});
+	});
+}
+
 CookieConsent.run({
 	mode: 'opt-in',
+
+	onFirstConsent: () => {
+		updateGoogleConsent();
+	},
+
+	onChange: () => {
+		updateGoogleConsent();
+	},
 
 	guiOptions: {
 		consentModal: {
@@ -24,6 +44,8 @@ CookieConsent.run({
 		},
 
 		analytics: {
+			enabled: true,
+
 			autoClear: {
 				cookies: [
 					{
@@ -42,7 +64,7 @@ CookieConsent.run({
 				consentModal: {
 					title: 'Cookies',
 					description:
-						'I use optional analytics cookies to understand how people use Complexity Clarified and improve the site.',
+						'I use analytics cookies to understand how people use Complexity Clarified and improve the site. You can opt out at any time.',
 					acceptAllBtn: 'Accept analytics',
 					acceptNecessaryBtn: 'Necessary only',
 					showPreferencesBtn: 'Manage preferences'
@@ -59,7 +81,7 @@ CookieConsent.run({
 						{
 							title: 'Your privacy',
 							description:
-								'You can choose whether to allow analytics cookies. You can change your choice at any time.'
+								'Analytics is enabled by default to help me understand how the site is used. You can turn analytics off at any time.'
 						},
 						{
 							title: 'Strictly necessary cookies',

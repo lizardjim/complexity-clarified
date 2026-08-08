@@ -1,58 +1,110 @@
----
-import Layout from '../layouts/Layout.astro';
----
+<script>
+    interface SearchArticle {
+        title: string;
+        description: string;
+        pillar: string;
+        tags: string[];
+        url: string;
+    }
 
-<Layout
-	title="Search | Complexity Clarified"
-	description="Search articles and ideas from Complexity Clarified."
->
-	<section class="search-page py-5">
-		<div class="container">
+    let searchIndex: SearchArticle[] = [];
 
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
+    const input = document.querySelector<HTMLInputElement>('#searchInput');
+    const button = document.querySelector<HTMLButtonElement>('#searchButton');
+    const results = document.querySelector<HTMLElement>('#searchResults');
+    const status = document.querySelector<HTMLElement>('#searchStatus');
 
-					<h1 class="mb-3">Search</h1>
+    async function loadSearchIndex() {
+        try {
+            const response = await fetch('/search-index.json');
 
-					<p class="mb-4">
-						Search articles on decision-making, leadership, technology and change.
-					</p>
+            if (!response.ok) {
+                throw new Error('Could not load search index');
+            }
 
-					<form
-						id="search-form"
-						class="search-form"
-						role="search"
-					>
-						<div class="input-group input-group-lg">
+            searchIndex = await response.json() as SearchArticle[];
+        } catch (error) {
+            console.error(error);
 
-							<input
-								type="search"
-								id="search-input"
-								class="form-control"
-								placeholder="What are you looking for?"
-								aria-label="Search Complexity Clarified"
-								autocomplete="off"
-							/>
+            if (status) {
+                status.textContent = 'Search is temporarily unavailable.';
+            }
+        }
+    }
 
-							<button
-								class="btn btn-dark"
-								type="submit"
-							>
-								Search
-							</button>
+    function search() {
+        if (!input || !results || !status) return;
 
-						</div>
-					</form>
+        const query = input.value.trim().toLowerCase();
 
-					<div
-						id="search-results"
-						class="mt-5"
-						aria-live="polite"
-					></div>
+        results.innerHTML = '';
+        status.textContent = '';
 
-				</div>
-			</div>
+        if (!query) return;
 
-		</div>
-	</section>
-</Layout>
+        const matches = searchIndex.filter((article) => {
+            const searchableText = [
+                article.title,
+                article.description,
+                article.pillar,
+                ...(article.tags || [])
+            ]
+                .join(' ')
+                .toLowerCase();
+
+            return searchableText.includes(query);
+        });
+
+        if (matches.length === 0) {
+            status.textContent = `No results found for "${input.value.trim()}".`;
+            return;
+        }
+
+        status.textContent =
+            `${matches.length} ${matches.length === 1 ? 'result' : 'results'} found`;
+
+        matches.forEach((article) => {
+            const result = document.createElement('article');
+            result.className = 'search-result border-bottom py-4';
+
+            const heading = document.createElement('h2');
+            heading.className = 'h4 mb-2';
+
+            const link = document.createElement('a');
+            link.href = article.url;
+            link.className = 'text-decoration-none';
+            link.textContent = article.title;
+
+            heading.appendChild(link);
+
+            const description = document.createElement('p');
+            description.className = 'mb-2';
+            description.textContent = article.description;
+
+            const meta = document.createElement('div');
+            meta.className = 'small text-muted';
+
+            const tags = article.tags.length
+                ? ` · ${article.tags.join(' · ')}`
+                : '';
+
+            meta.textContent = `${article.pillar}${tags}`;
+
+            result.appendChild(heading);
+            result.appendChild(description);
+            result.appendChild(meta);
+
+            results.appendChild(result);
+        });
+    }
+
+    button?.addEventListener('click', search);
+
+    input?.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            search();
+        }
+    });
+
+    loadSearchIndex();
+</script>

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && git diff --name-status HEAD^ HEAD && npm run indexnow",
+    "build": "astro build && npm run indexnow",
     "preview": "astro preview",
     "astro": "astro",
     "indexnow": "node src/scripts/indexnow.mjs"

@@ -204,7 +204,19 @@ import Layout from '../layouts/Layout.astro';
         );
 
 
-        loadSearchIndex();
+        async function initialiseSearch() {
+            await loadSearchIndex();
+
+            const params = new URLSearchParams(window.location.search);
+            const query = params.get('q');
+
+            if (query && input) {
+                input.value = query;
+                search();
+            }
+        }
+
+        initialiseSearch();
     </script>
 
 </Layout>

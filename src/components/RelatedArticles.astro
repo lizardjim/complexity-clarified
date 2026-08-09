@@ -1,0 +1,89 @@
+---
+import { getCollection } from "astro:content";
+
+const { currentArticle } = Astro.props;
+
+const articles = await getCollection("articles");
+
+const relatedArticles = articles
+    .filter((article) => article.id !== currentArticle.id)
+    .map((article) => {
+
+        let score = 0;
+
+        // Same pillar is the strongest relationship
+        if (article.data.pillar === currentArticle.data.pillar) {
+            score += 3;
+        }
+
+        // Add one point for each shared tag
+        const sharedTags = article.data.tags.filter((tag) =>
+            currentArticle.data.tags.includes(tag)
+        );
+
+        score += sharedTags.length;
+
+        return {
+            article,
+            score
+        };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 2);
+---
+
+{relatedArticles.length > 0 && (
+
+    <section class="related-articles mt-5 pt-5 border-top">
+
+        <h2 class="h3 mb-4">
+            Continue exploring
+        </h2>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+            {relatedArticles.map(({ article }) => (
+
+                <div class="col">
+
+                    <a
+                        href={`/articles/${article.id}`}
+                        class="text-decoration-none text-reset"
+                    >
+
+                        <div class="card article-card shadow-sm rounded-4 h-100 w-100">
+
+                            <div class="card-body p-4">
+
+                                <h3 class="card-title mb-3">
+                                    {article.data.title}
+                                </h3>
+
+                                <p class="card-text mb-4">
+                                    {article.data.description}
+                                </p>
+
+                                <small class="text-muted">
+                                    {article.data.date.toLocaleDateString("en-GB", {
+                                        day: "numeric",
+                                        month: "long",
+                                        year: "numeric"
+                                    })}
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            ))}
+
+        </div>
+
+    </section>
+
+)}

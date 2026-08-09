@@ -1,38 +1,65 @@
 /* ==========================================================
-   ARTICLE
-   ========================================================== */
+   ARTICLE HERO
+========================================================== */
+
+.article-hero {
+    padding: 4rem 0 3.5rem;
+
+    background: #f8f9fa;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.article-hero h1 {
+    font-size: clamp(2.6rem, 4vw, 3.3rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+
+    margin-bottom: 1rem;
+}
+
+.article-hero .lead {
+    max-width: 850px;
+
+    margin-bottom: 0;
+
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   ARTICLE META
+========================================================== */
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+
+    margin-top: 1.25rem;
+
+    font-size: .9rem;
+    line-height: 1.4;
+}
+
+
+/* ==========================================================
+   ARTICLE CONTENT
+========================================================== */
+
+.article-content {
+    padding: 3.5rem 0 4.5rem;
+}
 
 .article {
-    max-width: 980px;
-    margin: 0 auto;
     font-size: 1.05rem;
     line-height: 1.8;
 }
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
-
-.article header {
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid var(--bs-border-color);
-}
-
-.article h1 {
-    font-size: clamp(2.6rem, 4vw, 3.3rem);
-    line-height: 1.08;
-    letter-spacing: -0.03em;
-    margin-bottom: 0.8rem;
-}
-
-.article .lead {
-    margin-bottom: 2rem;
-}
 
 /* ==========================================================
    HEADINGS
-   ========================================================== */
+========================================================== */
 
 .article h2 {
     margin-top: 2.8rem;
@@ -57,17 +84,19 @@
     font-weight: 700;
 }
 
+
 /* ==========================================================
    PARAGRAPHS
-   ========================================================== */
+========================================================== */
 
 .article p {
     margin-bottom: 1.25rem;
 }
 
+
 /* ==========================================================
    LISTS
-   ========================================================== */
+========================================================== */
 
 .article ul,
 .article ol {
@@ -79,9 +108,10 @@
     margin-bottom: .45rem;
 }
 
+
 /* ==========================================================
    BLOCKQUOTES
-   ========================================================== */
+========================================================== */
 
 .article blockquote {
     margin: 3.5rem 0;
@@ -89,7 +119,7 @@
 
     border-left: 5px solid #212529;
 
-    background: #F8F9FA;
+    background: #f8f9fa;
 
     font-size: 1.35rem;
     line-height: 1.7;
@@ -101,17 +131,19 @@
     margin-bottom: 0;
 }
 
+
 /* ==========================================================
    STRONG
-   ========================================================== */
+========================================================== */
 
 .article strong {
     font-weight: 700;
 }
 
+
 /* ==========================================================
    LINKS
-   ========================================================== */
+========================================================== */
 
 .article a {
     color: var(--bs-primary);
@@ -123,12 +155,14 @@
     text-decoration: none;
 }
 
+
 /* ==========================================================
    IMAGES
-   ========================================================== */
+========================================================== */
 
 .article img {
     display: block;
+
     max-width: 100%;
     height: auto;
 
@@ -137,18 +171,20 @@
     border-radius: .75rem;
 }
 
+
 /* ==========================================================
    HORIZONTAL RULE
-   ========================================================== */
+========================================================== */
 
 .article hr {
     margin: 5rem 0;
     opacity: .15;
 }
 
+
 /* ==========================================================
    TABLES
-   ========================================================== */
+========================================================== */
 
 .article table {
     width: 100%;
@@ -158,17 +194,21 @@
 .article th,
 .article td {
     padding: .75rem;
+
     border-bottom: 1px solid var(--bs-border-color);
 }
 
+
 /* ==========================================================
    CODE
-   ========================================================== */
+========================================================== */
 
 .article code {
     padding: .15rem .4rem;
+
     border-radius: .25rem;
-    background: rgba(0,0,0,.05);
+
+    background: rgba(0, 0, 0, .05);
 }
 
 .article pre {
@@ -180,28 +220,73 @@
     overflow-x: auto;
 }
 
+
+/* ==========================================================
+   RELATED ARTICLES
+========================================================== */
+
+.related-articles {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+    border-top: 1px solid var(--bs-border-color);
+}
+
+.related-articles > h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
 /* ==========================================================
    MOBILE
-   ========================================================== */
+========================================================== */
 
 @media (max-width: 768px) {
 
-    .article {
-        max-width: 100%;
-        font-size: 1rem;
-        line-height: 1.75;
+    .article-hero {
+        padding: 2.75rem 0 2.5rem;
     }
 
-    .article h1 {
+    .article-hero h1 {
         font-size: 2.4rem;
+    }
+
+    .article-hero .lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .article-meta {
+        margin-top: 1rem;
+        font-size: .85rem;
+    }
+
+    .article-content {
+        padding: 2.5rem 0 3rem;
+    }
+
+    .article {
+        font-size: 1rem;
+        line-height: 1.75;
     }
 
     .article h2 {
         font-size: 1.75rem;
     }
 
-    .article .lead {
-        font-size: 1.1rem;
+    .article blockquote {
+        margin: 2.5rem 0;
+        padding: 1.25rem 1.5rem;
+
+        font-size: 1.15rem;
+    }
+
+    .related-articles {
+        margin-top: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
     }
 
 }

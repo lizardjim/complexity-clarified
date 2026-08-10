@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice"
+role="img" aria-label="Animated contact conversation graphic">
+<defs><path id="contact0" d="M210.0,170.0 Q505.0,286.8 800,350"/><path id="contact1" d="M390.0,500.0 Q595.0,399.3 800,350"/><path id="contact2" d="M1210.0,175.0 Q1005.0,240.6 800,350"/><path id="contact3" d="M1395.0,500.0 Q1097.5,432.8 800,350"/><path id="contact4" d="M560.0,585.0 Q680.0,441.3 800,350"/><path id="contact5" d="M1040.0,585.0 Q920.0,439.9 800,350"/><path id="contact6" d="M164.9,528.0 Q482.4,420.1 800,350"/><path id="contact7" d="M809.8,598.8 Q804.9,471.4 800,350"/><path id="contact8" d="M1314.8,542.8 Q1057.4,436.8 800,350"/><path id="contact9" d="M734.7,611.5 Q767.3,468.6 800,350"/><path id="contact10" d="M1406.9,198.1 Q1103.5,271.5 800,350"/><path id="contact11" d="M148.2,318.1 Q474.1,333.2 800,350"/><path id="contact12" d="M921.5,633.2 Q860.7,510.8 800,350"/><path id="contact13" d="M1025.5,547.9 Q912.7,439.1 800,350"/><path id="contact14" d="M879.8,651.3 Q839.9,527.2 800,350"/><path id="contact15" d="M1085.5,664.0 Q942.8,525.8 800,350"/><path id="contact16" d="M477.2,647.1 Q638.6,508.8 800,350"/><path id="contact17" d="M1088.7,629.0 Q944.3,514.7 800,350"/></defs>
+<style>
+.conversation-line {
+  fill:none;
+  stroke-width:1.25;
+  opacity:.20;
+  stroke-linecap:round;
+  stroke-dasharray:4 13;
+  animation:flow var(--dur) linear var(--delay) infinite;
+}
+.ambient {
+  fill:none;
+  stroke:#aebdca;
+  stroke-width:1;
+  opacity:.09;
+  stroke-dasharray:3 15;
+}
+.dialogue {
+  opacity:.62;
+}
+.bubble-pulse {
+  animation-name:talk;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;
+  transform-box:fill-box;
+  transform-origin:center;
+}
+.central-forum {
+  opacity:.92;
+  animation:centerBreath 7.5s ease-in-out infinite alternate;
+}
+@keyframes flow { to { stroke-dashoffset:-68; } }
+@keyframes talk {
+  0%,100% { opacity:.42; transform:scale(.94); }
+  50% { opacity:.88; transform:scale(1.05); }
+}
+@keyframes centerBreath {
+  from { opacity:.78; }
+  to { opacity:1; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .conversation-line,.bubble-pulse,.central-forum { animation:none!important; }
+}
+</style>
+<rect width="100%" height="100%" fill="#f8f9fa"/>
+
+<path d="M120,115 C310,160 430,150 560,115" class="ambient"/>
+<path d="M1040,115 C1170,150 1290,160 1480,115" class="ambient"/>
+<path d="M110,610 C310,540 430,545 570,600" class="ambient"/>
+<path d="M1030,600 C1170,545 1290,540 1490,610" class="ambient"/>
+
+<g><use href="#contact0" class="conversation-line" style="stroke:#4da3ff;--dur:13.84s;--delay:-2.36s"/><use href="#contact1" class="conversation-line" style="stroke:#45c3cf;--dur:12.59s;--delay:-1.07s"/><use href="#contact2" class="conversation-line" style="stroke:#8d78d8;--dur:11.51s;--delay:-6.53s"/><use href="#contact3" class="conversation-line" style="stroke:#212529;--dur:11.55s;--delay:-7.14s"/><use href="#contact4" class="conversation-line" style="stroke:#8fb7dc;--dur:11.52s;--delay:-5.04s"/><use href="#contact5" class="conversation-line" style="stroke:#45c3cf;--dur:15.75s;--delay:-1.54s"/><use href="#contact6" class="conversation-line" style="stroke:#45c3cf;--dur:13.47s;--delay:-0.70s"/><use href="#contact7" class="conversation-line" style="stroke:#8fb7dc;--dur:12.10s;--delay:-4.21s"/><use href="#contact8" class="conversation-line" style="stroke:#8fb7dc;--dur:12.88s;--delay:-6.57s"/><use href="#contact9" class="conversation-line" style="stroke:#8d78d8;--dur:12.38s;--delay:-0.78s"/><use href="#contact10" class="conversation-line" style="stroke:#4da3ff;--dur:13.03s;--delay:-1.59s"/><use href="#contact11" class="conversation-line" style="stroke:#4da3ff;--dur:13.79s;--delay:-2.56s"/><use href="#contact12" class="conversation-line" style="stroke:#4da3ff;--dur:10.89s;--delay:-9.19s"/><use href="#contact13" class="conversation-line" style="stroke:#45c3cf;--dur:15.68s;--delay:-6.94s"/><use href="#contact14" class="conversation-line" style="stroke:#8fb7dc;--dur:15.95s;--delay:-4.64s"/><use href="#contact15" class="conversation-line" style="stroke:#4da3ff;--dur:11.54s;--delay:-3.34s"/><use href="#contact16" class="conversation-line" style="stroke:#4da3ff;--dur:13.05s;--delay:-5.52s"/><use href="#contact17" class="conversation-line" style="stroke:#45c3cf;--dur:10.16s;--delay:-0.21s"/></g>
+<g><circle r="3.7" fill="#4da3ff" opacity=".9"><animateMotion dur="7.08s" begin="-5.08s" repeatCount="indefinite"><mpath href="#contact0"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.08s" begin="-5.08s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#8d78d8" opacity=".9"><animateMotion dur="6.59s" begin="-5.63s" repeatCount="indefinite"><mpath href="#contact2"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="6.59s" begin="-5.63s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#8fb7dc" opacity=".9"><animateMotion dur="9.49s" begin="-6.41s" repeatCount="indefinite"><mpath href="#contact4"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="9.49s" begin="-6.41s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#45c3cf" opacity=".9"><animateMotion dur="7.94s" begin="-1.68s" repeatCount="indefinite"><mpath href="#contact6"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.94s" begin="-1.68s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#8fb7dc" opacity=".9"><animateMotion dur="7.97s" begin="-4.22s" repeatCount="indefinite"><mpath href="#contact8"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.97s" begin="-4.22s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#4da3ff" opacity=".9"><animateMotion dur="7.61s" begin="-4.23s" repeatCount="indefinite"><mpath href="#contact10"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.61s" begin="-4.23s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#4da3ff" opacity=".9"><animateMotion dur="7.69s" begin="-2.07s" repeatCount="indefinite"><mpath href="#contact12"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.69s" begin="-2.07s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#8fb7dc" opacity=".9"><animateMotion dur="9.31s" begin="-0.41s" repeatCount="indefinite"><mpath href="#contact14"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="9.31s" begin="-0.41s" repeatCount="indefinite"/></circle><circle r="3.7" fill="#4da3ff" opacity=".9"><animateMotion dur="7.62s" begin="-2.99s" repeatCount="indefinite"><mpath href="#contact16"/></animateMotion><animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="7.62s" begin="-2.99s" repeatCount="indefinite"/></circle></g>
+<g>
+<g transform="translate(210.0 170.0) scale(1.00)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:8.75s;animation-delay:-0.49s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-28,-17 H8 C17,-17 23,-11 23,-3 V12 H2 L-10,22 V12 H-28 C-36,12 -42,6 -42,-2 V-7 C-42,-13 -36,-17 -28,-17 Z"/>
+  <path d="M2,-2 H29 C37,-2 42,3 42,10 V22 C42,29 37,34 29,34 H18 L7,43 V34 H1"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="8.75s" begin="-0.49s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="8.75s" begin="-0.49s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(390.0 500.0) scale(0.88)" class="dialogue" style="color:#45c3cf">
+  <circle r="50" fill="#45c3cf" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:7.40s;animation-delay:-1.63s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-28,-17 H8 C17,-17 23,-11 23,-3 V12 H2 L-10,22 V12 H-28 C-36,12 -42,6 -42,-2 V-7 C-42,-13 -36,-17 -28,-17 Z"/>
+  <path d="M2,-2 H29 C37,-2 42,3 42,10 V22 C42,29 37,34 29,34 H18 L7,43 V34 H1"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#45c3cf" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="7.40s" begin="-1.63s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="7.40s" begin="-1.63s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1210.0 175.0) scale(0.95)" class="dialogue" style="color:#8d78d8">
+  <circle r="50" fill="#8d78d8" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:6.59s;animation-delay:-2.34s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-28,-17 H8 C17,-17 23,-11 23,-3 V12 H2 L-10,22 V12 H-28 C-36,12 -42,6 -42,-2 V-7 C-42,-13 -36,-17 -28,-17 Z"/>
+  <path d="M2,-2 H29 C37,-2 42,3 42,10 V22 C42,29 37,34 29,34 H18 L7,43 V34 H1"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8d78d8" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="6.59s" begin="-2.34s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="6.59s" begin="-2.34s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1395.0 500.0) scale(1.00)" class="dialogue" style="color:#212529">
+  <circle r="50" fill="#212529" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.91s;animation-delay:-5.16s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-28,-17 H8 C17,-17 23,-11 23,-3 V12 H2 L-10,22 V12 H-28 C-36,12 -42,6 -42,-2 V-7 C-42,-13 -36,-17 -28,-17 Z"/>
+  <path d="M2,-2 H29 C37,-2 42,3 42,10 V22 C42,29 37,34 29,34 H18 L7,43 V34 H1"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#212529" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.91s" begin="-5.16s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.91s" begin="-5.16s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(560.0 585.0) scale(0.72)" class="dialogue" style="color:#8fb7dc">
+  <circle r="50" fill="#8fb7dc" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:6.65s;animation-delay:-5.93s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8fb7dc" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="6.65s" begin="-5.93s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="6.65s" begin="-5.93s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1040.0 585.0) scale(0.74)" class="dialogue" style="color:#45c3cf">
+  <circle r="50" fill="#45c3cf" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.66s;animation-delay:-5.15s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#45c3cf" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.66s" begin="-5.15s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.66s" begin="-5.15s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(164.9 528.0) scale(0.40)" class="dialogue" style="color:#45c3cf">
+  <circle r="50" fill="#45c3cf" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:7.12s;animation-delay:-1.91s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#45c3cf" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="7.12s" begin="-1.91s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="7.12s" begin="-1.91s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(809.8 598.8) scale(0.45)" class="dialogue" style="color:#8fb7dc">
+  <circle r="50" fill="#8fb7dc" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:7.06s;animation-delay:-4.43s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8fb7dc" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="7.06s" begin="-4.43s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="7.06s" begin="-4.43s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1314.8 542.8) scale(0.39)" class="dialogue" style="color:#8fb7dc">
+  <circle r="50" fill="#8fb7dc" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.01s;animation-delay:-1.66s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8fb7dc" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.01s" begin="-1.66s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.01s" begin="-1.66s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(734.7 611.5) scale(0.55)" class="dialogue" style="color:#8d78d8">
+  <circle r="50" fill="#8d78d8" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.86s;animation-delay:-4.36s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8d78d8" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.86s" begin="-4.36s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.86s" begin="-4.36s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1406.9 198.1) scale(0.42)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.00s;animation-delay:-2.54s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.00s" begin="-2.54s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.00s" begin="-2.54s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(148.2 318.1) scale(0.40)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.50s;animation-delay:-3.30s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.50s" begin="-3.30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.50s" begin="-3.30s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(921.5 633.2) scale(0.43)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:9.23s;animation-delay:-5.48s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="9.23s" begin="-5.48s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="9.23s" begin="-5.48s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1025.5 547.9) scale(0.43)" class="dialogue" style="color:#45c3cf">
+  <circle r="50" fill="#45c3cf" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:6.75s;animation-delay:-0.29s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#45c3cf" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="6.75s" begin="-0.29s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="6.75s" begin="-0.29s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(879.8 651.3) scale(0.51)" class="dialogue" style="color:#8fb7dc">
+  <circle r="50" fill="#8fb7dc" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:7.33s;animation-delay:-5.53s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#8fb7dc" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="7.33s" begin="-5.53s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="7.33s" begin="-5.53s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1085.5 664.0) scale(0.41)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:7.65s;animation-delay:-2.26s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="7.65s" begin="-2.26s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="7.65s" begin="-2.26s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(477.2 647.1) scale(0.54)" class="dialogue" style="color:#4da3ff">
+  <circle r="50" fill="#4da3ff" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:8.45s;animation-delay:-3.29s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#4da3ff" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="8.45s" begin="-3.29s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="8.45s" begin="-3.29s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(1088.7 629.0) scale(0.45)" class="dialogue" style="color:#45c3cf">
+  <circle r="50" fill="#45c3cf" opacity=".035"/>
+  <g class="bubble-pulse" style="animation-duration:8.07s;animation-delay:-4.91s">
+    
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-20,-12 H18 C25,-12 30,-7 30,0 V10 C30,17 25,22 18,22 H3 L-7,30 V22 H-20 C-27,22 -32,17 -32,10 V0 C-32,-7 -27,-12 -20,-12 Z"/>
+</g>
+  </g>
+  <circle r="44" fill="none" stroke="#45c3cf" stroke-width="1" opacity=".12">
+    <animate attributeName="r" values="44;52;44" dur="8.07s" begin="-4.91s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".14;0;.14" dur="8.07s" begin="-4.91s" repeatCount="indefinite"/>
+  </circle>
+</g></g>
+
+<g transform="translate(800 350)" class="central-forum" style="color:#212529">
+  <circle r="78" fill="#212529" opacity=".03"/>
+  <circle r="60" fill="none" stroke="#212529" stroke-width="1.3" opacity=".22"/>
+  
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M-28,-17 H8 C17,-17 23,-11 23,-3 V12 H2 L-10,22 V12 H-28 C-36,12 -42,6 -42,-2 V-7 C-42,-13 -36,-17 -28,-17 Z"/>
+  <path d="M2,-2 H29 C37,-2 42,3 42,10 V22 C42,29 37,34 29,34 H18 L7,43 V34 H1"/>
+</g>
+  <circle r="67" fill="none" stroke="#212529" stroke-width="1" opacity=".14">
+    <animate attributeName="r" values="67;80;67" dur="7.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".16;0;.16" dur="7.5s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+</svg>

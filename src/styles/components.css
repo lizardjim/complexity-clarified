@@ -144,3 +144,11 @@
 .approach-hero {
     background-image: url('/images/my-approach-four-lenses-animated.svg');
 }
+
+.about-hero {
+  background-image: url('images/about-account-circle-animated.svg')
+}
+
+contact-hero {
+  background-image: url('images/contact-forum-animated.svg')
+}

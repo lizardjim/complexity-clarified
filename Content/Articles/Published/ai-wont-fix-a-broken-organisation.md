@@ -30,7 +30,7 @@ extraordinary.
 
 But there is a problem...
 
-**AI operates through the organisation that already exists.**
+>**AI operates through the organisation that already exists.**
 
 If decision-making is unclear, AI doesn't create accountability. If
 knowledge is fragmented, AI can surface conflicting versions of the
@@ -44,11 +44,11 @@ simply creates a faster unnecessary process.
 
 So perhaps before asking:
 
-***Where can we use AI?***
+>***Where can we use AI?***
 
 We should ask a different question:
 
-***What kind of organisation are we about to amplify?***
+>***What kind of organisation are we about to amplify?***
 
 ## Efficiency isn't the same as capability
 
@@ -69,7 +69,7 @@ approvals.
 The AI implementation is declared a success... but there's a question
 nobody asked.
 
-***Why did seven people need to approve it in the first place?***
+>***Why did seven people need to approve it in the first place?***
 
 The organisation has become considerably more efficient at executing a
 process that may never have needed to exist.
@@ -135,7 +135,7 @@ What happens when two systems disagree?
 
 Perhaps, most importantly:
 
-**Why do we do this at all?**
+>**Why do we do this at all?**
 
 These aren't really technology questions - they're questions about how
 the organisation works.
@@ -205,4 +205,4 @@ first place.***
 
 AI won't fix a broken organisation.
 
-***But it might finally make the cracks impossible to ignore.***
+>***But it might finally make the cracks impossible to ignore.***

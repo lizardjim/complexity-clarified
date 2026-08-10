@@ -81,3 +81,24 @@
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: none;
 }
+
+.home-hero {
+    position: relative;
+    background-image: url('/images/complexity-network-animated-v2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.65);
+    pointer-events: none;
+}
+
+.home-hero > * {
+    position: relative;
+    z-index: 1;
+}

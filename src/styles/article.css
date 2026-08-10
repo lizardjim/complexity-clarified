@@ -5,7 +5,17 @@
 .article-hero {
     padding: 4rem 0 3.5rem;
 
-    background: #f8f9fa;
+    background:
+        linear-gradient(
+            to right,
+            rgba(248, 249, 250, 0.98) 0%,
+            rgba(248, 249, 250, 0.95) 35%,
+            rgba(239, 247, 255, 0.75) 60%,
+            rgba(224, 240, 255, 0.45) 80%,
+            rgba(214, 234, 255, 0.30) 100%
+        ),
+        var(--article-hero-image) center right / cover no-repeat;
+
     border-bottom: 1px solid var(--bs-border-color);
 }
 

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+<title id="title">Decisions article network</title>
+<desc id="desc">Animated network of questions, cognitive icons and connected decision nodes, concentrated on the right side.</desc>
+
+<style>
+  .line {
+    fill: none;
+    stroke: #8ec5ff;
+    stroke-width: 1.5;
+    opacity: .30;
+    stroke-linecap: round;
+    stroke-dasharray: 5 8;
+    animation: flow 16s linear infinite;
+  }
+  .line.purple { stroke: #a99af4; opacity: .28; }
+  .node { fill: #fff; stroke: #68baf2; stroke-width: 2; opacity: .78; }
+  .node.purple { stroke: #9d8bed; }
+  .dot { fill: #55b7e8; opacity: .68; }
+  .dot.purple { fill: #927ce7; }
+  .ring {
+    fill: rgba(255,255,255,.72);
+    stroke: #6bbbf1;
+    stroke-width: 2;
+    opacity: .72;
+  }
+  .ring.purple { stroke: #9f8deb; }
+  .question {
+    font: 500 50px Arial, sans-serif;
+    fill: #7661e6;
+    opacity: .75;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+  .question.blue { fill: #168fe0; }
+  .brain {
+    fill: none;
+    stroke: #168fe0;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: .82;
+  }
+  .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 5.8s ease-in-out infinite; }
+  .pulse2 { transform-box: fill-box; transform-origin: center; animation: pulse 7.2s ease-in-out -2s infinite; }
+  .float { animation: float 9s ease-in-out infinite; }
+  .float2 { animation: float2 11s ease-in-out -3s infinite; }
+  .spark { animation: blink 5s ease-in-out infinite; }
+  .spark:nth-of-type(2n) { animation-delay: -2.4s; }
+
+  @keyframes flow { to { stroke-dashoffset: -130; } }
+  @keyframes pulse {
+    0%,100% { transform: scale(1); opacity:.72; }
+    50% { transform: scale(1.08); opacity:.95; }
+  }
+  @keyframes float {
+    0%,100% { transform: translate(0,0); }
+    50% { transform: translate(7px,-8px); }
+  }
+  @keyframes float2 {
+    0%,100% { transform: translate(0,0); }
+    50% { transform: translate(-8px,6px); }
+  }
+  @keyframes blink {
+    0%,100% { opacity:.18; }
+    50% { opacity:.72; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+</style>
+
+<!-- Intentionally empty left side so article copy remains readable -->
+<g transform="translate(650 0)">
+  <!-- network -->
+  <path class="line" d="M90 105 L245 70 L395 125 L535 65 L690 125 L835 85"/>
+  <path class="line purple" d="M90 105 L210 220 L395 125 L445 275 L690 125 L735 245 L835 85"/>
+  <path class="line" d="M210 220 L315 315 L445 275 L560 365 L735 245 L835 345"/>
+  <path class="line purple" d="M315 315 L250 475 L455 500 L560 365 L650 510 L835 345"/>
+  <path class="line" d="M395 125 L315 315 L535 65 L560 365"/>
+  <path class="line purple" d="M445 275 L535 65 L690 125 L560 365"/>
+  <path class="line" d="M210 220 L445 275 L315 315"/>
+  <path class="line" d="M560 365 L735 245 L650 510"/>
+  <path class="line purple" d="M455 500 L560 365 L650 510"/>
+
+  <!-- small nodes -->
+  <circle class="node" cx="90" cy="105" r="9"/>
+  <circle class="dot purple pulse2" cx="245" cy="70" r="7"/>
+  <circle class="node purple" cx="395" cy="125" r="8"/>
+  <circle class="dot pulse" cx="535" cy="65" r="10"/>
+  <circle class="node" cx="690" cy="125" r="11"/>
+  <circle class="node purple" cx="835" cy="85" r="8"/>
+  <circle class="node purple" cx="210" cy="220" r="8"/>
+  <circle class="dot purple pulse" cx="445" cy="275" r="8"/>
+  <circle class="dot" cx="315" cy="315" r="8"/>
+  <circle class="node" cx="560" cy="365" r="10"/>
+  <circle class="node purple" cx="735" cy="245" r="11"/>
+  <circle class="dot" cx="835" cy="345" r="7"/>
+  <circle class="node" cx="250" cy="475" r="7"/>
+  <circle class="node purple" cx="455" cy="500" r="9"/>
+  <circle class="node" cx="650" cy="510" r="10"/>
+
+  <!-- question nodes -->
+  <g class="float pulse2">
+    <circle class="ring purple" cx="355" cy="205" r="38"/>
+    <text class="question" x="355" y="208">?</text>
+  </g>
+  <g class="float2 pulse">
+    <circle class="ring purple" cx="590" cy="120" r="47"/>
+    <text class="question" x="590" y="124">?</text>
+  </g>
+  <g class="float">
+    <circle class="ring" cx="800" cy="170" r="36"/>
+    <text class="question blue" x="800" y="174">?</text>
+  </g>
+  <g class="float2 pulse2">
+    <circle class="ring purple" cx="755" cy="435" r="43"/>
+    <text class="question" x="755" y="439">?</text>
+  </g>
+
+  <!-- central cognitive node -->
+  <g class="pulse">
+    <circle class="ring" cx="555" cy="270" r="57"/>
+    <path class="brain" d="M532 246
+      c-10 4-14 14-10 23
+      c-6 7-4 18 5 23
+      c1 12 10 20 22 20
+      l2 15 h18 l2-16
+      c12-3 20-13 19-25
+      c7-7 7-19 0-26
+      c2-11-6-21-17-23
+      c-7-8-20-8-28-2
+      c-5-1-9 0-13 2z"/>
+    <path class="brain" d="M546 261 l10-5 10 6 -3 12 -12 3 -8-8z"/>
+  </g>
+
+  <!-- secondary cognitive nodes -->
+  <g class="pulse2">
+    <circle class="ring" cx="300" cy="390" r="37"/>
+    <path class="brain" d="M286 378 c-7 3-9 10-6 16 c-3 7 2 15 10 16 l2 10 h13 l2-11 c8-3 11-12 7-19 c2-8-5-15-13-15 c-5-4-11-3-15 3z"/>
+    <path class="brain" d="M294 387 l7-3 6 4 -2 8 -8 2 -5-6z"/>
+  </g>
+  <g class="pulse">
+    <circle class="ring" cx="610" cy="465" r="38"/>
+    <path class="brain" d="M596 453 c-7 3-9 10-6 16 c-3 7 2 15 10 16 l2 10 h13 l2-11 c8-3 11-12 7-19 c2-8-5-15-13-15 c-5-4-11-3-15 3z"/>
+    <path class="brain" d="M604 462 l7-3 6 4 -2 8 -8 2 -5-6z"/>
+  </g>
+
+  <!-- atmospheric particles -->
+  <g fill="#77c9ef">
+    <circle class="spark" cx="150" cy="70" r="3"/>
+    <circle class="spark" cx="280" cy="145" r="4"/>
+    <circle class="spark" cx="480" cy="100" r="3"/>
+    <circle class="spark" cx="625" cy="205" r="4"/>
+    <circle class="spark" cx="780" cy="300" r="3"/>
+    <circle class="spark" cx="375" cy="430" r="3"/>
+    <circle class="spark" cx="705" cy="545" r="4"/>
+  </g>
+</g>
+</svg>

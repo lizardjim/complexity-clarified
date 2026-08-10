@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 620" role="img" aria-labelledby="title desc">
+<title id="title">Technology article memory network</title>
+<desc id="desc">Animated technology network with memory-chip motifs, connected circuits and data signals concentrated on the right side.</desc>
+
+<style>
+  .line {
+    fill:none; stroke:#8ec5ff; stroke-width:1.5; opacity:.28;
+    stroke-linecap:round; stroke-dasharray:5 9;
+    animation:flow 16s linear infinite;
+  }
+  .line.teal { stroke:#73d2cf; opacity:.27; }
+  .line.purple { stroke:#a99af4; opacity:.25; }
+
+  .ring {
+    fill:rgba(255,255,255,.72); stroke:currentColor;
+    stroke-width:2; opacity:.75;
+  }
+
+  .chip {
+    fill:none; stroke:currentColor; stroke-width:3;
+    stroke-linecap:round; stroke-linejoin:round;
+  }
+
+  .core { color:#212529; }
+  .blue { color:#4da3ff; }
+  .teal { color:#45c3cf; }
+  .purple { color:#8d78d8; }
+
+  .node { fill:#fff; stroke:#8fb7dc; stroke-width:2; opacity:.72; }
+  .dot { fill:#55b7e8; opacity:.68; }
+  .dot.teal { fill:#45c3cf; }
+  .dot.purple { fill:#927ce7; }
+
+  .pulse { transform-box:fill-box; transform-origin:center; animation:pulse 6.2s ease-in-out infinite; }
+  .pulse2 { transform-box:fill-box; transform-origin:center; animation:pulse 7.8s ease-in-out -2.2s infinite; }
+  .float { animation:float 10s ease-in-out infinite; }
+  .float2 { animation:float2 12s ease-in-out -3s infinite; }
+  .signal { opacity:0; }
+
+  @keyframes flow { to { stroke-dashoffset:-140; } }
+  @keyframes pulse {
+    0%,100% { transform:scale(1); opacity:.72; }
+    50% { transform:scale(1.07); opacity:.96; }
+  }
+  @keyframes float {
+    0%,100% { transform:translate(0,0); }
+    50% { transform:translate(6px,-7px); }
+  }
+  @keyframes float2 {
+    0%,100% { transform:translate(0,0); }
+    50% { transform:translate(-7px,6px); }
+  }
+
+  @media (prefers-reduced-motion:reduce) {
+    * { animation:none !important; }
+  }
+</style>
+
+<!-- left side intentionally sparse for article copy -->
+<g transform="translate(660 0)">
+
+  <!-- circuit network -->
+  <path id="p1" class="line" d="M100 115 L275 90 L435 175 L610 100 L805 155"/>
+  <path id="p2" class="line teal" d="M100 115 L225 270 L435 175 L520 330 L805 155"/>
+  <path id="p3" class="line purple" d="M225 270 L345 405 L520 330 L655 455 L830 345"/>
+  <path id="p4" class="line" d="M275 90 L345 405 L610 100 L520 330"/>
+  <path id="p5" class="line teal" d="M435 175 L520 330 L655 455"/>
+  <path id="p6" class="line purple" d="M520 330 L805 155 L830 345"/>
+  <path id="p7" class="line" d="M345 405 L290 525 L520 330 L655 455"/>
+  <path id="p8" class="line teal" d="M655 455 L735 535 L830 345"/>
+
+  <!-- travelling data packets -->
+  <circle r="4" fill="#4da3ff" class="signal">
+    <animateMotion dur="6.5s" begin="-1s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion>
+    <animate attributeName="opacity" values="0;.95;.95;0" keyTimes="0;.12;.82;1" dur="6.5s" begin="-1s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" fill="#45c3cf" class="signal">
+    <animateMotion dur="8s" begin="-3s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion>
+    <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="8s" begin="-3s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" fill="#8d78d8" class="signal">
+    <animateMotion dur="9s" begin="-5s" repeatCount="indefinite"><mpath href="#p6"/></animateMotion>
+    <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.12;.82;1" dur="9s" begin="-5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- network nodes -->
+  <circle class="node" cx="100" cy="115" r="9"/>
+  <circle class="dot teal pulse2" cx="275" cy="90" r="7"/>
+  <circle class="node" cx="435" cy="175" r="8"/>
+  <circle class="dot purple pulse" cx="610" cy="100" r="9"/>
+  <circle class="node" cx="805" cy="155" r="10"/>
+  <circle class="node" cx="225" cy="270" r="8"/>
+  <circle class="dot pulse" cx="345" cy="405" r="8"/>
+  <circle class="dot teal" cx="520" cy="330" r="8"/>
+  <circle class="node" cx="655" cy="455" r="10"/>
+  <circle class="node" cx="830" cy="345" r="8"/>
+  <circle class="node" cx="290" cy="525" r="7"/>
+  <circle class="dot purple" cx="735" cy="535" r="8"/>
+
+  <!-- central memory chip -->
+  <g transform="translate(555 255)" class="core pulse">
+    <circle class="ring" r="59"/>
+    <g class="chip">
+      <rect x="-24" y="-24" width="48" height="48" rx="5"/>
+      <rect x="-10" y="-10" width="20" height="20" rx="3"/>
+      <path d="M-15 -32v8 M0 -32v8 M15 -32v8
+               M-15 24v8 M0 24v8 M15 24v8
+               M-32 -15h8 M-32 0h8 M-32 15h8
+               M24 -15h8 M24 0h8 M24 15h8"/>
+    </g>
+  </g>
+
+  <!-- secondary chips -->
+  <g transform="translate(345 225)" class="blue float pulse2">
+    <circle class="ring" r="38"/>
+    <g class="chip">
+      <rect x="-16" y="-16" width="32" height="32" rx="4"/>
+      <rect x="-6" y="-6" width="12" height="12" rx="2"/>
+      <path d="M-9 -22v6 M9 -22v6 M-9 16v6 M9 16v6
+               M-22 -9h6 M-22 9h6 M16 -9h6 M16 9h6"/>
+    </g>
+  </g>
+
+  <g transform="translate(700 420)" class="teal float2 pulse">
+    <circle class="ring" r="39"/>
+    <g class="chip">
+      <rect x="-16" y="-16" width="32" height="32" rx="4"/>
+      <rect x="-6" y="-6" width="12" height="12" rx="2"/>
+      <path d="M-9 -22v6 M9 -22v6 M-9 16v6 M9 16v6
+               M-22 -9h6 M-22 9h6 M16 -9h6 M16 9h6"/>
+    </g>
+  </g>
+
+  <!-- smaller memory modules -->
+  <g transform="translate(790 250)" class="purple float">
+    <circle class="ring" r="31"/>
+    <g class="chip">
+      <rect x="-12" y="-12" width="24" height="24" rx="3"/>
+      <rect x="-4" y="-4" width="8" height="8" rx="1"/>
+    </g>
+  </g>
+
+  <g transform="translate(430 500)" class="blue float2">
+    <circle class="ring" r="29"/>
+    <g class="chip">
+      <rect x="-11" y="-11" width="22" height="22" rx="3"/>
+      <rect x="-4" y="-4" width="8" height="8" rx="1"/>
+    </g>
+  </g>
+
+  <!-- ambient data points -->
+  <g opacity=".38">
+    <circle cx="180" cy="165" r="3" fill="#8fb7dc"/>
+    <circle cx="375" cy="105" r="4" fill="#45c3cf"/>
+    <circle cx="490" cy="120" r="3" fill="#8d78d8"/>
+    <circle cx="675" cy="205" r="4" fill="#4da3ff"/>
+    <circle cx="770" cy="500" r="3" fill="#45c3cf"/>
+    <circle cx="575" cy="535" r="3" fill="#8d78d8"/>
+  </g>
+
+</g>
+</svg>

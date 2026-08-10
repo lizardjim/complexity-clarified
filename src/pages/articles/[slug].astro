@@ -19,6 +19,15 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 
+const pillarHero = {
+    decisions: "/images/decisions-article.svg",
+    leadership: "/images/leadership-article.svg",
+    technology: "/images/technology-article.svg",
+    change: "/images/change-article.svg",
+};
+
+const heroImage = pillarHero[article.data.pillar];
+
 /* ==========================================================
    ARTICLE META
 ========================================================== */
@@ -66,7 +75,10 @@ const readingTime = Math.max(
 >
 
     <!-- Article Hero -->
-    <section class="article-hero">
+    <section
+    class="article-hero"
+    style={`--article-hero-image: url("${heroImage}")`}
+    >
 
         <div class="container">
 

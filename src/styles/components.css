@@ -146,9 +146,9 @@
 }
 
 .about-hero {
-  background-image: url('images/about-account-circle-animated.svg');
+    background-image: url('/images/about-account-circle-animated.svg');
 }
 
 .contact-hero {
-  background-image: url('images/contact-forum-animated.svg');
+    background-image: url('/images/contact-forum-animated.svg');
 }

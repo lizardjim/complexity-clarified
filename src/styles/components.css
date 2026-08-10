@@ -102,3 +102,45 @@
     position: relative;
     z-index: 1;
 }
+
+.page-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(248, 249, 250, 0.7);
+    pointer-events: none;
+}
+
+.page-hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Page-specific backgrounds */
+
+.decisions-hero {
+    background-image: url('/images/decisions-cognitive-network-animated.svg');
+}
+
+.leadership-hero {
+    background-image: url('/images/leadership-influence-animated.svg');
+}
+
+.technology-hero {
+    background-image: url('/images/technology-memory-circuit-animated.svg');
+}
+
+.change-hero {
+    background-image: url('/images/change-autorenew-animated.svg');
+}
+
+.approach-hero {
+    background-image: url('/images/my-approach-four-lenses-animated.svg');
+}

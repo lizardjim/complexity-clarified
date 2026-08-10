@@ -1,24 +1,15 @@
 ---
 date: 2026-08-10
-description: AI has the potential to transform how organisations work.
-  But before asking what it can automate, perhaps we should ask what
-  we're about to amplify.
+description: AI has the potential to transform how organisations work. But before asking what it can automate, perhaps we should ask what we're about to amplify.
 pillar: technology
 tags:
-- ai
-- technology
-- digital-transformation
+  - ai
+  - technology
+  - digital-transformation
 title: AI Won't Fix a Broken Organisation
+published: "true"
 ---
-
-# AI Won't Fix a Broken Organisation
-
-*AI has the potential to transform how organisations work. But before
-asking what it can automate, perhaps we should ask what we're about to
-amplify.*
-
-Artificial intelligence is rapidly becoming the answer to almost every
-organisational question.
+Artificial intelligence is rapidly becoming the answer to almost every organisational question.
 
 How do we improve productivity?
 

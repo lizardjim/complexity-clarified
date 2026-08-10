@@ -7,7 +7,7 @@ tags:
   - technology
   - digital-transformation
 title: AI Won't Fix a Broken Organisation
-published: "true"
+published: true
 ---
 Artificial intelligence is rapidly becoming the answer to almost every organisational question.
 

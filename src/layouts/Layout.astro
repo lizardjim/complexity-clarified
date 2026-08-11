@@ -67,6 +67,13 @@ const structuredData = {
 		href={pageUrl}
 	/>
 
+	<link
+		rel="alternate"
+		type="application/rss+xml"
+		title="Complexity Clarified"
+		href={new URL('/rss.xml', Astro.site!).href}
+	/>
+
 	<!-- Open Graph -->
 	<meta property="og:type" content={type} />
 	<meta property="og:site_name" content={siteName} />

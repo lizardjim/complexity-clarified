@@ -9,22 +9,33 @@ import '../styles/article.css';
 import 'vanilla-cookieconsent/dist/cookieconsent.css';
 
 interface Props {
-	title?: string;
-	description?: string;
-	canonical?: string;
+    title?: string;
+    description?: string;
+    canonical?: string;
+    image?: string;
+    type?: 'website' | 'article';
 }
 
 const {
-	title = 'Complexity Clarified',
-	description = 'Helping organisations navigate complexity through better decision-making, leadership and technology.',
-	canonical
+    title = 'Complexity Clarified',
+    description = 'Helping organisations navigate complexity through better decision-making, leadership and technology.',
+    canonical,
+    image = '/images/social-preview.png',
+    type = 'website'
 } = Astro.props;
 
+const siteName = 'Complexity Clarified';
+
+const pageTitle =
+    title === siteName
+        ? siteName
+        : `${title} | ${siteName}`;
+
 const pageUrl =
-	canonical ?? new URL(Astro.url.pathname, Astro.site!).href;
+    canonical ?? new URL(Astro.url.pathname, Astro.site!).href;
 
 const socialImage =
-	new URL('/images/social-preview.png', Astro.site!).href;
+    new URL(image, Astro.site!).href;
 
 const structuredData = {
 	'@context': 'https://schema.org',
@@ -42,7 +53,7 @@ const structuredData = {
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>{title}</title>
+	<title>{pageTitle}</title>
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -57,16 +68,22 @@ const structuredData = {
 	/>
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Complexity Clarified" />
-	<meta property="og:title" content={title} />
+	<meta property="og:type" content={type} />
+	<meta property="og:site_name" content={siteName} />
+	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={pageUrl} />
 	<meta property="og:image" content={socialImage} />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
-	<meta property="og:image:alt" content={title} />
+	<meta property="og:image:alt" content={pageTitle} />
 	<meta property="og:locale" content="en_GB" />
+
+	<!-- Twitter / social -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={pageTitle} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={socialImage} />
 
 	<!-- JSON-LD -->
 	<script

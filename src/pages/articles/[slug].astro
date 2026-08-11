@@ -29,6 +29,16 @@ const pillarHero = {
 const heroImage = pillarHero[article.data.pillar];
 
 /* ==========================================================
+   ARTICLE SHARING
+========================================================== */
+
+const articleUrl = new URL(Astro.url.pathname, Astro.site!).href;
+
+const linkedInShareUrl =
+    `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
+
+
+/* ==========================================================
    ARTICLE META
 ========================================================== */
 
@@ -130,6 +140,58 @@ const readingTime = Math.max(
 
                     <Content />
 
+
+                    <!-- Article Sharing -->
+                    <div class="article-share">
+
+                        <span class="article-share-label">
+                            Share this article
+                        </span>
+
+                        <div class="article-share-actions">
+
+                            <a
+                                href={linkedInShareUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="article-share-link article-share-linkedin"
+                                aria-label={`Share "${article.data.title}" on LinkedIn`}
+                            >
+                                <span class="article-share-icon-wrap">
+                                    <img
+                                        src="/images/linkedin-icon.svg"
+                                        alt=""
+                                        class="article-share-icon"
+                                        aria-hidden="true"
+                                    />
+                                </span>
+
+                                <span>LinkedIn</span>
+                            </a>
+
+                            <button
+                                type="button"
+                                class="article-share-link article-copy-link"
+                                data-share-url={articleUrl}
+                            >
+                                <span
+                                    class="material-symbols-rounded article-share-icon"
+                                    aria-hidden="true"
+                                >
+                                    link
+                                </span>
+                                Copy link
+                            </button>
+
+                            <span
+                                class="article-copy-confirmation"
+                                aria-live="polite"
+                            ></span>
+
+                        </div>
+
+                    </div>
+
                 </article>
 
             </div>
@@ -159,3 +221,43 @@ const readingTime = Math.max(
     </section>
 
 </Layout>
+
+
+<!-- Article sharing behaviour -->
+<script>
+    document.querySelectorAll('.article-copy-link').forEach((button) => {
+
+        button.addEventListener('click', async () => {
+
+            const url = button.getAttribute('data-share-url');
+
+            if (!url) return;
+
+            try {
+
+                await navigator.clipboard.writeText(url);
+
+                const confirmation = button
+                    .closest('.article-share-actions')
+                    ?.querySelector('.article-copy-confirmation');
+
+                if (confirmation) {
+
+                    confirmation.textContent = 'Copied';
+
+                    setTimeout(() => {
+                        confirmation.textContent = '';
+                    }, 2000);
+
+                }
+
+            } catch (error) {
+
+                console.error('Unable to copy article link', error);
+
+            }
+
+        });
+
+    });
+</script>

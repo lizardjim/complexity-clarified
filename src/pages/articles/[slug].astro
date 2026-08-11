@@ -76,8 +76,8 @@ const readingTime = Math.max(
 
     <!-- Article Hero -->
     <section
-    class="article-hero"
-    style={`--article-hero-image: url("${heroImage}")`}
+        class="article-hero"
+        style={`--article-hero-image: url("${heroImage}")`}
     >
 
         <div class="container">
@@ -130,9 +130,27 @@ const readingTime = Math.max(
 
                     <Content />
 
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Related Articles -->
+    <section class="related-articles-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10">
+
                     <RelatedArticles currentArticle={article} />
 
-                </article>
+                </div>
 
             </div>
 

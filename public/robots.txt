@@ -1,5 +1,13 @@
-User-agent: *
+# OpenAI Search
+User-agent: OAI-SearchBot
+Allow: /
 
+# OpenAI model training
+User-agent: GPTBot
+Allow: /
+
+# All other crawlers
+User-agent: *
 Allow: /
 
 Sitemap: https://complexityclarified.co.uk/sitemap-index.xml

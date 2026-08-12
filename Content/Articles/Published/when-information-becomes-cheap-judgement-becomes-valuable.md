@@ -108,7 +108,7 @@ Organisations still need expertise in connecting information from apparently unr
 
 Most importantly, organisational leaders need to know when to stop analysing and when to act. This shifts the value from possessing information towards interpreting it.
 
->**From knowledge alone towards judgement.***
+>**From knowledge alone towards judgement.**
 
 ## This has implications for leadership
 
@@ -122,7 +122,7 @@ The role starts to change. Leaders become responsible for providing context, cla
 
 Essentially, it creates an environment where people can exercise judgement without requiring permission for every action, while leaders step in when a decision genuinely requires authority rather than merely information.
 
->**That could make organisations less hierarchical but only if leaders are willing to give up some of the control that information scarcity once gave them.***
+>**That could make organisations less hierarchical but only if leaders are willing to give up some of the control that information scarcity once gave them.**
 
 ## AI may expose unnecessary organisational complexity
 

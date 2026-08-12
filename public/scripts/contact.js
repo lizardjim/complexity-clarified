@@ -37,6 +37,13 @@ if (form) {
                 messageBox.classList.add("text-success");
                 messageBox.textContent = result.message;
 
+                // Record successful contact enquiry in the GTM data layer
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: "generate_lead",
+                    lead_source: "contact_form"
+                });
+
                 form.reset();
 
             } else {

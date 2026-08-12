@@ -9,7 +9,7 @@ export async function GET(context) {
         .filter((article) => article.data.published)
         .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-    return rss({
+    const response = await rss({
         title: 'Complexity Clarified',
 
         description:
@@ -23,5 +23,16 @@ export async function GET(context) {
             pubDate: article.data.date,
             link: `/articles/${article.id}/`,
         })),
+    });
+
+    const xml = await response.text();
+
+    const styledXml = xml.replace(
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/rss-style.xsl"?>'
+    );
+
+    return new Response(styledXml, {
+        headers: response.headers,
     });
 }

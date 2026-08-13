@@ -11,4 +11,4 @@ title: CMS Draft Test Three
 
 This article is testing the CMS draft publishing pipeline.
 
-If this appears in the Drafts folder, the Save Draft functionality is working correctly.
+This line has been added to test updating an existing draft.

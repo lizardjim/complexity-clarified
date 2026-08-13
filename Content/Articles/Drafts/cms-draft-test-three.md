@@ -11,4 +11,4 @@ title: CMS Draft Test Three
 
 This article is testing the CMS draft publishing pipeline.
 
-This line has been added to test updating an existing draft.
+This line has been edited through the CMS.

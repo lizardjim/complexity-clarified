@@ -2,7 +2,7 @@
 date: 2026-08-14
 description: Resistance to change is often less about the change itself and more about the uncertainty it creates around identity, capability, control and the future.
 pillar: change
-published: false
+published: true
 tags:
   - leadership
   - culture

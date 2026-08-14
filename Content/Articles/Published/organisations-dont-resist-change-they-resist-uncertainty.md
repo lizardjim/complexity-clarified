@@ -6,7 +6,7 @@ published: false
 tags:
   - leadership
   - culture
-title: Organisations don't resist change, the resist uncertainty
+title: Organisations don't resist change, they resist uncertainty
 ---
 *“People resist change”* is one of those management clichés that gets repeated endlessly.
 

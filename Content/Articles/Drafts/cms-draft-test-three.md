@@ -1,6 +1,6 @@
 ---
 date: 2026-08-13
-description: Testing the CMS draft publishing pipeline
+description: "Testing the CMS draft publishing pipeline"
 pillar: technology
 published: false
 tags:

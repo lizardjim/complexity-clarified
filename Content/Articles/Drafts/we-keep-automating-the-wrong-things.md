@@ -83,13 +83,14 @@ We've simply made unnecessary work cheaper.
 
 ## Start with the work, not the technology
 
-Perhaps then, the biggest opportunity with AI isn't automation at all.
-
-It's giving us a reason to look again at how work actually happens.
+Perhaps then, the biggest opportunity with AI isn't automation at all - it's giving us a reason to look again at how work actually happens.
 
 If we're going to spend time identifying processes that AI can automate, we should probably spend some of that time asking why those processes exist in the first place.
 
-What outcome is this trying to achieve? What would happen if we stopped doing it? Is it managing a genuine risk or simply following a process we've inherited? Could we achieve the same outcome in a completely different way?
+- What outcome is this trying to achieve?
+- What would happen if we stopped doing it?
+- Is it managing a genuine risk or simply following a process we've inherited?
+- Could we achieve the same outcome in a completely different way?
 
 And only then:
 

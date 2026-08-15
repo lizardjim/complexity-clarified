@@ -92,7 +92,7 @@ If we're going to spend time identifying processes that AI can automate, we shou
 - Is it managing a genuine risk or simply following a process we've inherited?
 - Could we achieve the same outcome in a completely different way?
 
-By answering these it naturally leads to the key question:
+Answering these naturally leads to the key question:
 
 > ***Could AI help us do it better?***
 

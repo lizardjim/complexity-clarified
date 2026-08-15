@@ -1,6 +1,6 @@
 ---
 date: 2026-08-15
-description: We’re getting better at automating work. But before asking how AI can make a process faster, perhaps we should ask a more fundamental question: why are we doing it at all?
+description: "We’re getting better at automating work. But before asking how AI can make a process faster, perhaps we should ask a more fundamental question: why are we doing it at all?"
 pillar: technology
 published: true
 tags:

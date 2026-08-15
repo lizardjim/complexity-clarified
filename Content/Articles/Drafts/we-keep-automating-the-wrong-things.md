@@ -80,3 +80,49 @@ Because if a report no longer needs to exist, producing it automatically isn't t
 We've simply made unnecessary work cheaper.
 
 **And AI could make us extraordinarily efficient at doing things we don't need to do.**
+
+## Start with the work, not the technology
+
+Perhaps then, the biggest opportunity with AI isn't automation at all.
+
+It's giving us a reason to look again at how work actually happens.
+
+If we're going to spend time identifying processes that AI can automate, we should probably spend some of that time asking why those processes exist in the first place.
+
+What outcome is this trying to achieve? What would happen if we stopped doing it? Is it managing a genuine risk or simply following a process we've inherited? Could we achieve the same outcome in a completely different way?
+
+And only then:
+
+> ***Could AI help us do it better?***
+
+This sounds obvious, but it represents quite a different way of thinking about technology.
+
+For years, digital transformation has often started with the technology. A new platform arrives, a capability becomes available and organisations look for places to use it.
+
+AI makes that temptation even greater because the technology can do so much.
+
+But starting with the capability inevitably shapes the question.
+
+If we start by asking *"What can we automate?"*, we'll find things to automate.
+
+If we start by asking *"What are we actually trying to achieve?"*, we might arrive somewhere completely different.
+
+A monthly report might not need to become an AI-generated monthly report. Perhaps people should simply be able to ask questions of the information when they need it.
+
+An approval process might not need faster approvals. Perhaps the decision could be made by the person doing the work, with AI helping them understand the rules, risks and information they need.
+
+A meeting that exists largely to exchange information might not need an AI-generated summary. Perhaps the meeting doesn't need to happen.
+
+That's a much more interesting use of AI.
+
+Not because we're using it to remove people from processes or squeeze another few percentage points of efficiency from the work we're already doing, but because it gives us an opportunity to rethink some of the assumptions those processes were built around.
+
+Technology has always been good at helping us do things faster.
+
+AI will make us faster still.
+
+But speed isn't particularly useful if we're running in the wrong direction.
+
+> ***The biggest productivity gains from AI may not come from doing our existing work faster.***
+
+> ***They may come from discovering how much of that work we no longer need to do.***

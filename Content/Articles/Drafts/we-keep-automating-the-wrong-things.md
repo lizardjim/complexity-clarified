@@ -29,16 +29,10 @@ It is undoubtedly faster but underneath the technology, the process may be almos
 
 **Request → Manager approval → Finance approval → Processing**
 
-We digitised the process.
+We digitised the process but we didn't necessarily ask whether the process still made sense. This pattern extends far beyond approvals though.
 
-We didn't necessarily ask whether the process still made sense.
+Reports became dashboards, meetings moved online, spreadsheets became applications and manual handovers became system integrations.
 
-And this pattern extends far beyond approvals.
-
-Reports became dashboards. Meetings moved online. Spreadsheets became applications. Manual handovers became system integrations.
-
-Again and again, technology has helped us perform existing work more efficiently.
-
-But efficiency and effectiveness aren't the same thing.
+Again and again, technology has helped us perform existing work more efficiently. But... efficiency and effectiveness aren't the same thing.
 
 **Making something easier to do doesn't necessarily mean it needs to be done.**

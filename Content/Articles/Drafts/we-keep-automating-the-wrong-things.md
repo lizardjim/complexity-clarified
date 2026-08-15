@@ -92,7 +92,7 @@ If we're going to spend time identifying processes that AI can automate, we shou
 - Is it managing a genuine risk or simply following a process we've inherited?
 - Could we achieve the same outcome in a completely different way?
 
-And only then:
+By answering these it naturally leads to the key question:
 
 > ***Could AI help us do it better?***
 
@@ -100,27 +100,21 @@ This sounds obvious, but it represents quite a different way of thinking about t
 
 For years, digital transformation has often started with the technology. A new platform arrives, a capability becomes available and organisations look for places to use it.
 
-AI makes that temptation even greater because the technology can do so much.
-
-But starting with the capability inevitably shapes the question.
+AI makes that temptation even greater because the technology can do so much but starting with the capability inevitably shapes the question.
 
 If we start by asking *"What can we automate?"*, we'll find things to automate.
 
 If we start by asking *"What are we actually trying to achieve?"*, we might arrive somewhere completely different.
 
-A monthly report might not need to become an AI-generated monthly report. Perhaps people should simply be able to ask questions of the information when they need it.
+A monthly report might not need to become an AI-generated monthly report... perhaps people should simply be able to ask questions of the information when they need it.
 
-An approval process might not need faster approvals. Perhaps the decision could be made by the person doing the work, with AI helping them understand the rules, risks and information they need.
+An approval process might not need faster approvals... Perhaps the decision could be made by the person doing the work, with AI helping them understand the rules, risks and information they need.
 
-A meeting that exists largely to exchange information might not need an AI-generated summary. Perhaps the meeting doesn't need to happen.
+A meeting that exists largely to exchange information might not need an AI-generated summary... Perhaps the meeting doesn't need to happen.
 
-That's a much more interesting use of AI.
+That's a much more interesting use of AI - but not because we're using it to remove people from processes or squeeze another few percentage points of efficiency from the work we're already doing, but because it gives us an opportunity to rethink some of the assumptions those processes were built around.
 
-Not because we're using it to remove people from processes or squeeze another few percentage points of efficiency from the work we're already doing, but because it gives us an opportunity to rethink some of the assumptions those processes were built around.
-
-Technology has always been good at helping us do things faster.
-
-AI will make us faster still.
+Technology has always been good at helping us do things faster - AI will make us faster still.
 
 But speed isn't particularly useful if we're running in the wrong direction.
 

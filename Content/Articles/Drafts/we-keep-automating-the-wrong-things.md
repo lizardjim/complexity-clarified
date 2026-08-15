@@ -9,29 +9,23 @@ tags:
   - strategy
 title: We Keep Automating The Wrong Things
 ---
-For decades, one of the promises of technology has been remarkably simple: **make work faster.**
+For decades, one of the promises of technology has been remarkably simple: **make work faster** and, for the most part, it has.
 
-And, for the most part, it has.
+Paper forms became web forms, filing cabinets became databases and spreadsheets became platforms. Manual processes became workflows and information that once took days to find can now be retrieved in seconds.
 
-Paper forms became web forms. Filing cabinets became databases. Spreadsheets became platforms. Manual processes became workflows. Information that once took days to find can now be retrieved in seconds.
-
-These changes have created enormous value.
-
-But there is a problem.
+These changes have created enormous value... but there is a problem.
 
 > ***We changed the tools far more often than we changed the work.***
 
-Consider a typical approval process.
+Consider a typical approval process:
 
 Twenty years ago, someone might have completed a form, passed it to their manager, sent it to finance for approval and then waited for someone else to process it.
 
-Today, the same process might happen entirely inside a digital platform.
+Today, that same process might happen entirely inside a digital platform.
 
-The form is online. Notifications are automatic. Approvals happen with a click. Everyone can see the status in real time.
+The form is online, notifications are automatic and approvals happen with a click. Everyone can see the status in real time.
 
-It is undoubtedly faster.
-
-But underneath the technology, the process may be almost identical.
+It is undoubtedly faster but underneath the technology, the process may be almost identical.
 
 **Request → Manager approval → Finance approval → Processing**
 

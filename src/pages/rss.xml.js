@@ -9,6 +9,22 @@ export async function GET(context) {
         .filter((article) => article.data.published)
         .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
+    const feedUrl = new URL('/rss.xml', context.site).href;
+
+    const latestArticleDate =
+        publishedArticles[0]?.data.date ?? new Date();
+
+    const categoryLabels = {
+        decisions: 'Decisions',
+        leadership: 'Leadership',
+        technology: 'Technology',
+        change: 'Change',
+        'digital-transformation': 'Digital Transformation',
+        ai: 'AI',
+        strategy: 'Strategy',
+        culture: 'Culture',
+    };
+
     const response = await rss({
         title: 'Complexity Clarified',
 
@@ -17,12 +33,50 @@ export async function GET(context) {
 
         site: context.site,
 
-        items: publishedArticles.map((article) => ({
-            title: article.data.title,
-            description: article.data.description,
-            pubDate: article.data.date,
-            link: `/articles/${article.id}/`,
-        })),
+        xmlns: {
+            atom: 'http://www.w3.org/2005/Atom',
+            dc: 'http://purl.org/dc/elements/1.1/',
+        },
+
+        customData: `
+            <language>en-gb</language>
+            <lastBuildDate>${latestArticleDate.toUTCString()}</lastBuildDate>
+            <atom:link
+                href="${feedUrl}"
+                rel="self"
+                type="application/rss+xml"
+            />
+        `,
+
+        items: publishedArticles.map((article) => {
+
+            const categories = [
+                article.data.pillar,
+                ...(article.data.tags ?? []),
+            ]
+                .filter(Boolean)
+                .filter(
+                    (value, index, array) =>
+                        array.indexOf(value) === index
+                );
+
+            return {
+                title: article.data.title,
+                description: article.data.description,
+                pubDate: article.data.date,
+                link: `/articles/${article.id}/`,
+
+                customData: `
+                    <dc:creator>James Barnett</dc:creator>
+                    ${categories
+                        .map(
+                            (category) =>
+                                `<category>${categoryLabels[category] ?? category}</category>`
+                        )
+                        .join('\n')}
+                `,
+            };
+        }),
     });
 
     const xml = await response.text();

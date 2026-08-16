@@ -10,6 +10,7 @@ export async function GET(context) {
         .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
     const feedUrl = new URL('/rss.xml', context.site).href;
+    const socialImageUrl = new URL('/images/social-preview.png', context.site).href;
 
     const latestArticleDate =
         publishedArticles[0]?.data.date ?? new Date();
@@ -68,6 +69,11 @@ export async function GET(context) {
 
                 customData: `
                     <dc:creator>James Barnett</dc:creator>
+                    <enclosure
+                        url="${socialImageUrl}"
+                        type="image/png"
+                        length="0"
+                    />
                     ${categories
                         .map(
                             (category) =>

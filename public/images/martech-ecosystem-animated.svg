@@ -1,0 +1,228 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 600"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">MarTech ecosystem and integration network</title>
+    <desc id="desc">
+        An abstract animated network of connected marketing technology platforms,
+        data flows and integration points.
+    </desc>
+
+    <defs>
+        <style>
+            .line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.18;
+            }
+
+            .line-soft {
+                fill: none;
+                stroke: #6c757d;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.12;
+            }
+
+            .node {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .node-core {
+                fill: #343a40;
+                opacity: 0.22;
+            }
+
+            .pulse {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.5;
+                opacity: 0;
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: pulse 5s ease-out infinite;
+            }
+
+            .flow {
+                fill: #495057;
+                opacity: 0.30;
+            }
+
+            .flow-1 { animation: move1 8s linear infinite; }
+            .flow-2 { animation: move2 10s linear infinite; }
+            .flow-3 { animation: move3 9s linear infinite; }
+            .flow-4 { animation: move4 11s linear infinite; }
+
+            @keyframes pulse {
+                0%   { opacity: 0; transform: scale(0.7); }
+                18%  { opacity: 0.22; }
+                65%  { opacity: 0.06; }
+                100% { opacity: 0; transform: scale(1.8); }
+            }
+
+            @keyframes move1 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.32; }
+                90%  { opacity: 0.32; }
+                100% { transform: translate(300px, 70px); opacity: 0; }
+            }
+
+            @keyframes move2 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.26; }
+                90%  { opacity: 0.26; }
+                100% { transform: translate(-275px, 120px); opacity: 0; }
+            }
+
+            @keyframes move3 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.28; }
+                90%  { opacity: 0.28; }
+                100% { transform: translate(280px, -115px); opacity: 0; }
+            }
+
+            @keyframes move4 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.24; }
+                90%  { opacity: 0.24; }
+                100% { transform: translate(-305px, -85px); opacity: 0; }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .pulse,
+                .flow {
+                    animation: none !important;
+                }
+
+                .flow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Broad ecosystem connections -->
+    <path class="line-soft" d="M110 145 C330 65 520 90 700 235" />
+    <path class="line-soft" d="M150 455 C350 535 560 500 700 355" />
+    <path class="line-soft" d="M1490 130 C1290 70 1090 95 900 235" />
+    <path class="line-soft" d="M1460 470 C1270 535 1060 500 900 355" />
+
+    <path class="line-soft" d="M275 135 C455 210 540 245 700 285" />
+    <path class="line-soft" d="M300 480 C470 415 555 375 700 325" />
+    <path class="line-soft" d="M1325 145 C1160 205 1050 245 900 285" />
+    <path class="line-soft" d="M1300 470 C1135 420 1050 370 900 325" />
+
+    <!-- Central integration layer -->
+    <path class="line" d="M700 235 L800 185 L900 235 L900 355 L800 415 L700 355 Z" />
+    <path class="line" d="M700 235 L900 355" />
+    <path class="line" d="M900 235 L700 355" />
+    <path class="line" d="M800 185 L800 415" />
+
+    <!-- Outer platform connections -->
+    <path class="line" d="M255 145 L700 285" />
+    <path class="line" d="M300 470 L700 325" />
+    <path class="line" d="M1345 155 L900 285" />
+    <path class="line" d="M1300 460 L900 325" />
+
+    <path class="line" d="M500 95 L760 205" />
+    <path class="line" d="M515 515 L760 395" />
+    <path class="line" d="M1100 95 L840 205" />
+    <path class="line" d="M1085 515 L840 395" />
+
+    <!-- Outer ecosystem nodes -->
+    <g>
+        <circle class="node" cx="255" cy="145" r="34"/>
+        <circle class="node-core" cx="255" cy="145" r="8"/>
+        <circle class="pulse" cx="255" cy="145" r="34" style="animation-delay:0s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="300" cy="470" r="27"/>
+        <circle class="node-core" cx="300" cy="470" r="7"/>
+        <circle class="pulse" cx="300" cy="470" r="27" style="animation-delay:1.4s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="500" cy="95" r="25"/>
+        <circle class="node-core" cx="500" cy="95" r="6"/>
+        <circle class="pulse" cx="500" cy="95" r="25" style="animation-delay:2.1s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="515" cy="515" r="31"/>
+        <circle class="node-core" cx="515" cy="515" r="7"/>
+        <circle class="pulse" cx="515" cy="515" r="31" style="animation-delay:3.2s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="1345" cy="155" r="34"/>
+        <circle class="node-core" cx="1345" cy="155" r="8"/>
+        <circle class="pulse" cx="1345" cy="155" r="34" style="animation-delay:0.8s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="1300" cy="460" r="27"/>
+        <circle class="node-core" cx="1300" cy="460" r="7"/>
+        <circle class="pulse" cx="1300" cy="460" r="27" style="animation-delay:2.7s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="1100" cy="95" r="25"/>
+        <circle class="node-core" cx="1100" cy="95" r="6"/>
+        <circle class="pulse" cx="1100" cy="95" r="25" style="animation-delay:1.8s"/>
+    </g>
+
+    <g>
+        <circle class="node" cx="1085" cy="515" r="31"/>
+        <circle class="node-core" cx="1085" cy="515" r="7"/>
+        <circle class="pulse" cx="1085" cy="515" r="31" style="animation-delay:3.8s"/>
+    </g>
+
+    <!-- Central ecosystem nodes -->
+    <g filter="url(#softGlow)">
+        <circle class="node" cx="800" cy="185" r="24"/>
+        <circle class="node-core" cx="800" cy="185" r="6"/>
+
+        <circle class="node" cx="700" cy="235" r="22"/>
+        <circle class="node-core" cx="700" cy="235" r="6"/>
+
+        <circle class="node" cx="900" cy="235" r="22"/>
+        <circle class="node-core" cx="900" cy="235" r="6"/>
+
+        <circle class="node" cx="700" cy="355" r="22"/>
+        <circle class="node-core" cx="700" cy="355" r="6"/>
+
+        <circle class="node" cx="900" cy="355" r="22"/>
+        <circle class="node-core" cx="900" cy="355" r="6"/>
+
+        <circle class="node" cx="800" cy="415" r="24"/>
+        <circle class="node-core" cx="800" cy="415" r="6"/>
+
+        <circle class="node" cx="800" cy="300" r="40"/>
+        <circle class="node-core" cx="800" cy="300" r="10"/>
+        <circle class="pulse" cx="800" cy="300" r="40" style="animation-delay:.5s"/>
+    </g>
+
+    <!-- Animated data-flow particles -->
+    <circle class="flow flow-1" cx="255" cy="145" r="5"/>
+    <circle class="flow flow-2" cx="1345" cy="155" r="5"/>
+    <circle class="flow flow-3" cx="300" cy="470" r="5"/>
+    <circle class="flow flow-4" cx="1300" cy="460" r="5"/>
+</svg>

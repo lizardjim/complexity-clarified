@@ -32,32 +32,117 @@
       >
         <ul class="navbar-nav gap-lg-2 align-items-lg-center">
 
+          <!-- Approach -->
           <li class="nav-item">
-            <a class="nav-link nav-small" href="/approach">My Approach</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link nav-small" href="/decisions">Decisions</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link nav-small" href="/leadership">Leadership</a>
+            <a class="nav-link nav-small" href="/approach">
+              My Approach
+            </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link nav-small" href="/technology">Technology</a>
+          <!-- Explore dropdown -->
+          <li class="nav-item dropdown">
+            <button
+              class="nav-link nav-small dropdown-toggle"
+              type="button"
+              id="exploreDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Explore
+            </button>
+
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="exploreDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="/articles/decisions">
+                  Decisions
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="/articles/leadership">
+                  Leadership
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="/articles/technology">
+                  Technology
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="/articles/change">
+                  Change
+                </a>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="/articles">
+                  All Articles
+                </a>
+              </li>
+            </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link nav-small" href="/change">Change</a>
+          <!-- Services dropdown -->
+          <li class="nav-item dropdown">
+            <button
+              class="nav-link nav-small dropdown-toggle"
+              type="button"
+              id="servicesDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </button>
+
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="servicesDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="/services">
+                  All Services
+                </a>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="/services/martech-integration/"
+                >
+                  MarTech Ecosystems &amp; Integration
+                </a>
+              </li>
+            </ul>
           </li>
 
+          <!-- About -->
           <li class="nav-item">
-            <a class="nav-link nav-small" href="/about">About</a>
+            <a class="nav-link nav-small" href="/about">
+              About
+            </a>
           </li>
 
+          <!-- Contact -->
           <li class="nav-item">
-            <a href="/contact" class="btn btn-sm btn-outline-light rounded-4 fw-semibold px-3">Let's Talk</a>
+            <a
+              href="/contact"
+              class="btn btn-sm btn-outline-light rounded-4 fw-semibold px-3"
+            >
+              Let's Talk
+            </a>
           </li>
 
           <!-- Desktop search trigger -->

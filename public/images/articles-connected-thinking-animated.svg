@@ -1,0 +1,234 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 600"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">Connected articles and ideas</title>
+    <desc id="desc">
+        An animated abstract network of document icons representing connected articles,
+        ideas and themes across Complexity Clarified.
+    </desc>
+
+    <defs>
+        <style>
+            .connector {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.6;
+                stroke-linecap: round;
+                opacity: 0.14;
+            }
+
+            .connector-strong {
+                fill: none;
+                stroke: #343a40;
+                stroke-width: 2;
+                stroke-linecap: round;
+                opacity: 0.18;
+            }
+
+            .doc {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.3;
+            }
+
+            .doc-fold {
+                fill: none;
+                stroke: #343a40;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.26;
+            }
+
+            .doc-line {
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                opacity: 0.22;
+            }
+
+            .anchor {
+                fill: #343a40;
+                opacity: 0.16;
+            }
+
+            .pulse {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.5;
+                opacity: 0;
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: pulse 6s ease-out infinite;
+            }
+
+            .float-a {
+                animation: floatA 8s ease-in-out infinite;
+                transform-box: fill-box;
+                transform-origin: center;
+            }
+
+            .float-b {
+                animation: floatB 10s ease-in-out infinite;
+                transform-box: fill-box;
+                transform-origin: center;
+            }
+
+            .float-c {
+                animation: floatC 9s ease-in-out infinite;
+                transform-box: fill-box;
+                transform-origin: center;
+            }
+
+            @keyframes pulse {
+                0%   { opacity: 0; transform: scale(0.8); }
+                20%  { opacity: 0.18; }
+                70%  { opacity: 0.04; }
+                100% { opacity: 0; transform: scale(1.7); }
+            }
+
+            @keyframes floatA {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-7px); }
+            }
+
+            @keyframes floatB {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(8px); }
+            }
+
+            @keyframes floatC {
+                0%, 100% { transform: translate(0, 0); }
+                50% { transform: translate(5px, -5px); }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .pulse,
+                .float-a,
+                .float-b,
+                .float-c {
+                    animation: none !important;
+                }
+            }
+        </style>
+    </defs>
+
+    <!-- Network connections -->
+    <path class="connector" d="M190 150 C360 115 475 130 610 220" />
+    <path class="connector" d="M235 445 C410 500 525 470 650 370" />
+    <path class="connector" d="M1410 150 C1240 115 1120 135 990 220" />
+    <path class="connector" d="M1365 445 C1190 500 1080 465 950 370" />
+
+    <path class="connector" d="M425 95 C560 145 650 180 735 245" />
+    <path class="connector" d="M455 505 C575 455 665 415 745 355" />
+    <path class="connector" d="M1175 95 C1040 145 950 180 865 245" />
+    <path class="connector" d="M1145 505 C1025 455 935 415 855 355" />
+
+    <path class="connector-strong" d="M610 220 L800 160 L990 220" />
+    <path class="connector-strong" d="M650 370 L800 440 L950 370" />
+    <path class="connector-strong" d="M610 220 L650 370" />
+    <path class="connector-strong" d="M990 220 L950 370" />
+    <path class="connector-strong" d="M800 160 L800 440" />
+
+    <!-- Left document group -->
+    <g class="float-a">
+        <path class="doc" d="M150 105 H245 L285 145 V245 H150 Z" />
+        <path class="doc-fold" d="M245 105 V145 H285" />
+        <line class="doc-line" x1="175" y1="170" x2="255" y2="170" />
+        <line class="doc-line" x1="175" y1="195" x2="235" y2="195" />
+        <line class="doc-line" x1="175" y1="220" x2="245" y2="220" />
+        <circle class="pulse" cx="218" cy="175" r="54" style="animation-delay:.2s" />
+    </g>
+
+    <g class="float-b">
+        <path class="doc" d="M205 380 H290 L325 415 V505 H205 Z" />
+        <path class="doc-fold" d="M290 380 V415 H325" />
+        <line class="doc-line" x1="228" y1="440" x2="300" y2="440" />
+        <line class="doc-line" x1="228" y1="465" x2="282" y2="465" />
+    </g>
+
+    <g class="float-c">
+        <path class="doc" d="M385 55 H455 L485 85 V165 H385 Z" />
+        <path class="doc-fold" d="M455 55 V85 H485" />
+        <line class="doc-line" x1="405" y1="110" x2="460" y2="110" />
+        <line class="doc-line" x1="405" y1="132" x2="448" y2="132" />
+    </g>
+
+    <g class="float-a">
+        <path class="doc" d="M410 440 H490 L525 475 V555 H410 Z" />
+        <path class="doc-fold" d="M490 440 V475 H525" />
+        <line class="doc-line" x1="432" y1="500" x2="500" y2="500" />
+        <line class="doc-line" x1="432" y1="525" x2="485" y2="525" />
+    </g>
+
+    <!-- Right document group -->
+    <g class="float-b">
+        <path class="doc" d="M1315 105 H1410 L1450 145 V245 H1315 Z" />
+        <path class="doc-fold" d="M1410 105 V145 H1450" />
+        <line class="doc-line" x1="1340" y1="170" x2="1420" y2="170" />
+        <line class="doc-line" x1="1340" y1="195" x2="1400" y2="195" />
+        <line class="doc-line" x1="1340" y1="220" x2="1410" y2="220" />
+        <circle class="pulse" cx="1382" cy="175" r="54" style="animation-delay:1.7s" />
+    </g>
+
+    <g class="float-a">
+        <path class="doc" d="M1275 380 H1360 L1395 415 V505 H1275 Z" />
+        <path class="doc-fold" d="M1360 380 V415 H1395" />
+        <line class="doc-line" x1="1298" y1="440" x2="1370" y2="440" />
+        <line class="doc-line" x1="1298" y1="465" x2="1352" y2="465" />
+    </g>
+
+    <g class="float-c">
+        <path class="doc" d="M1115 55 H1185 L1215 85 V165 H1115 Z" />
+        <path class="doc-fold" d="M1185 55 V85 H1215" />
+        <line class="doc-line" x1="1135" y1="110" x2="1190" y2="110" />
+        <line class="doc-line" x1="1135" y1="132" x2="1178" y2="132" />
+    </g>
+
+    <g class="float-b">
+        <path class="doc" d="M1075 440 H1155 L1190 475 V555 H1075 Z" />
+        <path class="doc-fold" d="M1155 440 V475 H1190" />
+        <line class="doc-line" x1="1097" y1="500" x2="1165" y2="500" />
+        <line class="doc-line" x1="1097" y1="525" x2="1150" y2="525" />
+    </g>
+
+    <!-- Four central anchor documents / themes -->
+    <g>
+        <circle class="anchor" cx="800" cy="300" r="108" />
+
+        <g class="float-a">
+            <path class="doc" d="M730 105 H790 L815 130 V205 H730 Z" />
+            <path class="doc-fold" d="M790 105 V130 H815" />
+            <line class="doc-line" x1="748" y1="153" x2="795" y2="153" />
+            <line class="doc-line" x1="748" y1="175" x2="785" y2="175" />
+        </g>
+
+        <g class="float-b">
+            <path class="doc" d="M565 225 H625 L650 250 V325 H565 Z" />
+            <path class="doc-fold" d="M625 225 V250 H650" />
+            <line class="doc-line" x1="583" y1="273" x2="630" y2="273" />
+            <line class="doc-line" x1="583" y1="295" x2="620" y2="295" />
+        </g>
+
+        <g class="float-c">
+            <path class="doc" d="M950 225 H1010 L1035 250 V325 H950 Z" />
+            <path class="doc-fold" d="M1010 225 V250 H1035" />
+            <line class="doc-line" x1="968" y1="273" x2="1015" y2="273" />
+            <line class="doc-line" x1="968" y1="295" x2="1005" y2="295" />
+        </g>
+
+        <g class="float-a">
+            <path class="doc" d="M750 395 H810 L835 420 V495 H750 Z" />
+            <path class="doc-fold" d="M810 395 V420 H835" />
+            <line class="doc-line" x1="768" y1="443" x2="815" y2="443" />
+            <line class="doc-line" x1="768" y1="465" x2="805" y2="465" />
+        </g>
+
+        <circle class="pulse" cx="800" cy="300" r="92" style="animation-delay:2.5s" />
+    </g>
+
+</svg>

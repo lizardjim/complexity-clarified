@@ -8,6 +8,18 @@
     }
 }
 
+/* Navigation Tweaks */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .navbar .dropdown:hover > .dropdown-toggle {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
 /* Navigation search */
 
 .nav-search-trigger {
@@ -151,4 +163,12 @@
 
 .contact-hero {
     background-image: url('/images/contact-forum-animated.svg');
+}
+
+.martech-hero {
+    background-image: url('/images/martech-ecosystem-animated.svg');
+}
+
+.articles-hero {
+    background-image: url('/images/articles-connected-thinking-animated.svg');
 }

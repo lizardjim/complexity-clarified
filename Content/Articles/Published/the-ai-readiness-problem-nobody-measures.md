@@ -17,7 +17,7 @@ Most organisations preparing for AI ask broadly the same questions:
 
 These are all sensible questions, but there is another form of readiness that receives far less attention.
 
-***Is the organisation actually capable of acting on what AI tells it?***
+> ***Is the organisation actually capable of acting on what AI tells it?***
 
 An organisation can have excellent data, sophisticated technology, robust governance and capable people but still struggle to extract meaningful value from AI.
 
@@ -37,7 +37,7 @@ The obvious assumption is that better and faster information will produce better
 
 But this raises a problem…
 
-***Knowing something faster does not necessarily mean an organisation can act on it faster.***
+> ***Knowing something faster does not necessarily mean an organisation can act on it faster.***
 
 Imagine an AI system identifies a significant opportunity to change pricing but who can approve it?
 
@@ -62,13 +62,13 @@ But decision-making is harder - it sits between organisational charts, processes
 
 These problems already exist in organisations.
 
-***AI doesn't remove them. It exposes them.***
+> ***AI doesn't remove them. It exposes them.***
 
 ## **What happens when AI challenges the organisation?**
 
 There is another dimension to decision readiness that becomes increasingly important as AI capabilities improve.
 
-***What happens when the system reaches a conclusion people don't like?***
+> ***What happens when the system reaches a conclusion people don't like?***
 
 Suppose an organisation has spent years pursuing a particular customer segment and AI analysis suggests it is structurally unprofitable.
 
@@ -78,7 +78,7 @@ Maybe it concludes that the programme receiving the greatest executive attention
 
 The technical question is whether the analysis is reliable… the organisational question is more uncomfortable:
 
-***Are we genuinely prepared to change our minds?***
+> ***Are we genuinely prepared to change our minds?***
 
 Organisations are not rational machines waiting for better information.
 
@@ -100,17 +100,17 @@ Not who the organisation chart suggests has authority, but who can genuinely mak
 
 Some escalation is necessary; some exists because responsibility is unclear, incentives discourage risk or people have learned that making the wrong decision is more dangerous than making no decision.
 
-***How reversible is the decision?***
+> ***How reversible is the decision?***
 
 Organisations often apply similar governance to fundamentally different decisions. A difficult-to-reverse strategic commitment deserves scrutiny yet a low-cost experiment that can be reversed next week probably does not.
 
-***How quickly can evidence change a decision?***
+> ***How quickly can evidence change a decision?***
 
 If new information appears, can the organisation adapt or does changing direction require someone to admit that the previous decision was wrong?
 
 Perhaps most importantly:
 
-***Who is accountable when AI contributes to a decision?***
+> ***Who is accountable when AI contributes to a decision?***
 
 If a human accepts an AI recommendation and the outcome is poor, who owns the result?
 
@@ -161,4 +161,4 @@ The organisations that benefit most from AI may not simply be those with the bes
 
 They may be the organisations capable of turning better information into better judgement… and better judgement into action.
 
-***Before asking whether your technology is ready for AI, it may be worth asking whether your organisation is ready to decide.***
+> ***Before asking whether your technology is ready for AI, it may be worth asking whether your organisation is ready to decide.***

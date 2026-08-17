@@ -172,3 +172,32 @@
 .articles-hero {
     background-image: url('/images/articles-connected-thinking-animated.svg');
 }
+
+/* Breadcrumbs */
+
+.breadcrumb-wrapper {
+    background: var(--bs-light);
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+    --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
+
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--bs-body-color);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--bs-secondary-color);
+}

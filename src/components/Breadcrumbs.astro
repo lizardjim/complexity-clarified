@@ -1,0 +1,85 @@
+---
+interface Props {
+	currentLabel?: string;
+}
+
+const { currentLabel } = Astro.props;
+
+const pathname = Astro.url.pathname;
+
+const segments = pathname
+	.split("/")
+	.filter(Boolean);
+
+const labels: Record<string, string> = {
+	articles: "Articles",
+	decisions: "Decisions",
+	leadership: "Leadership",
+	technology: "Technology",
+	change: "Change",
+	services: "Services",
+	approach: "My Approach",
+	about: "About",
+	contact: "Contact",
+	"martech-integration": "MarTech Ecosystems & Integration"
+};
+
+const formatLabel = (segment: string) => {
+	if (labels[segment]) {
+		return labels[segment];
+	}
+
+	return segment
+		.replace(/-/g, " ")
+		.replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
+const breadcrumbs = segments.map((segment, index) => {
+	const href = "/" + segments.slice(0, index + 1).join("/") + "/";
+	const isCurrent = index === segments.length - 1;
+
+	return {
+		label: isCurrent && currentLabel
+			? currentLabel
+			: formatLabel(segment),
+		href,
+		isCurrent
+	};
+});
+---
+
+{segments.length > 0 && (
+	<nav
+		class="breadcrumb-wrapper"
+		aria-label="Breadcrumb"
+	>
+		<div class="container py-2">
+
+			<ol class="breadcrumb mb-0">
+
+				<li class="breadcrumb-item">
+					<a href="/">Home</a>
+				</li>
+
+				{breadcrumbs.map((item) => (
+					item.isCurrent ? (
+						<li
+							class="breadcrumb-item active"
+							aria-current="page"
+						>
+							{item.label}
+						</li>
+					) : (
+						<li class="breadcrumb-item">
+							<a href={item.href}>
+								{item.label}
+							</a>
+						</li>
+					)
+				))}
+
+			</ol>
+
+		</div>
+	</nav>
+)}

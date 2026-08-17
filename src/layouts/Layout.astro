@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Footer from '../components/Footer.astro';
 
 import '../styles/global.css';
@@ -14,6 +15,8 @@ interface Props {
     canonical?: string;
     image?: string;
     type?: 'website' | 'article';
+    breadcrumbLabel?: string;
+    publishedTime?: Date;
 }
 
 const {
@@ -21,10 +24,15 @@ const {
     description = 'Helping organisations navigate complexity through better decision-making, leadership and technology.',
     canonical,
     image = '/images/social-preview.png',
-    type = 'website'
+    type = 'website',
+    breadcrumbLabel,
+    publishedTime
 } = Astro.props;
 
 const siteName = 'Complexity Clarified';
+
+const siteDescription =
+    'Helping organisations navigate complexity through better decision-making, leadership and technology.';
 
 const pageTitle =
     title === siteName
@@ -34,15 +42,162 @@ const pageTitle =
 const pageUrl =
     canonical ?? new URL(Astro.url.pathname, Astro.site!).href;
 
+const siteUrl =
+    new URL('/', Astro.site!).href;
+
 const socialImage =
     new URL(image, Astro.site!).href;
 
+const isHome =
+    Astro.url.pathname === '/';
+
+const currentBreadcrumbLabel =
+    breadcrumbLabel ?? title;
+
+
+/* ==========================================================
+   BREADCRUMB DATA
+========================================================== */
+
+const segments = Astro.url.pathname
+    .split('/')
+    .filter(Boolean);
+
+const breadcrumbLabels: Record<string, string> = {
+    articles: 'Articles',
+    decisions: 'Decisions',
+    leadership: 'Leadership',
+    technology: 'Technology',
+    change: 'Change',
+    services: 'Services',
+    approach: 'My Approach',
+    about: 'About',
+    contact: 'Contact',
+    'martech-integration': 'MarTech Ecosystems & Integration'
+};
+
+const formatBreadcrumbLabel = (segment: string) => {
+
+    if (breadcrumbLabels[segment]) {
+        return breadcrumbLabels[segment];
+    }
+
+    return segment
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
+const breadcrumbItems = [
+    {
+        name: 'Home',
+        url: siteUrl
+    },
+
+    ...segments.map((segment, index) => {
+
+        const isCurrent =
+            index === segments.length - 1;
+
+        const path =
+            '/' +
+            segments.slice(0, index + 1).join('/') +
+            '/';
+
+        return {
+            name:
+                isCurrent
+                    ? currentBreadcrumbLabel
+                    : formatBreadcrumbLabel(segment),
+
+            url: new URL(path, Astro.site!).href
+        };
+    })
+];
+
+
+/* ==========================================================
+   STRUCTURED DATA
+========================================================== */
+
+const structuredDataGraph: Record<string, unknown>[] = [
+
+    /* Website */
+    {
+        '@type': 'WebSite',
+        '@id': `${siteUrl}#website`,
+        name: siteName,
+        url: siteUrl,
+        description: siteDescription
+    }
+
+];
+
+
+/* Breadcrumbs */
+
+if (!isHome) {
+
+    structuredDataGraph.push({
+        '@type': 'BreadcrumbList',
+        '@id': `${pageUrl}#breadcrumb`,
+
+        itemListElement: breadcrumbItems.map(
+            (item, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                name: item.name,
+                item: item.url
+            })
+        )
+    });
+
+}
+
+
+/* Article */
+
+if (type === 'article') {
+
+    structuredDataGraph.push({
+        '@type': 'Article',
+        '@id': `${pageUrl}#article`,
+
+        headline: title,
+        description,
+        url: pageUrl,
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': pageUrl
+        },
+
+        image: socialImage,
+
+        ...(publishedTime && {
+            datePublished: publishedTime.toISOString()
+        }),
+
+        author: {
+            '@type': 'Person',
+            name: 'James Barnett'
+        },
+
+        publisher: {
+            '@type': 'Organization',
+            name: siteName,
+            url: siteUrl
+        },
+
+        isPartOf: {
+            '@id': `${siteUrl}#website`
+        }
+    });
+
+}
+
+
 const structuredData = {
-	'@context': 'https://schema.org',
-	'@type': 'WebSite',
-	name: 'Complexity Clarified',
-	url: Astro.site,
-	description
+    '@context': 'https://schema.org',
+    '@graph': structuredDataGraph
 };
 ---
 
@@ -50,117 +205,238 @@ const structuredData = {
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>{pageTitle}</title>
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-	<meta
-		name="description"
-		content={description}
-	/>
+    <meta charset="UTF-8" />
 
-	<link
-		rel="canonical"
-		href={pageUrl}
-	/>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
 
-	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="Complexity Clarified"
-		href={new URL('/rss.xml', Astro.site!).href}
-	/>
+    <title>{pageTitle}</title>
 
-	<!-- Open Graph -->
-	<meta property="og:type" content={type} />
-	<meta property="og:site_name" content={siteName} />
-	<meta property="og:title" content={pageTitle} />
-	<meta property="og:description" content={description} />
-	<meta property="og:url" content={pageUrl} />
-	<meta property="og:image" content={socialImage} />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<meta property="og:image:alt" content={pageTitle} />
-	<meta property="og:locale" content="en_GB" />
 
-	<!-- Twitter / social -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={pageTitle} />
-	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={socialImage} />
+    <!-- Favicons -->
 
-	<!-- JSON-LD -->
-	<script
-		type="application/ld+json"
-		set:html={JSON.stringify(structuredData)}
-	></script>
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/favicon.svg"
+    />
 
-	<!-- Google Consent Mode - Default -->
-	<script is:inline>
-		window.dataLayer = window.dataLayer || [];
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="/favicon-96x96.png"
+    />
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/apple-touch-icon.png"
+    />
 
-		gtag('consent', 'default', {
-			analytics_storage: 'granted',
-			ad_storage: 'denied',
-			ad_user_data: 'denied',
-			ad_personalization: 'denied',
-			functionality_storage: 'granted',
-			security_storage: 'granted'
-		});
-	</script>
 
-	<!-- Google Tag Manager -->
-	<script is:inline>
-		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TFNB4W9H');
-	</script>
-	<!-- End Google Tag Manager -->
+    <!-- Meta -->
+
+    <meta
+        name="description"
+        content={description}
+    />
+
+    <link
+        rel="canonical"
+        href={pageUrl}
+    />
+
+    <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Complexity Clarified"
+        href={new URL('/rss.xml', Astro.site!).href}
+    />
+
+
+    <!-- Open Graph -->
+
+    <meta
+        property="og:type"
+        content={type}
+    />
+
+    <meta
+        property="og:site_name"
+        content={siteName}
+    />
+
+    <meta
+        property="og:title"
+        content={pageTitle}
+    />
+
+    <meta
+        property="og:description"
+        content={description}
+    />
+
+    <meta
+        property="og:url"
+        content={pageUrl}
+    />
+
+    <meta
+        property="og:image"
+        content={socialImage}
+    />
+
+    <meta
+        property="og:image:width"
+        content="1200"
+    />
+
+    <meta
+        property="og:image:height"
+        content="630"
+    />
+
+    <meta
+        property="og:image:alt"
+        content={pageTitle}
+    />
+
+    <meta
+        property="og:locale"
+        content="en_GB"
+    />
+
+    {type === 'article' && publishedTime && (
+        <meta
+            property="article:published_time"
+            content={publishedTime.toISOString()}
+        />
+    )}
+
+
+    <!-- Twitter / social -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    />
+
+    <meta
+        name="twitter:title"
+        content={pageTitle}
+    />
+
+    <meta
+        name="twitter:description"
+        content={description}
+    />
+
+    <meta
+        name="twitter:image"
+        content={socialImage}
+    />
+
+
+    <!-- JSON-LD -->
+
+    <script
+        type="application/ld+json"
+        set:html={JSON.stringify(structuredData)}
+    ></script>
+
+
+    <!-- Google Consent Mode - Default -->
+
+    <script is:inline>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('consent', 'default', {
+            analytics_storage: 'granted',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            functionality_storage: 'granted',
+            security_storage: 'granted'
+        });
+    </script>
+
+
+    <!-- Google Tag Manager -->
+
+    <script is:inline>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TFNB4W9H');
+    </script>
+
+    <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
 
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
-		<iframe
-			src="https://www.googletagmanager.com/ns.html?id=GTM-TFNB4W9H"
-			height="0"
-			width="0"
-			style="display:none;visibility:hidden"
-		></iframe>
-	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
 
-	<div class="d-flex flex-column min-vh-100">
-		<div class="site-navigation sticky-top">
-			<Navigation />
-		</div>
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TFNB4W9H"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"
+        ></iframe>
+    </noscript>
 
-		<main class="flex-grow-1">
-			<slot />
-		</main>
+    <!-- End Google Tag Manager (noscript) -->
 
-		<Footer />
-	</div>
 
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-		defer
-	></script>
+    <div class="d-flex flex-column min-vh-100">
 
-	<script is:inline src="/scripts/scripts.js"></script>
-	<script>
-		import '../scripts/cookieconsent.js';
-	</script>
+        <div class="site-navigation sticky-top">
+            <Navigation />
+        </div>
+
+
+        {!isHome && (
+            <Breadcrumbs
+                currentLabel={currentBreadcrumbLabel}
+            />
+        )}
+
+
+        <main class="flex-grow-1">
+            <slot />
+        </main>
+
+
+        <Footer />
+
+    </div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        defer
+    ></script>
+
+    <script
+        is:inline
+        src="/scripts/scripts.js"
+    ></script>
+
+    <script>
+        import '../scripts/cookieconsent.js';
+    </script>
+
 </body>
 
 </html>

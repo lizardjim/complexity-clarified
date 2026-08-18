@@ -7,7 +7,7 @@ tags:
   - decisions
   - leadership
   - culture
-title: Minimum Viable Human: The Change Management Metric Nobody Measures
+title: Minimum Viable Human - The Change Management Metric Nobody Measures
 ---
 Change programmes have become increasingly sophisticated at measuring readiness.
 

@@ -1,6 +1,6 @@
 ---
 date: 2026-08-18
-description: Organisations spend enormous amounts of effort assessing people's readiness for change, but far less assessing their capacity to absorb it.
+description: "Organisations spend enormous amounts of effort assessing people's readiness for change, but far less assessing their capacity to absorb it."
 pillar: change
 published: true
 tags:

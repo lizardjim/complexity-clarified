@@ -50,3 +50,7 @@ body{
 .article-card:hover {
     transform: translateY(-4px);
 }
+
+.footer-social-icon {
+    filter: invert(1);
+}

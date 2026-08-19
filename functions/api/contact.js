@@ -53,7 +53,7 @@ export async function onRequestPost(context) {
 
             from: "Complexity Clarified <noreply@complexityclarified.co.uk>",
 
-            to: "contact@complexityclarified.co.uk",
+            to: "james@complexityclarified.co.uk",
 
             replyTo: cleanEmail,
 

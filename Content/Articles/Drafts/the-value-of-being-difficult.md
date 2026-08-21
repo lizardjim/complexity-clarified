@@ -32,7 +32,7 @@ The question wasn't whether I needed to stop challenging systems.
 
 There is another uncomfortable possibility, of course; sometimes the disruptor really is the problem...
 
-Challenging everything without understanding why something exists isn't innovation - it's just noise.
+Challenging everything without understanding why something exists isn't innovation - It's just noise.
 
 I couldn't have built the ideas I'm exploring today when I was 22 - I didn't understand organisations well enough, I hadn't seen enough transformation programmes succeed and fail. 
 

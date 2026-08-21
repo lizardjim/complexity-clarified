@@ -27,3 +27,13 @@ I'm starting to think I was asking the wrong question.
 The question wasn't whether I needed to stop challenging systems.
 
 > ***It was whether I was working in systems that genuinely wanted to be challenged.***
+
+There is another uncomfortable possibility, of course; sometimes the disruptor really is the problem...
+
+Challenging everything without understanding why something exists isn't innovation - it's just noise.
+
+I couldn't have built the ideas I'm exploring today when I was 22 - I didn't understand organisations well enough, I hadn't seen enough transformation programmes succeed and fail. 
+
+I also hadn't watched technology solve one problem while creating three others or worked with enough different cultures, functions and personalities.
+
+I hadn't yet learned the difference between a constraint that should be challenged and one that exists for a very good reason.

@@ -37,3 +37,13 @@ I couldn't have built the ideas I'm exploring today when I was 22 - I didn't und
 I also hadn't watched technology solve one problem while creating three others or worked with enough different cultures, functions and personalities.
 
 I hadn't yet learned the difference between a constraint that should be challenged and one that exists for a very good reason.
+
+One of the most important things I've learned is that being wrong isn't particularly dangerous but being expensively wrong is.
+
+The objective shouldn't be to eliminate failure; it should be to reduce the cost of discovering that an assumption was wrong.
+
+Ideate -> Prototype -> Test -> Analyse -> Iterate.
+
+Sometimes... stop.
+
+Failure can be enormously valuable when it is fast, cheap and produces learning.

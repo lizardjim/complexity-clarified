@@ -1,11 +1,9 @@
 import { Resend } from "resend";
 
 export async function onRequestPost(context) {
-
     const resend = new Resend(context.env.RESEND_API_KEY);
 
     try {
-
         const body = await context.request.json();
 
         const { name, email, message } = body;
@@ -50,15 +48,10 @@ export async function onRequestPost(context) {
 
         // Send email
         const { data, error } = await resend.emails.send({
-
-            from: "Complexity Clarified <noreply@complexityclarified.co.uk>",
-
+            from: "Complexity Clarified noreply@complexityclarified.co.uk",
             to: "james@complexityclarified.co.uk",
-
             replyTo: cleanEmail,
-
             subject: `New website enquiry from ${cleanName}`,
-
             text: `A new message has been submitted via the Complexity Clarified website.
 
 Name:
@@ -68,21 +61,48 @@ Email:
 ${cleanEmail}
 
 Message:
-
-${cleanMessage}
-`
-
+${cleanMessage}`
         });
 
         if (error) {
-
             console.error("Resend Error:", error);
 
             return Response.json({
                 success: false,
                 error: error.message ?? JSON.stringify(error)
             }, { status: 500 });
+        }
 
+        // Send enquiry to CRM
+        try {
+            const crmResponse = await fetch(
+                "https://crm.complexityclarified.co.uk/api/contact",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CRM-API-Key": context.env.CRM_CONTACT_SECRET
+                    },
+                    body: JSON.stringify({
+                        name: cleanName,
+                        email: cleanEmail,
+                        message: cleanMessage
+                    })
+                }
+            );
+
+            if (!crmResponse.ok) {
+                console.error(
+                    "CRM Error:",
+                    await crmResponse.text()
+                );
+            }
+
+        } catch (crmError) {
+            console.error(
+                "CRM sync failed:",
+                crmError
+            );
         }
 
         return Response.json({
@@ -92,14 +112,11 @@ ${cleanMessage}
         });
 
     } catch (error) {
-
         console.error("Server Error:", error);
 
         return Response.json({
             success: false,
             error: error.message ?? String(error)
         }, { status: 500 });
-
     }
-
 }

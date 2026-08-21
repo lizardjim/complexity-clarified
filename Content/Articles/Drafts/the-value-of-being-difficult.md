@@ -1,6 +1,6 @@
 ---
 date: 2026-08-21
-description: "Blah blah"
+description: "For years, I questioned whether challenging organisations was a weakness. Now I see it differently: sometimes disruption is not the problem - it is the path to understanding that needs to change."
 pillar: decisions
 published: false
 tags:

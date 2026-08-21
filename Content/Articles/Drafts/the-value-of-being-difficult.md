@@ -18,7 +18,9 @@ I've spent much of my career asking questions that weren't always particularly c
 
 For a long time, I wondered whether that tendency was a weakness.
 
-I've worked in large global organisations, smaller businesses and startups. I've experienced restructures, redundancies and all the usual frustrations of organisational life. At various points, it was difficult not to wonder whether I was simply the common denominator.
+I've worked in large global organisations, smaller businesses and startups. I've experienced restructures, redundancies and all the usual frustrations of organisational life. 
+
+At various points, it was difficult not to wonder whether I was simply the common denominator... perhaps the problem wasn't the organisations I was working in... perhaps the problem was me.
 
 Perhaps I was too challenging... too impatient... too willing to question things other people had accepted?
 

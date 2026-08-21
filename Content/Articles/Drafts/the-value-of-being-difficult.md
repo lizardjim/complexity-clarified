@@ -9,7 +9,7 @@ tags:
   - culture
 title: "The Value of Being Difficult"
 ---
-I've spent much of my career asking questions that weren't always particularly welcome:
+I've spent much of my career asking questions that weren't always particularly comfortable:
 
 - Why are we doing this?
 - What problem are we actually trying to solve?

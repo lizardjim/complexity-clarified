@@ -47,3 +47,19 @@ Ideate -> Prototype -> Test -> Analyse -> Iterate.
 Sometimes... stop.
 
 Failure can be enormously valuable when it is fast, cheap and produces learning.
+
+The older I've become, the less interested I am in being the smartest person in the room - I'd much rather be in a room where nobody sees the problem in quite the same way.
+
+Put a technologist beside a commercial strategist, add someone who understands people and organisational behaviour. 
+
+Bring in somebody from another country, industry or culture who doesn't share any of their assumptions - give them a difficult problem and permission to challenge one another.
+
+That's where things become interesting.
+
+At 46, I've realised that perhaps I haven't suddenly become entrepreneurial - I've been thinking this way for most of my career.
+
+What has changed is that I now have enough experience to understand what I'm challenging, enough failures to know I won't always be right, and enough confidence to surround myself with people who will tell me when I'm not.
+
+Perhaps careers aren't always about climbing towards the role you were eventually supposed to have.
+
+> ***Sometimes they're about accumulating enough experience to understand the problem you were eventually supposed to solve.***

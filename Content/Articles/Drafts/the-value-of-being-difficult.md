@@ -34,7 +34,9 @@ There is another uncomfortable possibility, of course; sometimes the disruptor r
 
 Challenging everything without understanding why something exists isn't innovation - It's just noise.
 
-I couldn't have built the ideas I'm exploring today when I was 22 - I didn't understand organisations well enough, I hadn't seen enough transformation programmes succeed and fail. 
+I couldn't have built the ideas I'm exploring today when I was 22 - not because I lacked ambition, I lacked context. 
+
+I didn't understand organisations well enough, I hadn't seen enough transformation programmes succeed and fail. 
 
 I also hadn't watched technology solve one problem while creating three others or worked with enough different cultures, functions and personalities.
 

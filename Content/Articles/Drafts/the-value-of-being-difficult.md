@@ -11,10 +11,10 @@ title: "The Value of Being Difficult"
 ---
 I've spent much of my career asking questions that weren't always particularly welcome:
 
-Why are we doing this?
-What problem are we actually trying to solve?
-Why have we made this so complicated?
-What would happen if we did it completely differently?
+- Why are we doing this?
+- What problem are we actually trying to solve?
+- Why have we made this so complicated?
+- What would happen if we did it completely differently?
 
 For a long time, I wondered whether that tendency was a weakness.
 
@@ -25,4 +25,5 @@ Perhaps I was too challenging... too impatient... too willing to question things
 I'm starting to think I was asking the wrong question.
 
 The question wasn't whether I needed to stop challenging systems.
->*** It was whether I was working in systems that genuinely wanted to be challenged.
+
+> ***It was whether I was working in systems that genuinely wanted to be challenged.***

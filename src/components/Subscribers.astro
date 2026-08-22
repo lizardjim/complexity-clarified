@@ -1,0 +1,187 @@
+<div class="bg-dark text-white rounded-4 shadow-sm p-4 p-lg-5">
+	<div
+		class="mx-auto"
+		style="max-width: 48rem;"
+	>
+		<div class="mb-4">
+			<h2 class="h3 mb-2">
+				Stay connected
+			</h2>
+
+			<p class="text-white-50 mb-0">
+				Get new Complexity Clarified articles and insights
+				delivered to your inbox.
+			</p>
+		</div>
+
+		<form id="newsletter-form">
+			<div class="row g-3">
+				<div class="col-md-6">
+					<label
+						for="subscriber-name"
+						class="form-label fw-semibold"
+					>
+						Name
+					</label>
+
+					<input
+						type="text"
+						class="form-control form-control-lg"
+						id="subscriber-name"
+						name="name"
+						autocomplete="name"
+						maxlength="200"
+						required
+					/>
+				</div>
+
+				<div class="col-md-6">
+					<label
+						for="subscriber-email"
+						class="form-label fw-semibold"
+					>
+						Email address
+					</label>
+
+					<input
+						type="email"
+						class="form-control form-control-lg"
+						id="subscriber-email"
+						name="email"
+						autocomplete="email"
+						maxlength="320"
+						required
+					/>
+				</div>
+			</div>
+
+			<div class="form-check mb-3 mt-3">
+				<input class="form-check-input" type="checkbox" id="privacy" name="privacy" value="accepted" required>
+				<label class="form-check-label" for="privacy">I have read and agree to the <a class="text-light" href="/privacy">Privacy Policy</a>.
+				</label>
+			</div>
+
+			<div class="mt-4">
+				<button
+					type="submit"
+					id="subscribe-button"
+					class="btn btn-light btn-lg rounded-pill px-5"
+				>
+					Subscribe
+				</button>
+			</div>
+
+			<div
+				aria-hidden="true"
+				style="position: absolute; left: -9999px;"
+			>
+				<label for="subscriber-website">
+					Website
+				</label>
+
+				<input
+					type="text"
+					id="subscriber-website"
+					name="website"
+					tabindex="-1"
+					autocomplete="off"
+				/>
+			</div>
+
+			<p
+				id="subscribe-message"
+				class="small mt-3 mb-0"
+				role="status"
+				aria-live="polite"
+			></p>
+		</form>
+	</div>
+</div>
+
+<script>
+	const form =
+		document.querySelector<HTMLFormElement>(
+			"#newsletter-form"
+		);
+
+	const submitButton =
+		document.querySelector<HTMLButtonElement>(
+			"#subscribe-button"
+		);
+
+	const message =
+		document.querySelector<HTMLElement>(
+			"#subscribe-message"
+		);
+
+	form?.addEventListener("submit", async (event) => {
+		event.preventDefault();
+
+		if (!form || !submitButton || !message) {
+			return;
+		}
+
+		const formData = new FormData(form);
+
+		const name = String(
+			formData.get("name") || ""
+		).trim();
+
+		const email = String(
+			formData.get("email") || ""
+		).trim();
+
+		const website = String(
+			formData.get("website") || ""
+		).trim();
+
+		message.textContent = "";
+		message.className = "small mt-3 mb-0";
+
+		submitButton.disabled = true;
+		submitButton.textContent = "Subscribing...";
+
+		try {
+			const response = await fetch(
+				"/api/subscribe",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type":
+							"application/json"
+					},
+					body: JSON.stringify({
+						name,
+						email,
+						website
+					})
+				}
+			);
+
+			const result = await response.json();
+
+			if (!response.ok || !result.success) {
+				throw new Error(
+					result.error ||
+						"Unable to subscribe."
+				);
+			}
+
+			form.reset();
+
+			message.classList.add("text-success");
+			message.textContent =
+				result.message ||
+				"Thank you for subscribing.";
+		} catch (error) {
+			message.classList.add("text-warning");
+			message.textContent =
+				error instanceof Error
+					? error.message
+					: "Unable to subscribe. Please try again.";
+		} finally {
+			submitButton.disabled = false;
+			submitButton.textContent = "Subscribe";
+		}
+	});
+</script>

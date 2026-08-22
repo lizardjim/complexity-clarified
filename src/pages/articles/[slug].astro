@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import RelatedArticles from "../../components/RelatedArticles.astro";
+import Subscribers from "../../components/Subscribers.astro";
 
 export async function getStaticPaths() {
     const articles = await getCollection("articles");
@@ -202,6 +203,16 @@ const readingTime = Math.max(
 
     </section>
 
+    <!-- Newsletter subscription -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <Subscribers />
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Related Articles -->
     <section class="related-articles-section">

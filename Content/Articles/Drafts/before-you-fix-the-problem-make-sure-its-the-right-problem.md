@@ -25,8 +25,6 @@ When we move too quickly from identifying a symptom to implementing a solution, 
 
 ## **Follow the problem**
 
-Follow the problem
-
 Imagine customer enquiries are taking too long to reach the sales team - from the outside, the problem seems relatively straightforward. 
 
 A potential customer submits an enquiry through the website but too much time passes before it reaches the right salesperson.

@@ -1,0 +1,216 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 600"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">CMS and CRM, connected simply</title>
+    <desc id="desc">
+        Two calm product surfaces for CMS and CRM, joined through a subtle animated
+        ecosystem beneath them to form one simple connected whole.
+    </desc>
+
+    <defs>
+        <style>
+            .line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.18;
+            }
+
+            .line-soft {
+                fill: none;
+                stroke: #6c757d;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.12;
+            }
+
+            .surface {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .surface-line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                opacity: 0.20;
+            }
+
+            .node {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .node-core {
+                fill: #343a40;
+                opacity: 0.22;
+            }
+
+            .label {
+                fill: #343a40;
+                font: 600 25px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                letter-spacing: 0.18em;
+                opacity: 0.54;
+            }
+
+            .pulse {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.5;
+                opacity: 0;
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: pulse 5s ease-out infinite;
+            }
+
+            .flow {
+                fill: #495057;
+                opacity: 0;
+            }
+
+            .flow-1 { animation: move1 9s linear infinite; }
+            .flow-2 { animation: move2 10s linear infinite; }
+            .flow-3 { animation: move3 11s linear infinite; }
+            .flow-4 { animation: move4 12s linear infinite; }
+
+            @keyframes pulse {
+                0%   { opacity: 0; transform: scale(0.7); }
+                18%  { opacity: 0.22; }
+                65%  { opacity: 0.06; }
+                100% { opacity: 0; transform: scale(1.8); }
+            }
+
+            @keyframes move1 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.30; }
+                90%  { opacity: 0.30; }
+                100% { transform: translate(410px, 130px); opacity: 0; }
+            }
+
+            @keyframes move2 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.26; }
+                90%  { opacity: 0.26; }
+                100% { transform: translate(-410px, 130px); opacity: 0; }
+            }
+
+            @keyframes move3 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.24; }
+                90%  { opacity: 0.24; }
+                100% { transform: translate(335px, -85px); opacity: 0; }
+            }
+
+            @keyframes move4 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.22; }
+                90%  { opacity: 0.22; }
+                100% { transform: translate(-335px, -85px); opacity: 0; }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .pulse,
+                .flow {
+                    animation: none !important;
+                }
+
+                .flow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- The simple product surfaces -->
+    <g aria-label="CMS product">
+        <rect class="surface" x="180" y="105" width="390" height="230" rx="28"/>
+        <circle class="node-core" cx="222" cy="145" r="6"/>
+        <path class="surface-line" d="M250 145 H360"/>
+        <path class="surface-line" d="M222 195 H430"/>
+        <path class="surface-line" d="M222 232 H512"/>
+        <path class="surface-line" d="M222 269 H465"/>
+        <text class="label" x="375" y="309" text-anchor="middle">CMS</text>
+    </g>
+
+    <g aria-label="CRM product">
+        <rect class="surface" x="1030" y="105" width="390" height="230" rx="28"/>
+        <circle class="node-core" cx="1072" cy="145" r="6"/>
+        <path class="surface-line" d="M1100 145 H1210"/>
+        <circle class="surface" cx="1090" cy="214" r="22"/>
+        <path class="surface-line" d="M1128 202 H1348"/>
+        <path class="surface-line" d="M1128 226 H1295"/>
+        <path class="surface-line" d="M1070 269 H1348"/>
+        <text class="label" x="1225" y="309" text-anchor="middle">CRM</text>
+    </g>
+
+    <!-- Quiet visible connection: one ecosystem on the surface -->
+    <path class="line" d="M570 220 C650 220 682 263 734 286"/>
+    <path class="line" d="M866 286 C918 263 950 220 1030 220"/>
+
+    <!-- The connected system beneath -->
+    <path class="line-soft" d="M375 335 C410 455 565 510 740 410"/>
+    <path class="line-soft" d="M1225 335 C1190 455 1035 510 860 410"/>
+    <path class="line-soft" d="M570 285 C650 405 700 440 770 411"/>
+    <path class="line-soft" d="M1030 285 C950 405 900 440 830 411"/>
+    <path class="line-soft" d="M520 470 C635 545 965 545 1080 470"/>
+
+    <!-- Complexity Clarified convergence mark -->
+    <g filter="url(#softGlow)">
+        <path class="line" d="M800 240 L866 278 L866 354 L800 392 L734 354 L734 278 Z"/>
+        <path class="line" d="M734 278 L866 354 M866 278 L734 354 M800 240 V392"/>
+        <circle class="node" cx="800" cy="240" r="18"/>
+        <circle class="node" cx="734" cy="278" r="16"/>
+        <circle class="node" cx="866" cy="278" r="16"/>
+        <circle class="node" cx="734" cy="354" r="16"/>
+        <circle class="node" cx="866" cy="354" r="16"/>
+        <circle class="node" cx="800" cy="392" r="18"/>
+        <circle class="node" cx="800" cy="316" r="34"/>
+        <circle class="node-core" cx="800" cy="316" r="9"/>
+        <circle class="pulse" cx="800" cy="316" r="34" style="animation-delay:.5s"/>
+    </g>
+
+    <!-- Expandable ecosystem nodes -->
+    <g>
+        <circle class="node" cx="520" cy="470" r="22"/>
+        <circle class="node-core" cx="520" cy="470" r="6"/>
+        <circle class="pulse" cx="520" cy="470" r="22" style="animation-delay:2.1s"/>
+    </g>
+    <g>
+        <circle class="node" cx="1080" cy="470" r="22"/>
+        <circle class="node-core" cx="1080" cy="470" r="6"/>
+        <circle class="pulse" cx="1080" cy="470" r="22" style="animation-delay:3.2s"/>
+    </g>
+    <g>
+        <circle class="node" cx="640" cy="505" r="17"/>
+        <circle class="node-core" cx="640" cy="505" r="5"/>
+    </g>
+    <g>
+        <circle class="node" cx="960" cy="505" r="17"/>
+        <circle class="node-core" cx="960" cy="505" r="5"/>
+    </g>
+
+    <!-- Slow, understated information flow -->
+    <circle class="flow flow-1" cx="375" cy="335" r="5"/>
+    <circle class="flow flow-2" cx="1225" cy="335" r="5"/>
+    <circle class="flow flow-3" cx="465" cy="421" r="4"/>
+    <circle class="flow flow-4" cx="1135" cy="421" r="4"/>
+</svg>

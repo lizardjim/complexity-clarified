@@ -173,6 +173,10 @@
     background-image: url('/images/articles-connected-thinking-animated.svg');
 }
 
+.product-hero{
+    background-image: url('/images/products-animated.svg');
+}
+
 /* Breadcrumbs */
 
 .breadcrumb-wrapper {

@@ -66,22 +66,25 @@ But they represent very different problems and would require very different inte
 - Adding more routing rules might actually make an already complicated process worse.
 - And training salespeople wouldn't help if they aren't receiving the information they need in the first place.
 
-The important thing is to resist the temptation to decide what the problem is before understanding how the system actually behaves.
+The important thing is to resist the temptation to decide what the problem is before understanding how the system actually behaves - that doesn't necessarily require months of analysis or an enormous discovery programme.
 
-That doesn't necessarily require months of analysis or an enormous discovery programme.
-Talk to the people doing the work. Follow the process from beginning to end. Look at the information moving through it. Understand where decisions are made, where ownership changes and where people have created workarounds to compensate for something that doesn't work.
-Before trying to fix the problem, follow it through the system.
+- Talk to the people doing the work. 
+- Follow the process from beginning to end. 
+- Look at the information moving through it. 
+- Understand where decisions are made, where ownership changes and where people have created workarounds to compensate for something that doesn't work.
 
-Separate observation from explanation
-There's another important distinction that's easily missed.
-Consider these two statements:
-Observation: Customer enquiries take an average of 36 hours to reach the appropriate salesperson.
-Explanation: Our CRM and lead-routing process is inefficient.
+Before trying to fix the problem, follow it through the system: Separate observation from explanation.
 
-They might sound like two descriptions of the same problem.
-They're not.
-The first describes something we can observe and potentially measure.
-The second is a hypothesis about why it is happening.
+There's another important distinction that's easily missed though - consider these two statements:
+
+- **Observation:** Customer enquiries take an average of 36 hours to reach the appropriate salesperson.
+- **Explanation:** Our CRM and lead-routing process is inefficient.
+
+They might sound like two descriptions of the same problem but they're not.
+
+- The first describes something we can observe and potentially measure.
+- The second is a hypothesis about why it is happening.
+
 That hypothesis might ultimately prove to be correct. But until we've investigated it, that's all it is.
 This distinction matters because organisations can become remarkably good at turning explanations into facts.
 A project begins because the technology is outdated. A process is redesigned because people aren't following it correctly. More governance is introduced because teams aren't communicating. Training is commissioned because users don't understand the system.

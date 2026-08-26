@@ -60,11 +60,14 @@ All of those situations could produce essentially the same visible symptom:
 **Customer enquiries are taking too long to reach sales.**
 
 But they represent very different problems and would require very different interventions.
-Replacing the CRM wouldn't fix unclear ownership.
-Automation wouldn't resolve disagreement between marketing and sales.
-Adding more routing rules might actually make an already complicated process worse.
-And training salespeople wouldn't help if they aren't receiving the information they need in the first place.
+
+- Replacing the CRM wouldn't fix unclear ownership.
+- Automation wouldn't resolve disagreement between marketing and sales.
+- Adding more routing rules might actually make an already complicated process worse.
+- And training salespeople wouldn't help if they aren't receiving the information they need in the first place.
+
 The important thing is to resist the temptation to decide what the problem is before understanding how the system actually behaves.
+
 That doesn't necessarily require months of analysis or an enormous discovery programme.
 Talk to the people doing the work. Follow the process from beginning to end. Look at the information moving through it. Understand where decisions are made, where ownership changes and where people have created workarounds to compensate for something that doesn't work.
 Before trying to fix the problem, follow it through the system.

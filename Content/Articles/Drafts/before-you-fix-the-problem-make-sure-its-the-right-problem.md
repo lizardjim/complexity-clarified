@@ -71,7 +71,9 @@ The important thing is to resist the temptation to decide what the problem is be
 - Look at the information moving through it. 
 - Understand where decisions are made, where ownership changes and where people have created workarounds to compensate for something that doesn't work.
 
-Before trying to fix the problem, follow it through the system: Separate observation from explanation.
+Before trying to fix the problem, follow it through the system. 
+
+## **Separate observation from explanation**
 
 There's another important distinction that's easily missed though - consider these two statements:
 

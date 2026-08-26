@@ -85,12 +85,14 @@ They might sound like two descriptions of the same problem but they're not.
 - The first describes something we can observe and potentially measure.
 - The second is a hypothesis about why it is happening.
 
-That hypothesis might ultimately prove to be correct. But until we've investigated it, that's all it is.
-This distinction matters because organisations can become remarkably good at turning explanations into facts.
-A project begins because the technology is outdated. A process is redesigned because people aren't following it correctly. More governance is introduced because teams aren't communicating. Training is commissioned because users don't understand the system.
-Before long, the assumed cause becomes embedded in the language surrounding the problem — and the organisation starts designing solutions around something it hasn't actually established to be true.
-A useful first step is therefore surprisingly simple:
-Describe what is happening without explaining why it is happening.
+That hypothesis might ultimately prove to be correct but until we've investigated it, that's all it is.
+
+This distinction matters because organisations can become remarkably good at turning explanations into facts: A project begins because the technology is outdated, a process is redesigned because people aren't following it correctly, more governance is introduced because teams aren't communicating and training is commissioned because users don't understand the system.
+
+Before long, the assumed cause becomes embedded in the language surrounding the problem and the organisation starts designing solutions around something it hasn't actually established to be true.
+
+> ***A useful first step is therefore surprisingly simple:
+Describe what is happening without explaining why it is happening.***
 
 Once we can separate what we know from what we think we know, we have somewhere much better to begin the investigation.
 

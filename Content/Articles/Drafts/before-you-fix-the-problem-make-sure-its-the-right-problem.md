@@ -126,7 +126,9 @@ The point isn't to examine every part of the organisation - it's to follow the e
 > ***The purpose of diagnosis isn't to prove that our first explanation was right.
 It's to understand the problem well enough that we know what actually needs to change.***
 
-This matters because the solution might still be automation, it might still be the CRM, it might require a process change, clearer ownership, better information or a different decision but now we're solving something we've taken the time to understand rather than something we've simply assumed.
+This matters because the solution might still be automation, it might still be the CRM, it might require a process change, clearer ownership, better information or a different decision.
+
+Now we're solving something we've taken the time to understand rather than something we've simply assumed.
 
 > ***Sometimes the most valuable question isn't “How do we fix this?”
 It's “What exactly are we trying to fix?”***

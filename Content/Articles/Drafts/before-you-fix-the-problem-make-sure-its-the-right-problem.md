@@ -96,5 +96,32 @@ Describe what is happening without explaining why it is happening.***
 
 Once we can separate what we know from what we think we know, we have somewhere much better to begin the investigation.
 
+## **Challenge what you think you know**
+
+Once we've separated what we know from what we think we know, it's tempting to start looking for evidence that proves our explanation is correct.
+If we believe the CRM is causing the delay, every awkward workflow, incorrect field or complicated routing rule suddenly becomes evidence that the CRM is the problem.
+But finding evidence that supports an explanation isn't the same as proving it.
+Instead, we should also ask:
+What would we expect to see if our explanation was wrong?
+
+Go back to our customer enquiry.
+Perhaps some enquiries move through exactly the same system in minutes while others take two days.
+Perhaps one sales team receives enquiries almost immediately while another experiences significant delays.
+Perhaps manually routed enquiries are no faster than automated ones.
+Or perhaps the data shows that enquiries reach the salesperson within minutes - and most of the delay happens afterwards.
+Each of those observations challenges our original explanation and gives us somewhere else to look.
+That might take us into the process itself, the information being captured, the decisions being made, ownership between teams, the technology supporting them or the way people actually work around the system.
+The point isn't to examine every part of the organisation.
+It's to follow the evidence.
+Ask what supports our explanation but also what contradicts it. Look at where the problem occurs and where it doesn't. Talk to the people experiencing it and understand what they see that we might not.
+Because the purpose of diagnosis isn't to prove that our first explanation was right.
+It's to understand the problem well enough that we know what actually needs to change.
+
+And that matters because the solution might still be automation.
+It might still be the CRM.
+It might require a process change, clearer ownership, better information or a different decision.
+But now we're solving something we've taken the time to understand rather than something we've simply assumed.
+Then I think you can go straight into your parked conclusion:
+
 > ***Sometimes the most valuable question isn't “How do we fix this?”
 It's “What exactly are we trying to fix?”***

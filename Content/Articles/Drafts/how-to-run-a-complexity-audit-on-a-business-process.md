@@ -28,3 +28,21 @@ Now simply define the boundaries:
 3. **Outcome:** What is it supposed to achieve?
 
 Keep the scope tight. You're not trying to understand the whole organisation — you're trying to understand one process well enough to improve it.
+
+### 2. Follow What Actually Happens
+
+Don't rely on the documented process - follow a real example from start to finish and talk to the people who actually do the work.
+
+Capture the following:
+
+1. What happens at each step.
+
+2. Who is involved.
+
+3. Which systems or tools are used.
+
+4. Where information moves between people or teams.
+
+5. Where the process waits, loops back or requires a workaround.
+
+The goal is simply to understand the process as it works in reality, not as it was designed.

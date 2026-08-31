@@ -114,3 +114,20 @@ You don't need a complex business case - capture a few simple measures that show
 5. **Errors:** Where does the process commonly fail or need correcting?
 
 A process that takes five days may contain only an hour of actual work. Understanding the difference shows you where to focus.
+
+## 7. Simplify the Process
+
+Now turn what you've found into action; work through the opportunities in this order:
+
+1. **Remove:** Eliminate steps, approvals or activities that no longer serve a purpose.
+2. **Simplify:** Reduce unnecessary steps, hand-offs and rules.
+3. **Integrate:** Connect systems and information where manual movement creates friction.
+4. **Automate:** Automate repetitive, predictable work that still needs to happen.
+
+The order matters. **Don't automate complexity you could have removed.**
+
+Then test the redesigned process with a simple question:
+
+**Can someone explain how it works and why each step exists?**
+
+If not, there may still be complexity worth removing.

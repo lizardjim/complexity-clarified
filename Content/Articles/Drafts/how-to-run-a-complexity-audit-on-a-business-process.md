@@ -131,3 +131,5 @@ Then test the redesigned process with a simple question:
 **Can someone explain how it works and why each step exists?**
 
 If not, there may still be complexity worth removing.
+
+> **Complexity isn't always the problem but unnecessary complexity is. The goal isn't to make every process simple; it's to make every part of it earn its place.**

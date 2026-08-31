@@ -51,19 +51,19 @@ The goal is simply to understand the process as it works in reality, not as it w
 
 Now look at where complexity appears in the process. Focus on seven areas:
 
-1. Steps: How many activities are required?
+1. **Steps:** How many activities are required?
 
-2. Hand-offs: How often does responsibility move between people or teams?
+2. **Hand-offs:** How often does responsibility move between people or teams?
 
-3. Approvals: Which decisions require approval, and by whom?
+3. **Approvals:** Which decisions require approval, and by whom?
 
-4. Systems: How many systems, spreadsheets or tools are involved?
+4. **Systems:** How many systems, spreadsheets or tools are involved?
 
-5. Information: Where is data duplicated, re-entered or manually reconciled?
+5. **Information:** Where is data duplicated, re-entered or manually reconciled?
 
-6. Exceptions: How often does the process require a workaround?
+6. **Exceptions:** How often does the process require a workaround?
 
-7. Ownership: Is it clear who owns the process and can change it?
+7. **Ownership:** Is it clear who owns the process and can change it?
 
 Don't assume complexity is automatically bad. At this stage, you're simply making it visible.
 

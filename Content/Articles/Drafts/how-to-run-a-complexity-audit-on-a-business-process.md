@@ -23,8 +23,8 @@ Start small, pick just one process with clear signs of friction - delays, repeat
 
 Now simply define the boundaries:
 
-- Start: What triggers the process?
-- End: When is it complete?
-- Outcome: What is it supposed to achieve?
+1. **Start:** What triggers the process?
+2. **End:** When is it complete?
+3. **Outcome:** What is it supposed to achieve?
 
 Keep the scope tight. You're not trying to understand the whole organisation — you're trying to understand one process well enough to improve it.

@@ -66,3 +66,21 @@ Now look at where complexity appears in the process. Focus on seven areas:
 7. Ownership: Is it clear who owns the process and can change it?
 
 Don't assume complexity is automatically bad. At this stage, you're simply making it visible.
+
+### 4) Ask Why
+
+For each source of complexity you've identified, ask a simple question: why does this exist?
+
+1. Why is this step necessary?
+
+2. Why does this need approval?
+
+3. Why is information entered twice?
+
+4. Why does responsibility move between teams?
+
+5. Why is a workaround needed?
+
+Look for a clear reason and remember - regulation, risk or genuine business requirements may justify the complexity.
+
+> ***“Because that's how we've always done it” isn't a reason.***

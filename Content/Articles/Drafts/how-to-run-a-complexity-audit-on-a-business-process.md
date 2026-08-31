@@ -16,3 +16,15 @@ Complexity accumulates over time: new approvals, additional systems, manual work
 A complexity audit helps make that visible - by examining how a process actually works, you can identify unnecessary friction, distinguish necessary complexity from complexity that has simply accumulated, and find practical opportunities to simplify.
 
 Here's how to run one.
+
+### 1) Choose The Process
+
+Start small, pick just one process with clear signs of friction - delays, repeated work, too many approvals, manual workarounds or frequent complaints.
+
+Now simply define the boundaries:
+
+- Start: What triggers the process?
+- End: When is it complete?
+- Outcome: What is it supposed to achieve?
+
+Keep the scope tight. You're not trying to understand the whole organisation — you're trying to understand one process well enough to improve it.

@@ -9,4 +9,10 @@ tags:
   - strategy
 title: "How to Run a Complexity Audit on a Business Process"
 ---
-Test
+Business processes rarely become complicated by design. 
+
+Complexity accumulates over time: new approvals, additional systems, manual workarounds and changing responsibilities gradually become part of how work gets done.
+
+A complexity audit helps make that visible - by examining how a process actually works, you can identify unnecessary friction, distinguish necessary complexity from complexity that has simply accumulated, and find practical opportunities to simplify.
+
+Here's how to run one.

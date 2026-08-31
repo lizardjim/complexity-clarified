@@ -1,0 +1,213 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 600"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">A calm, connected customer relationship ecosystem</title>
+    <desc id="desc">
+        Abstract customer and relationship nodes connect through a quiet animated
+        network, leaving generous open space for overlaid page copy.
+    </desc>
+
+    <defs>
+        <style>
+            .line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.18;
+            }
+
+            .line-soft {
+                fill: none;
+                stroke: #6c757d;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.12;
+            }
+
+            .surface {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .surface-line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                opacity: 0.20;
+            }
+
+            .node {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .node-core {
+                fill: #343a40;
+                opacity: 0.22;
+            }
+
+            .pulse {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.5;
+                opacity: 0;
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: pulse 5s ease-out infinite;
+            }
+
+            .flow {
+                fill: #495057;
+                opacity: 0;
+            }
+
+            .flow-1 { animation: move1 9s linear infinite; }
+            .flow-2 { animation: move2 10s linear infinite; }
+            .flow-3 { animation: move3 11s linear infinite; }
+            .flow-4 { animation: move4 12s linear infinite; }
+
+            @keyframes pulse {
+                0%   { opacity: 0; transform: scale(0.7); }
+                18%  { opacity: 0.22; }
+                65%  { opacity: 0.06; }
+                100% { opacity: 0; transform: scale(1.8); }
+            }
+
+            @keyframes move1 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.30; }
+                90%  { opacity: 0.30; }
+                100% { transform: translate(390px, 116px); opacity: 0; }
+            }
+
+            @keyframes move2 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.26; }
+                90%  { opacity: 0.26; }
+                100% { transform: translate(-390px, 116px); opacity: 0; }
+            }
+
+            @keyframes move3 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.24; }
+                90%  { opacity: 0.24; }
+                100% { transform: translate(330px, -102px); opacity: 0; }
+            }
+
+            @keyframes move4 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.22; }
+                90%  { opacity: 0.22; }
+                100% { transform: translate(-330px, -102px); opacity: 0; }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .pulse,
+                .flow {
+                    animation: none !important;
+                }
+
+                .flow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Quiet relationship paths spanning the canvas -->
+    <path class="line-soft" d="M190 238 C330 120 505 132 670 272"/>
+    <path class="line-soft" d="M190 238 C325 360 478 420 670 328"/>
+    <path class="line-soft" d="M1410 238 C1270 120 1095 132 930 272"/>
+    <path class="line-soft" d="M1410 238 C1275 360 1122 420 930 328"/>
+    <path class="line-soft" d="M385 456 C565 540 1035 540 1215 456"/>
+
+    <!-- Small abstract relationship clusters -->
+    <g aria-label="Customer relationship cluster">
+        <path class="line" d="M190 238 L312 176 L385 274 L278 346 Z"/>
+        <path class="line-soft" d="M190 238 L385 274 M312 176 L278 346"/>
+        <circle class="node" cx="190" cy="238" r="22"/>
+        <circle class="node-core" cx="190" cy="238" r="6"/>
+        <circle class="pulse" cx="190" cy="238" r="22" style="animation-delay:1.2s"/>
+        <circle class="node" cx="312" cy="176" r="16"/>
+        <circle class="node-core" cx="312" cy="176" r="5"/>
+        <circle class="node" cx="385" cy="274" r="18"/>
+        <circle class="node-core" cx="385" cy="274" r="5"/>
+        <circle class="node" cx="278" cy="346" r="15"/>
+        <circle class="node-core" cx="278" cy="346" r="4"/>
+    </g>
+
+    <g aria-label="Customer relationship cluster">
+        <path class="line" d="M1410 238 L1288 176 L1215 274 L1322 346 Z"/>
+        <path class="line-soft" d="M1410 238 L1215 274 M1288 176 L1322 346"/>
+        <circle class="node" cx="1410" cy="238" r="22"/>
+        <circle class="node-core" cx="1410" cy="238" r="6"/>
+        <circle class="pulse" cx="1410" cy="238" r="22" style="animation-delay:2.6s"/>
+        <circle class="node" cx="1288" cy="176" r="16"/>
+        <circle class="node-core" cx="1288" cy="176" r="5"/>
+        <circle class="node" cx="1215" cy="274" r="18"/>
+        <circle class="node-core" cx="1215" cy="274" r="5"/>
+        <circle class="node" cx="1322" cy="346" r="15"/>
+        <circle class="node-core" cx="1322" cy="346" r="4"/>
+    </g>
+
+    <!-- Central relationship hub: abstract, not a dashboard -->
+    <g filter="url(#softGlow)" aria-label="Connected relationship hub">
+        <path class="line" d="M800 214 L930 272 L930 328 L800 386 L670 328 L670 272 Z"/>
+        <path class="line" d="M670 272 L930 328 M930 272 L670 328"/>
+        <path class="line-soft" d="M800 214 V386"/>
+        <circle class="node" cx="800" cy="214" r="17"/>
+        <circle class="node" cx="670" cy="272" r="15"/>
+        <circle class="node" cx="930" cy="272" r="15"/>
+        <circle class="node" cx="670" cy="328" r="15"/>
+        <circle class="node" cx="930" cy="328" r="15"/>
+        <circle class="node" cx="800" cy="386" r="17"/>
+        <circle class="surface" cx="800" cy="300" r="42"/>
+        <circle class="surface-line" cx="800" cy="286" r="11"/>
+        <path class="surface-line" d="M778 320 C782 300 818 300 822 320"/>
+        <circle class="node-core" cx="800" cy="300" r="5"/>
+        <circle class="pulse" cx="800" cy="300" r="42" style="animation-delay:.5s"/>
+    </g>
+
+    <!-- A few expandable relationship nodes below -->
+    <path class="line-soft" d="M670 328 C602 408 526 450 385 456"/>
+    <path class="line-soft" d="M930 328 C998 408 1074 450 1215 456"/>
+    <g>
+        <circle class="node" cx="385" cy="456" r="21"/>
+        <circle class="node-core" cx="385" cy="456" r="6"/>
+        <circle class="pulse" cx="385" cy="456" r="21" style="animation-delay:3.4s"/>
+    </g>
+    <g>
+        <circle class="node" cx="1215" cy="456" r="21"/>
+        <circle class="node-core" cx="1215" cy="456" r="6"/>
+        <circle class="pulse" cx="1215" cy="456" r="21" style="animation-delay:4.1s"/>
+    </g>
+    <circle class="node" cx="590" cy="496" r="15"/>
+    <circle class="node-core" cx="590" cy="496" r="4"/>
+    <circle class="node" cx="1010" cy="496" r="15"/>
+    <circle class="node-core" cx="1010" cy="496" r="4"/>
+
+    <!-- Slow, understated information flow -->
+    <circle class="flow flow-1" cx="280" cy="184" r="5"/>
+    <circle class="flow flow-2" cx="1320" cy="184" r="5"/>
+    <circle class="flow flow-3" cx="385" cy="456" r="4"/>
+    <circle class="flow flow-4" cx="1215" cy="456" r="4"/>
+</svg>

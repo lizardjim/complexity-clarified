@@ -1,0 +1,213 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 600"
+    role="img"
+    aria-labelledby="title desc"
+>
+    <title id="title">A calm, connected content ecosystem</title>
+    <desc id="desc">
+        Abstract content fragments flow through a quiet publishing system into
+        connected channels, leaving generous open space for overlaid page copy.
+    </desc>
+
+    <defs>
+        <style>
+            .line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.18;
+            }
+
+            .line-soft {
+                fill: none;
+                stroke: #6c757d;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                opacity: 0.12;
+            }
+
+            .surface {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .surface-line {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 2;
+                stroke-linecap: round;
+                opacity: 0.20;
+            }
+
+            .node {
+                fill: #f8f9fa;
+                stroke: #343a40;
+                stroke-width: 2;
+                opacity: 0.32;
+            }
+
+            .node-core {
+                fill: #343a40;
+                opacity: 0.22;
+            }
+
+            .pulse {
+                fill: none;
+                stroke: #495057;
+                stroke-width: 1.5;
+                opacity: 0;
+                transform-box: fill-box;
+                transform-origin: center;
+                animation: pulse 5s ease-out infinite;
+            }
+
+            .flow {
+                fill: #495057;
+                opacity: 0;
+            }
+
+            .flow-1 { animation: move1 9s linear infinite; }
+            .flow-2 { animation: move2 10s linear infinite; }
+            .flow-3 { animation: move3 11s linear infinite; }
+            .flow-4 { animation: move4 12s linear infinite; }
+
+            @keyframes pulse {
+                0%   { opacity: 0; transform: scale(0.7); }
+                18%  { opacity: 0.22; }
+                65%  { opacity: 0.06; }
+                100% { opacity: 0; transform: scale(1.8); }
+            }
+
+            @keyframes move1 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.30; }
+                90%  { opacity: 0.30; }
+                100% { transform: translate(390px, 112px); opacity: 0; }
+            }
+
+            @keyframes move2 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.26; }
+                90%  { opacity: 0.26; }
+                100% { transform: translate(-390px, 112px); opacity: 0; }
+            }
+
+            @keyframes move3 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.24; }
+                90%  { opacity: 0.24; }
+                100% { transform: translate(330px, -96px); opacity: 0; }
+            }
+
+            @keyframes move4 {
+                0%   { transform: translate(0, 0); opacity: 0; }
+                10%  { opacity: 0.22; }
+                90%  { opacity: 0.22; }
+                100% { transform: translate(-330px, -96px); opacity: 0; }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .pulse,
+                .flow {
+                    animation: none !important;
+                }
+
+                .flow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="7" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Quiet content paths spanning the canvas -->
+    <path class="line-soft" d="M190 230 C335 125 510 144 670 272"/>
+    <path class="line-soft" d="M190 230 C320 350 490 430 670 328"/>
+    <path class="line-soft" d="M1410 230 C1265 125 1090 144 930 272"/>
+    <path class="line-soft" d="M1410 230 C1280 350 1110 430 930 328"/>
+    <path class="line-soft" d="M390 462 C570 538 1030 538 1210 462"/>
+
+    <!-- Modular content fragments -->
+    <g aria-label="Content fragments">
+        <rect class="surface" x="168" y="195" width="122" height="78" rx="16"/>
+        <circle class="node-core" cx="190" cy="217" r="5"/>
+        <path class="surface-line" d="M208 217 H261 M190 239 H265 M190 254 H238"/>
+        <circle class="pulse" cx="229" cy="234" r="31" style="animation-delay:1.2s"/>
+
+        <rect class="surface" x="302" y="144" width="105" height="68" rx="15"/>
+        <path class="surface-line" d="M323 166 H382 M323 184 H366"/>
+
+        <rect class="surface" x="324" y="300" width="116" height="72" rx="15"/>
+        <circle class="node-core" cx="347" cy="323" r="5"/>
+        <path class="surface-line" d="M365 323 H416 M347 345 H405"/>
+    </g>
+
+    <!-- Publishing core: abstract structure, not a dashboard -->
+    <g filter="url(#softGlow)" aria-label="Connected publishing core">
+        <path class="line" d="M800 214 L930 272 L930 328 L800 386 L670 328 L670 272 Z"/>
+        <path class="line" d="M670 272 L930 328 M930 272 L670 328"/>
+        <path class="line-soft" d="M800 214 V386"/>
+        <circle class="node" cx="800" cy="214" r="17"/>
+        <circle class="node" cx="670" cy="272" r="15"/>
+        <circle class="node" cx="930" cy="272" r="15"/>
+        <circle class="node" cx="670" cy="328" r="15"/>
+        <circle class="node" cx="930" cy="328" r="15"/>
+        <circle class="node" cx="800" cy="386" r="17"/>
+        <rect class="surface" x="756" y="258" width="88" height="84" rx="18"/>
+        <circle class="node-core" cx="778" cy="280" r="5"/>
+        <path class="surface-line" d="M796 280 H824 M778 302 H823 M778 320 H810"/>
+        <circle class="pulse" cx="800" cy="300" r="42" style="animation-delay:.5s"/>
+    </g>
+
+    <!-- Distributed channel fragments -->
+    <g aria-label="Published content channels">
+        <rect class="surface" x="1310" y="195" width="122" height="78" rx="16"/>
+        <circle class="node-core" cx="1332" cy="217" r="5"/>
+        <path class="surface-line" d="M1350 217 H1403 M1332 239 H1407 M1332 254 H1380"/>
+        <circle class="pulse" cx="1371" cy="234" r="31" style="animation-delay:2.6s"/>
+
+        <rect class="surface" x="1193" y="144" width="105" height="68" rx="15"/>
+        <circle class="surface" cx="1221" cy="178" r="12"/>
+        <path class="surface-line" d="M1243 170 H1275 M1243 188 H1263"/>
+
+        <rect class="surface" x="1160" y="300" width="116" height="72" rx="15"/>
+        <path class="surface-line" d="M1184 323 H1252 M1184 345 H1234"/>
+    </g>
+
+    <!-- Expandable content and channel nodes below -->
+    <path class="line-soft" d="M670 328 C605 408 530 452 390 462"/>
+    <path class="line-soft" d="M930 328 C995 408 1070 452 1210 462"/>
+    <g>
+        <circle class="node" cx="390" cy="462" r="21"/>
+        <circle class="node-core" cx="390" cy="462" r="6"/>
+        <circle class="pulse" cx="390" cy="462" r="21" style="animation-delay:3.4s"/>
+    </g>
+    <g>
+        <circle class="node" cx="1210" cy="462" r="21"/>
+        <circle class="node-core" cx="1210" cy="462" r="6"/>
+        <circle class="pulse" cx="1210" cy="462" r="21" style="animation-delay:4.1s"/>
+    </g>
+    <circle class="node" cx="590" cy="500" r="15"/>
+    <circle class="node-core" cx="590" cy="500" r="4"/>
+    <circle class="node" cx="1010" cy="500" r="15"/>
+    <circle class="node-core" cx="1010" cy="500" r="4"/>
+
+    <!-- Slow, understated content flow -->
+    <circle class="flow flow-1" cx="280" cy="188" r="5"/>
+    <circle class="flow flow-2" cx="1320" cy="188" r="5"/>
+    <circle class="flow flow-3" cx="390" cy="462" r="4"/>
+    <circle class="flow flow-4" cx="1210" cy="462" r="4"/>
+</svg>

@@ -84,3 +84,33 @@ For each source of complexity you've identified, ask a simple question: why does
 Look for a clear reason and remember - regulation, risk or genuine business requirements may justify the complexity.
 
 > ***“Because that's how we've always done it” isn't a reason.***
+
+### 5. Separate Necessary from Unnecessary Complexity
+
+Not all complexity should be removed - the aim is to understand which parts serve a genuine purpose.
+
+For each step, ask whether it exists because of:
+
+1. Regulation or compliance.
+
+2. Genuine risk or control requirements.
+
+3. Customer or business needs.
+
+4. Specialist judgement or expertise.
+
+5. Legacy decisions, duplication or workarounds.
+
+The first four may be necessary but the fifth is where your biggest opportunities for simplification are likely to be.
+
+## 6. Measure the Impact
+
+You don't need a complex business case - capture a few simple measures that show what the complexity is costing:
+
+1. **Time:** How long does the process take from start to finish?
+2. **Waiting:** How much of that time is spent waiting?
+3. **Effort:** How much actual work is involved?
+4. **Duplication:** How often is work or information repeated?
+5. **Errors:** Where does the process commonly fail or need correcting?
+
+A process that takes five days may contain only an hour of actual work. Understanding the difference shows you where to focus.

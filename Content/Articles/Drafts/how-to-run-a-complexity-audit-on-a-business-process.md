@@ -29,7 +29,7 @@ Now simply define the boundaries:
 
 Keep the scope tight. You're not trying to understand the whole organisation — you're trying to understand one process well enough to improve it.
 
-### 2. Follow What Actually Happens
+### 2) Follow What Actually Happens
 
 Don't rely on the documented process - follow a real example from start to finish and talk to the people who actually do the work.
 
@@ -46,3 +46,23 @@ Capture the following:
 5. Where the process waits, loops back or requires a workaround.
 
 The goal is simply to understand the process as it works in reality, not as it was designed.
+
+### 3) Identify the Sources of Complexity
+
+Now look at where complexity appears in the process. Focus on seven areas:
+
+1. Steps: How many activities are required?
+
+2. Hand-offs: How often does responsibility move between people or teams?
+
+3. Approvals: Which decisions require approval, and by whom?
+
+4. Systems: How many systems, spreadsheets or tools are involved?
+
+5. Information: Where is data duplicated, re-entered or manually reconciled?
+
+6. Exceptions: How often does the process require a workaround?
+
+7. Ownership: Is it clear who owns the process and can change it?
+
+Don't assume complexity is automatically bad. At this stage, you're simply making it visible.

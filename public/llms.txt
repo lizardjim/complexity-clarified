@@ -1,0 +1,54 @@
+# Complexity Clarified
+
+> Complexity Clarified helps organisations navigate complexity through better decision-making, leadership, technology and change.
+
+Complexity Clarified combines practical thinking, consultancy and simple, connected technology designed around how organisations actually work. The focus is on reducing unnecessary complexity, improving how organisations make decisions and helping technology enable meaningful change rather than creating additional complexity.
+
+## Start Here
+
+- [Complexity Clarified](https://complexityclarified.co.uk/): Overview of Complexity Clarified, its thinking, services and technology.
+- [About](https://complexityclarified.co.uk/about/): Background and purpose behind Complexity Clarified.
+- [Approach](https://complexityclarified.co.uk/approach/): How Complexity Clarified approaches organisational complexity, technology and transformation.
+- [What is Complexity Clarified?](https://complexityclarified.co.uk/articles/what-is-complexity-clarified/): An introduction to why meaningful transformation starts with understanding how organisations make decisions, work together and navigate complexity.
+
+## Products
+
+Complexity Clarified develops simple, focused business technology designed to work independently or together, with integration and data portability built in.
+
+- [Products](https://complexityclarified.co.uk/products/): Overview of the Complexity Clarified technology ecosystem.
+- [Content Management System](https://complexityclarified.co.uk/products/cms/): A simple CMS for creating, managing and publishing content without unnecessary complexity.
+- [Customer Relationship Management](https://complexityclarified.co.uk/products/crm/): A simple CRM for managing customers, contacts, enquiries and subscribers while keeping relationship information connected.
+
+## Services
+
+Complexity Clarified provides consultancy focused on understanding and reducing organisational and technological complexity.
+
+- [Services](https://complexityclarified.co.uk/services/): Overview of Complexity Clarified consultancy services.
+- [Digital Transformation & Change](https://complexityclarified.co.uk/services/digital-transformation-change/): Helping organisations approach digital transformation as organisational change rather than simply technology implementation.
+- [MarTech Integration](https://complexityclarified.co.uk/services/martech-integration/): Connecting marketing technology, data and customer journeys to reduce fragmentation and complexity.
+- [Organisational Complexity Diagnostic](https://complexityclarified.co.uk/services/organisational-complexity-diagnostic/): Identifying where unnecessary complexity, processes, systems and ways of working are getting in the way.
+
+## Thinking
+
+Complexity Clarified publishes practical and conceptual thinking about organisational complexity, decision-making, leadership, technology and change.
+
+- [All Articles](https://complexityclarified.co.uk/articles/): Browse the complete and continually updated article library.
+- [AI Won't Fix a Broken Organisation](https://complexityclarified.co.uk/articles/ai-wont-fix-a-broken-organisation/): Why AI can amplify existing organisational dysfunction rather than solve it.
+- [Before You Fix the Problem, Make Sure It's the Right Problem](https://complexityclarified.co.uk/articles/before-you-fix-the-problem-make-sure-its-the-right-problem/): Why solving the wrong problem efficiently still produces the wrong outcome.
+- [Clarity Is a Leadership Responsibility](https://complexityclarified.co.uk/articles/clarity-is-a-leadership-responsibility/): The role leaders play in creating organisational clarity.
+- [Different Minds. Better Decisions.](https://complexityclarified.co.uk/articles/different-minds-better-decisions/): How different perspectives and ways of thinking can improve organisational decision-making.
+- [Digital Transformation Isn't a Technological Challenge](https://complexityclarified.co.uk/articles/digital-transformation-isnt-a-technological-challenge/): Why meaningful digital transformation depends on the organisation around the technology.
+- [How to Run a Complexity Audit on a Business Process](https://complexityclarified.co.uk/articles/how-to-run-a-complexity-audit-on-a-business-process/): A practical method for identifying unnecessary steps, hand-offs, systems and complexity in business processes.
+- [Leadership Is Not About Having the Answers](https://complexityclarified.co.uk/articles/leadership-is-not-about-having-the-answers/): A perspective on leadership, uncertainty and decision-making.
+- [Minimum Viable Human](https://complexityclarified.co.uk/articles/minimum-viable-human-the-change-management-metric-nobody-measures/): Why transformation needs to consider the human effort required to make change work.
+- [Organisations Don't Resist Change. They Resist Uncertainty.](https://complexityclarified.co.uk/articles/organisations-dont-resist-change-they-resist-uncertainty/): How uncertainty shapes organisational responses to change.
+- [People Don't Resist Change](https://complexityclarified.co.uk/articles/people-dont-resist-change/): Challenging a common assumption about resistance to organisational change.
+- [The AI Readiness Problem Nobody Measures](https://complexityclarified.co.uk/articles/the-ai-readiness-problem-nobody-measures/): Why organisational readiness matters when adopting AI.
+- [The Strategy Paradox](https://complexityclarified.co.uk/articles/the-strategy-paradox-why-the-best-ideas-often-fail-at-the-point-of-implementation/): Why strong strategic ideas can fail when they encounter organisational reality.
+- [The Value of Being Difficult](https://complexityclarified.co.uk/articles/the-value-of-being-difficult/): Why constructive challenge can improve organisational decisions.
+- [We Keep Automating the Wrong Things](https://complexityclarified.co.uk/articles/we-keep-automating-the-wrong-things/): Why organisations should question work before using technology to automate it.
+- [When Information Becomes Cheap, Judgement Becomes Valuable](https://complexityclarified.co.uk/articles/when-information-becomes-cheap-judgement-becomes-valuable/): How AI changes the value of information and increases the importance of judgement and decision-making.
+
+## Contact
+
+- [Contact Complexity Clarified](https://complexityclarified.co.uk/contact/): Get in touch about consultancy, technology or working with Complexity Clarified.

@@ -183,6 +183,58 @@
 
 
 /* ==========================================================
+   ARTICLE VIDEO
+========================================================== */
+
+.article-video-section {
+    padding: 3.5rem 0 0;
+}
+
+.article-video {
+    margin: 3rem 0;
+}
+
+.article-video-primary .article-video {
+    margin: 0;
+}
+
+.article-video .video-play img {
+    margin: 0;
+    border-radius: 0;
+}
+
+.article-video-caption {
+    margin-top: 1rem;
+}
+
+.article-video-caption p {
+    margin: .35rem 0 0;
+    color: var(--bs-secondary-color);
+}
+
+.article-video-transcript {
+    margin: 3rem 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: .75rem;
+    background: #f8f9fa;
+}
+
+.article-video-transcript summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.article-video-transcript-content {
+    margin-top: 1.5rem;
+}
+
+.article-video-transcript-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================
    HORIZONTAL RULE
 ========================================================== */
 
@@ -277,6 +329,14 @@
 
     .article-content {
         padding: 2.5rem 0 3rem;
+    }
+
+    .article-video-section {
+        padding-top: 2.5rem;
+    }
+
+    .article-video {
+        margin: 2.5rem 0;
     }
 
     .article {

@@ -3,6 +3,8 @@ import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import RelatedArticles from "../../components/RelatedArticles.astro";
 import Subscribers from "../../components/Subscribers.astro";
+import ArticleVideo from "../../components/ArticleVideo.astro";
+import { getYouTubeId } from "../../utils/youtube";
 
 export async function getStaticPaths() {
     const articles = await getCollection("articles");
@@ -34,6 +36,22 @@ const heroImage = pillarHero[article.data.pillar];
 ========================================================== */
 
 const articleUrl = new URL(Astro.url.pathname, Astro.site!).href;
+
+const video = article.data.video;
+const videoId = video ? getYouTubeId(video.url) : null;
+const isPrimaryVideo = video?.mode === "primary";
+
+const videoSchema = video && videoId
+    ? {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: video.title,
+        description: video.description,
+        thumbnailUrl: [new URL(video.thumbnail, Astro.site!).href],
+        uploadDate: article.data.date.toISOString(),
+        embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
+    }
+    : null;
 
 const linkedInShareUrl =
     `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(articleUrl)}`;
@@ -87,6 +105,13 @@ const readingTime = Math.max(
     publishedTime={article.data.date}
 >
 
+    {videoSchema && (
+        <script
+            type="application/ld+json"
+            set:html={JSON.stringify(videoSchema)}
+        />
+    )}
+
     <!-- Article Hero -->
     <section
         class="article-hero"
@@ -131,6 +156,18 @@ const readingTime = Math.max(
 
     </section>
 
+    {video && isPrimaryVideo && (
+        <section class="article-video-section article-video-primary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <ArticleVideo video={video} />
+                    </div>
+                </div>
+            </div>
+        </section>
+    )}
+
 
     <!-- Article Content -->
     <section class="article-content">
@@ -142,6 +179,23 @@ const readingTime = Math.max(
                 <article class="article col-lg-10">
 
                     <Content />
+
+                    {video && !isPrimaryVideo && (
+                        <ArticleVideo video={video} />
+                    )}
+
+                    {video?.transcript && (
+                        <details class="article-video-transcript">
+                            <summary>Video transcript</summary>
+
+                            <div class="article-video-transcript-content">
+                                {video.transcript
+                                    .trim()
+                                    .split(/\n\s*\n/)
+                                    .map((paragraph) => <p>{paragraph}</p>)}
+                            </div>
+                        </details>
+                    )}
 
 
                     <!-- Article Sharing -->

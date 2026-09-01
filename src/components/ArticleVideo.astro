@@ -3,17 +3,18 @@ import { getYouTubeId } from "../utils/youtube";
 
 interface Props {
     video: {
-        mode: "supporting" | "primary";
         url: string;
-        title: string;
-        description: string;
-        thumbnail: string;
         transcript?: string;
     };
+    title: string;
+    description: string;
 }
 
-const { video } = Astro.props;
+const { video, title, description } = Astro.props;
 const videoId = getYouTubeId(video.url);
+const thumbnail = videoId
+    ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
+    : null;
 ---
 
 <figure class="article-video">
@@ -25,10 +26,10 @@ const videoId = getYouTubeId(video.url);
             <button
                 type="button"
                 class="video-play"
-                aria-label={`Play ${video.title}`}
+                aria-label={`Play ${title}`}
             >
                 <img
-                    src={video.thumbnail}
+                    src={thumbnail!}
                     alt=""
                     class="w-100 h-100 object-fit-cover"
                     loading="lazy"
@@ -41,12 +42,25 @@ const videoId = getYouTubeId(video.url);
         </div>
     ) : (
         <a href={video.url} target="_blank" rel="noopener noreferrer">
-            Watch {video.title} on YouTube
+            Watch {title} on YouTube
         </a>
     )}
 
     <figcaption class="article-video-caption">
-        <strong>{video.title}</strong>
-        <p>{video.description}</p>
+        <strong>{title}</strong>
+        <p>{description}</p>
     </figcaption>
 </figure>
+
+{video.transcript && (
+    <details class="article-video-transcript">
+        <summary>Video transcript</summary>
+
+        <div class="article-video-transcript-content">
+            {video.transcript
+                .trim()
+                .split(/\n\s*\n/)
+                .map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+    </details>
+)}

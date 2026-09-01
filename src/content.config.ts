@@ -35,11 +35,7 @@ const articles = defineCollection({
         published: z.boolean(),
 
         video: z.object({
-            mode: z.enum(["supporting", "primary"]).default("supporting"),
             url: z.string().url(),
-            title: z.string().min(1),
-            description: z.string().min(1),
-            thumbnail: z.string().min(1),
             transcript: z.string().optional()
         }).optional()
     })

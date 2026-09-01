@@ -39,15 +39,17 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site!).href;
 
 const video = article.data.video;
 const videoId = video ? getYouTubeId(video.url) : null;
-const isPrimaryVideo = video?.mode === "primary";
+const videoThumbnail = videoId
+    ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
+    : null;
 
 const videoSchema = video && videoId
     ? {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: video.title,
-        description: video.description,
-        thumbnailUrl: [new URL(video.thumbnail, Astro.site!).href],
+        name: article.data.title,
+        description: article.data.description,
+        thumbnailUrl: [videoThumbnail],
         uploadDate: article.data.date.toISOString(),
         embedUrl: `https://www.youtube-nocookie.com/embed/${videoId}`,
     }
@@ -156,12 +158,16 @@ const readingTime = Math.max(
 
     </section>
 
-    {video && isPrimaryVideo && (
-        <section class="article-video-section article-video-primary">
+    {video && (
+        <section class="article-video-section">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <ArticleVideo video={video} />
+                        <ArticleVideo
+                            video={video}
+                            title={article.data.title}
+                            description={article.data.description}
+                        />
                     </div>
                 </div>
             </div>
@@ -179,24 +185,6 @@ const readingTime = Math.max(
                 <article class="article col-lg-10">
 
                     <Content />
-
-                    {video && !isPrimaryVideo && (
-                        <ArticleVideo video={video} />
-                    )}
-
-                    {video?.transcript && (
-                        <details class="article-video-transcript">
-                            <summary>Video transcript</summary>
-
-                            <div class="article-video-transcript-content">
-                                {video.transcript
-                                    .trim()
-                                    .split(/\n\s*\n/)
-                                    .map((paragraph) => <p>{paragraph}</p>)}
-                            </div>
-                        </details>
-                    )}
-
 
                     <!-- Article Sharing -->
                     <div class="article-share">

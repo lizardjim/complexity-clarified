@@ -7,11 +7,12 @@ interface Props {
         transcript?: string;
     };
     title: string;
-    description: string;
 }
 
-const { video, title, description } = Astro.props;
+const { video, title } = Astro.props;
+
 const videoId = getYouTubeId(video.url);
+
 const thumbnail = videoId
     ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
     : null;
@@ -45,11 +46,6 @@ const thumbnail = videoId
             Watch {title} on YouTube
         </a>
     )}
-
-    <figcaption class="article-video-caption">
-        <strong>{title}</strong>
-        <p>{description}</p>
-    </figcaption>
 </figure>
 
 {video.transcript && (

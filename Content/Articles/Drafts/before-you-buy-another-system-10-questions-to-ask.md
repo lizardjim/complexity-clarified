@@ -72,7 +72,7 @@ Every system solves some problems and creates others so it's vital to ask what t
 - New support processes?
 - New dependencies?
 
-The question should not simply be “What can this system do?” it should also be “What will we have to do because this system exists?”
+The question should not simply be “What can this system do?”; it should also be “What will we have to do because this system exists?”
 
 ### 7) How will it connect to everything else?
 

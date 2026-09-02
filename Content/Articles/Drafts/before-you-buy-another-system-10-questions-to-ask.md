@@ -34,7 +34,8 @@ Technology often gets blamed for problems created elsewhere:
 - A slow approval process may be caused by unclear authority.
 - Poor customer data may be caused by inconsistent processes.
 - Reporting problems may exist because nobody agrees which measures actually matter.
-- A new platform might make those problems easier to see without doing anything to resolve them.
+
+A new platform might make those problems easier to see without doing anything to resolve them.
 
 > ***Before replacing the technology it's important to understand the system around it.***
 

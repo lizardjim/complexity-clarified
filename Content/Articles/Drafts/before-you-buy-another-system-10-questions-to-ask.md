@@ -17,3 +17,12 @@ Before choosing the technology, it is worth asking a more fundamental question:
 > ***Do we actually need another system?***
 
 Here are ten questions worth answering before you buy one.
+
+### 1) What problem are we actually trying to solve?
+
+Not what software do we need or which vendor should we choose - simply ask: 
+> ***what is the actual problem?***
+
+***“We need a new CRM”*** is not a problem statement... but ***“we cannot see the complete relationship we have with a customer because information is spread across four systems and several spreadsheets”*** is.
+
+This distinction matters because once the problem is understood properly, the solution could end up look very different.

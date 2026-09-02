@@ -43,7 +43,7 @@ A new platform might make those problems easier to see without doing anything to
 
 Organisations are very good at adding another process, another approval, another integration and yet another platform...
 
-They are considerably less enthusiastic about removing things however.
+They are considerably less enthusiastic about removing things, however.
 
 Before adding another system, ask whether an existing step, tool or requirement could simply disappear.
 Sometimes the best technology transformation involves less technology.

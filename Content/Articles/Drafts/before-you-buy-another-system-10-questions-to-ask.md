@@ -112,7 +112,7 @@ Organisations accumulate technology over time - every decision may have made sen
 
 So step outside the existing architecture for a moment and ask yourself:
 
-If you were designing the process today, without the historical systems, organisational boundaries and assumptions; what would it look like?
+If you were designing the process today, without the historical systems, organisational boundaries and assumptions - what would it look like?
 
 You may still conclude that you need another platform but at least you will understand why.
 

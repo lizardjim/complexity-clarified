@@ -87,10 +87,14 @@ Instead, start with the points of friction you've already identified and ask wha
 
 That could mean:
 
-Removing an approval that no longer serves a useful purpose
-Giving someone clearer authority to make the decision
-Making information available earlier in the process
-Reducing the number of people who need to be involved
-Clarifying where responsibility sits
-Replacing a recurring meeting with a simpler way of sharing information
-Defining when a decision genuinely needs to be escalated
+- Removing an approval that no longer serves a useful purpose
+- Giving someone clearer authority to make the decision
+- Making information available earlier in the process
+- Reducing the number of people who need to be involved
+- Clarifying where responsibility sits
+- Replacing a recurring meeting with a simpler way of sharing information
+- Defining when a decision genuinely needs to be escalated
+
+The objective isn't to remove governance or encourage people to make decisions without the information they need; it's to make sure that every stage exists for a reason.
+
+This is particularly important when looking at approvals. Organisations often add controls in response to individual problems, but rarely go back later and ask whether those controls are still necessary. Over time, a decision can accumulate layers of approval that made sense when they were introduced but add little value today.

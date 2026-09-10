@@ -78,3 +78,19 @@ In addition, if almost every decision eventually reaches the same senior person,
 
 > ***The important question therefore isn't simply where is the decision getting stuck?***
 > ***It's why does it need to stop there in the first place?***
+
+### Make the decision easier to make
+
+Once you understand where a decision is getting stuck and why, the temptation is to redesign the entire process but most of the time, you don't actually need to.
+
+Instead, start with the points of friction you've already identified and ask what would need to change for the decision to move through them more easily.
+
+That could mean:
+
+Removing an approval that no longer serves a useful purpose
+Giving someone clearer authority to make the decision
+Making information available earlier in the process
+Reducing the number of people who need to be involved
+Clarifying where responsibility sits
+Replacing a recurring meeting with a simpler way of sharing information
+Defining when a decision genuinely needs to be escalated

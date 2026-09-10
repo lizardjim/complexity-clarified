@@ -45,3 +45,36 @@ Start with a few simple questions:
 Don't worry initially about how the process is supposed to work, just map how the decision actually happened.
 
 That difference is often where the complexity starts to become visible.
+
+### Find the points of friction
+
+Once you've mapped the decision, the next step is to look at where time and effort are actually being spent.
+
+The obvious place to start is time; how long did the decision spend at each stage and, more importantly, how much of that time was spent waiting?
+
+A decision might only require a few hours of actual work but still take three weeks to complete because it spends most of its life sitting in inboxes, waiting for meetings or moving between people.
+
+So look for the points where this is happening:
+
+- Where does the decision wait?
+- How many people are involved?
+- How many approvals are required?
+- Where is additional information requested?
+- Where does responsibility become unclear?
+- Where does the decision move backwards?
+- Which stages regularly require meetings or escalation?
+
+The aim here is not simply to find the slowest person or department; delays are often symptoms of something deeper in the way the organisation works.
+
+An approval might exist because nobody is confident about who has authority to make the decision, a meeting might be necessary because information is spread across several systems or teams. 
+
+Additional stakeholders might become involved because responsibilities overlap, or because previous decisions have created a culture where people are reluctant to take ownership.
+
+This is also where those backwards loops become particularly useful.
+
+If a decision repeatedly returns to an earlier stage because information is missing, the problem may not be the approval process at all; it may be that the right information isn't available when the decision begins.
+
+Likewise, if almost every decision eventually reaches the same senior person, the organisation may have created a bottleneck by concentrating authority rather than distributing it.
+
+> ***The important question therefore isn't simply where is the decision getting stuck?***
+> ***It's why does it need to stop there in the first place?***

@@ -74,7 +74,7 @@ This is also where those backwards loops become particularly useful.
 
 If a decision repeatedly returns to an earlier stage because information is missing, the problem may not be the approval process at all; it may be that the right information isn't available when the decision begins.
 
-Likewise, if almost every decision eventually reaches the same senior person, the organisation may have created a bottleneck by concentrating authority rather than distributing it.
+In addition, if almost every decision eventually reaches the same senior person, the organisation may have created a bottleneck by concentrating authority rather than distributing it.
 
 > ***The important question therefore isn't simply where is the decision getting stuck?***
 > ***It's why does it need to stop there in the first place?***

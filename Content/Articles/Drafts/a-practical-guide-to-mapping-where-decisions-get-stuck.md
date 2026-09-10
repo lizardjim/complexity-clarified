@@ -98,3 +98,18 @@ That could mean:
 The objective isn't to remove governance or encourage people to make decisions without the information they need; it's to make sure that every stage exists for a reason.
 
 This is particularly important when looking at approvals - organisations often add controls in response to individual problems, but rarely go back later and ask whether those controls are still necessary. Over time, a decision can accumulate layers of approval that made sense when they were introduced but add little value today.
+
+Once you've made a change, follow the same decision again...
+
+- Has the overall time reduced? 
+- Are there fewer hand-offs? 
+- Does it still move backwards? 
+- Are fewer people involved? 
+- Can more decisions now be made without escalation?
+
+You don't need a complicated set of metrics; you're simply trying to establish whether the decision has become easier to make without reducing the quality of the outcome.
+
+And if it hasn't, go back to the map because the purpose of mapping decisions isn't to create another process diagram that sits forgotten somewhere; it's to make visible the complexity that has accumulated around them.
+
+> ***Sometimes the most useful question an organisation can ask isn't who needs to make this decision?***
+> ***It's what is stopping them from making it?***

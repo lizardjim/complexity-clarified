@@ -97,4 +97,4 @@ That could mean:
 
 The objective isn't to remove governance or encourage people to make decisions without the information they need; it's to make sure that every stage exists for a reason.
 
-This is particularly important when looking at approvals. Organisations often add controls in response to individual problems, but rarely go back later and ask whether those controls are still necessary. Over time, a decision can accumulate layers of approval that made sense when they were introduced but add little value today.
+This is particularly important when looking at approvals - organisations often add controls in response to individual problems, but rarely go back later and ask whether those controls are still necessary. Over time, a decision can accumulate layers of approval that made sense when they were introduced but add little value today.

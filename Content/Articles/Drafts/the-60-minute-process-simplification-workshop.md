@@ -27,4 +27,4 @@ This workshop is designed to answer that question.
 In 60 minutes, you'll take one real business process, identify where unnecessary complexity has accumulated, and design a simpler version you can test.
 
 > ***You won't leave with a perfect process...***
-> ***You should leave with a better one.***
+> ***...you should leave with a better one.***

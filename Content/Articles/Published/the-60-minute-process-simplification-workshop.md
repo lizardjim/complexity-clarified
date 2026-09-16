@@ -10,7 +10,7 @@ tags:
   - strategy
 title: The 60-Minute Process Simplification Workshop
 ---
-## Part 1 — Before You Start
+## Part 1 - Before You Start
 
 Most business processes don't become complicated because somebody deliberately designed them that way... they become complicated gradually.
 

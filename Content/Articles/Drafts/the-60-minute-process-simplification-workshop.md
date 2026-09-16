@@ -59,13 +59,13 @@ Don't map the documented process; ask the people doing the work:
 
 Then start the clock:
 
-- 0–5 minutes — Define it: Agree where the process starts, where it ends and what it is supposed to achieve.
-- 5–15 minutes — Map it: Capture every step, handoff, system, spreadsheet and workaround.
-- 15–25 minutes — Find the friction: Mark delays, duplication, approvals, rework and unnecessary handoffs.
-- 25–40 minutes — Challenge it: For every step ask, “What would happen if we stopped doing this?”
-- 40–50 minutes — Simplify it: Remove, combine or simplify anything that doesn't need to be there.
-- 50–57 minutes — Test it: Check the new process against genuine risks, constraints and dependencies.
-- 57–60 minutes — Commit: Agree what will change, who owns it and when you'll test it.
+- **0–5 minutes** - Define it: Agree where the process starts, where it ends and what it is supposed to achieve.
+- **5–15 minutes** - Map it: Capture every step, handoff, system, spreadsheet and workaround.
+- **15–25 minutes** - Find the friction: Mark delays, duplication, approvals, rework and unnecessary handoffs.
+- **25–40 minutes** - Challenge it: For every step ask, “What would happen if we stopped doing this?”
+- **40–50 minutes** - Simplify it: Remove, combine or simplify anything that doesn't need to be there.
+- **50–57 minutes** - Test it: Check the new process against genuine risks, constraints and dependencies.
+- **57–60 minutes** - Commit: Agree what will change, who owns it and when you'll test it.
 
 Don't finish with a list of twenty-seven improvements and another meeting - just pick the changes that matter and try them.
 

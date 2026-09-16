@@ -11,3 +11,16 @@ tags:
 title: The 60-Minute Process Simplification Workshop
 ---
 ## Part 1 — Before You Start
+
+Most business processes don't become complicated because somebody deliberately designed them that way.
+They become complicated gradually.
+An approval is added because something once went wrong. A spreadsheet appears because the system doesn't quite work. Someone creates a workaround. Another check is added to make sure the workaround worked.
+Eventually, nobody remembers why half of it exists.
+And then somebody suggests automating it.
+Before you automate a complicated process, there's a simpler question worth asking:
+Does all of this need to happen at all?
+This workshop is designed to answer that question.
+In 60 minutes, you'll take one real business process, identify where unnecessary complexity has accumulated, and design a simpler version you can test.
+
+> ***You won't leave with a perfect process...***
+> ***You should leave with a better one.***

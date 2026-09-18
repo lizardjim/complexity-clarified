@@ -54,3 +54,95 @@ body{
 .footer-social-icon {
     filter: invert(1);
 }
+
+/* Ask Complexity Clarified */
+
+.ask-home-form {
+	display: flex;
+	align-items: center;
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 0.35rem;
+	background: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.85);
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.18);
+}
+
+.ask-home-input {
+	flex: 1;
+	min-width: 0;
+	padding: 0.7rem 0.9rem;
+	background: transparent;
+	color: #212529;
+	border: 0;
+	outline: 0;
+	font-size: 1rem;
+}
+
+.ask-home-input::placeholder {
+	color: #6c757d;
+}
+
+.ask-cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	flex-shrink: 0;
+	padding: 0.7rem 1rem;
+	background: #212529;
+	color: #fff;
+	border: 0;
+	border-radius: 0.75rem;
+	font-weight: 600;
+	transition:
+		transform 160ms ease,
+		background-color 160ms ease;
+}
+
+.ask-cta:hover {
+	background: #343a40;
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.ask-cta:disabled {
+	opacity: 0.65;
+	cursor: not-allowed;
+	transform: none;
+}
+
+.ask-cta-icon {
+	font-size: 1.1rem;
+	line-height: 1;
+}
+
+#questionInput {
+	resize: vertical;
+	min-height: 130px;
+}
+
+.ask-answer {
+	font-size: 1.075rem;
+	line-height: 1.75;
+}
+
+.ask-answer p:last-child {
+	margin-bottom: 0;
+}
+
+#answerArea {
+	scroll-margin-top: 2rem;
+}
+
+@media (max-width: 575.98px) {
+	.ask-home-form {
+		align-items: stretch;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.ask-cta {
+		justify-content: center;
+	}
+}

@@ -48,3 +48,47 @@ If neither has a clear answer, you've found something worth investigating.
 
 > ***Don't make unnecessary work more efficient...***
 > ***...first find out whether it needs to exist.***
+
+### Test Why the Work Exists
+
+Now take each activity and ask why it exists.
+
+Don't settle for “we've always done it”, “management needs it” or “it's part of the process”. Find the original purpose.
+
+For each activity, ask:
+
+- What problem was this created to solve?
+- Does that problem still exist?
+- Who would notice if we stopped doing it?
+- What would actually happen if we did?
+
+Be particularly suspicious of work where the answer is unclear or based on assumption rather than evidence.
+- A report nobody reads isn't valuable because it takes two hours instead of four.
+- A meeting nobody needs isn't useful because it only lasts 30 minutes.
+- An approval that prevents nothing isn't control.
+
+The objective isn't to prove that work is pointless; it's to find out whether the reason for doing it still exists.
+
+> ***“We've always done it” explains the history...***
+> ***...it doesn't justify the future.***
+
+### Decide What Happens Next
+
+You should now have a smaller list of activities whose value is questionable.
+
+For each one, make a simple decision:
+- Stop - the need no longer exists.
+- Simplify - the outcome matters, but the way you produce it doesn't.
+- Keep - the work still serves a clear purpose.
+
+Where you're unsure, simply test it.
+
+Pause a report for a month, cancel one recurring meeting or remove an unnecessary approval and see what happens.
+
+- If something genuinely breaks, you've learnt why the work matters.
+- If nobody notices, you've learnt something more interesting.
+
+The goal isn't to remove work for the sake of it; it's to create capacity for work that actually matters.
+
+> ***Sometimes the easiest way to discover whether work is valuable...***
+> ***...is to stop doing it.***

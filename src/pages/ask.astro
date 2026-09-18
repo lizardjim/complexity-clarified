@@ -1,0 +1,306 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+	title="Ask Complexity Clarified"
+	description="Ask a question about organisational complexity, leadership, technology, decisions or change."
+>
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-9">
+
+				<div class="mb-5">
+					<h1 class="display-5 mb-3">
+						Ask Complexity Clarified
+					</h1>
+
+					<p class="lead mb-0">
+						Complex organisations create difficult questions.
+						Ask one.
+					</p>
+				</div>
+
+				<form id="askForm">
+					<label
+						for="questionInput"
+						class="form-label fw-semibold"
+					>
+						What's making work more complicated than it needs to be?
+					</label>
+
+					<textarea
+						id="questionInput"
+						class="form-control form-control-lg"
+						rows="4"
+						placeholder="For example: Why do our transformation projects keep stalling?"
+						required
+					></textarea>
+
+					<div class="d-flex align-items-center gap-3 mt-3">
+						<button
+							type="submit"
+							id="askButton"
+							class="btn btn-dark btn-lg"
+						>
+							Ask
+						</button>
+
+						<span
+							id="askStatus"
+							class="text-muted"
+							aria-live="polite"
+						></span>
+					</div>
+				</form>
+
+				<div
+					id="answerArea"
+					class="mt-5 d-none"
+				>
+					<hr class="mb-5" />
+
+					<article>
+						<h2 class="h4 mb-4">
+							A Complexity Clarified perspective
+						</h2>
+
+						<div
+							id="answerContent"
+							class="ask-answer"
+						></div>
+					</article>
+
+					<div
+						id="sourcesArea"
+						class="mt-5 d-none"
+					>
+						<h2 class="h5 mb-3">
+							Relevant thinking
+						</h2>
+
+						<div
+							id="sourcesList"
+							class="list-group"
+						></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<script>
+		interface AskSource {
+			title: string;
+			url: string;
+		}
+
+		interface AskResponse {
+			query: string;
+			answer: string;
+			sources: AskSource[];
+		}
+
+		const ENDPOINT =
+			'https://cc-semantic-search.james-barnett.workers.dev/ask';
+
+		const form =
+			document.querySelector<HTMLFormElement>('#askForm');
+
+		const input =
+			document.querySelector<HTMLTextAreaElement>('#questionInput');
+
+		const button =
+			document.querySelector<HTMLButtonElement>('#askButton');
+
+		const status =
+			document.querySelector<HTMLElement>('#askStatus');
+
+		const answerArea =
+			document.querySelector<HTMLElement>('#answerArea');
+
+		const answerContent =
+			document.querySelector<HTMLElement>('#answerContent');
+
+		const sourcesArea =
+			document.querySelector<HTMLElement>('#sourcesArea');
+
+		const sourcesList =
+			document.querySelector<HTMLElement>('#sourcesList');
+
+
+		function renderAnswer(answer: string) {
+			if (!answerContent) return;
+
+			answerContent.innerHTML = '';
+
+			const paragraphs = answer
+				.split(/\n\s*\n/)
+				.map((paragraph) => paragraph.trim())
+				.filter(Boolean);
+
+			for (const text of paragraphs) {
+				const paragraph = document.createElement('p');
+				paragraph.textContent = text;
+				answerContent.appendChild(paragraph);
+			}
+		}
+
+
+		function renderSources(sources: AskSource[]) {
+			if (!sourcesList || !sourcesArea) return;
+
+			sourcesList.innerHTML = '';
+
+			if (!sources.length) {
+				sourcesArea.classList.add('d-none');
+				return;
+			}
+
+			for (const source of sources) {
+				const link = document.createElement('a');
+
+				link.href = source.url;
+				link.className =
+					'list-group-item list-group-item-action py-3';
+
+				const title = document.createElement('div');
+
+				title.className = 'fw-semibold';
+				title.textContent = source.title;
+
+				const hint = document.createElement('div');
+
+				hint.className = 'small text-muted mt-1';
+				hint.textContent = 'Read the article →';
+
+				link.appendChild(title);
+				link.appendChild(hint);
+
+				sourcesList.appendChild(link);
+			}
+
+			sourcesArea.classList.remove('d-none');
+		}
+
+
+		async function askQuestion(event: SubmitEvent) {
+			event.preventDefault();
+
+			if (
+				!input ||
+				!button ||
+				!status ||
+				!answerArea
+			) {
+				return;
+			}
+
+			const query = input.value.trim();
+
+			if (!query) return;
+
+			button.disabled = true;
+			button.textContent = 'Thinking…';
+
+			status.textContent =
+				'Looking across Complexity Clarified…';
+
+			answerArea.classList.add('d-none');
+
+			try {
+				const response = await fetch(
+					ENDPOINT,
+					{
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({ query })
+					}
+				);
+
+				if (!response.ok) {
+					throw new Error(
+						`Request failed with ${response.status}`
+					);
+				}
+
+				const data =
+					await response.json() as AskResponse;
+
+				if (!data.answer) {
+					throw new Error(
+						'No answer was returned.'
+					);
+				}
+
+				renderAnswer(data.answer);
+				renderSources(data.sources ?? []);
+
+				answerArea.classList.remove('d-none');
+
+				status.textContent = '';
+
+				answerArea.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+
+			} catch (error) {
+				console.error(error);
+
+				status.textContent =
+					'Ask Complexity Clarified is temporarily unavailable.';
+
+			} finally {
+				button.disabled = false;
+				button.textContent = 'Ask';
+			}
+		}
+
+
+		form?.addEventListener(
+			'submit',
+			askQuestion
+		);
+
+		const initialQuestion =
+			new URLSearchParams(window.location.search)
+				.get('q')
+				?.trim();
+
+		if (initialQuestion && input && form) {
+			input.value = initialQuestion.slice(0, 1000);
+
+			window.history.replaceState(
+				{},
+				'',
+				window.location.pathname
+			);
+
+			form.requestSubmit();
+		}
+	</script>
+
+	<style>
+		#questionInput {
+			resize: vertical;
+			min-height: 130px;
+		}
+
+		.ask-answer {
+			font-size: 1.075rem;
+			line-height: 1.75;
+		}
+
+		.ask-answer p:last-child {
+			margin-bottom: 0;
+		}
+
+		#answerArea {
+			scroll-margin-top: 2rem;
+		}
+	</style>
+</Layout>

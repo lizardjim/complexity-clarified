@@ -1,3 +1,60 @@
+<!-- Ask Complexity Clarified -->
+<section class="bg-dark text-white py-5">
+	<div class="container">
+		<div class="row justify-content-center text-center">
+			<div class="col-lg-8">
+				<p class="text-uppercase small fw-semibold mb-2">
+					Ask Complexity Clarified
+				</p>
+
+				<h2 class="mb-3">
+					What's making work more complicated than it needs to be?
+				</h2>
+
+				<p class="lead mb-4">
+					Ask a question about technology, transformation, leadership,
+					decisions or change — and explore the thinking that might help
+					make sense of it.
+				</p>
+
+				<form
+					class="ask-home-form"
+					action="/ask/"
+					method="get"
+				>
+					<label
+						for="homeAskQuestion"
+						class="visually-hidden"
+					>
+						Ask Complexity Clarified
+					</label>
+
+					<input
+						id="homeAskQuestion"
+						name="q"
+						type="text"
+						class="ask-home-input"
+						placeholder="Ask about a problem you're dealing with…"
+						maxlength="1000"
+						required
+					/>
+
+					<button
+						type="submit"
+						class="ask-home-cta"
+					>
+						<span
+							class="ask-home-icon"
+							aria-hidden="true"
+						>✦</span>
+						<span>Ask</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section>
 	<div class="container pt-5 pb-5">
 		<div class="row align-items-center">
@@ -487,3 +544,70 @@
 	</div>
 
 </section>
+
+<style>
+	.ask-home-form {
+		display: flex;
+		align-items: center;
+		max-width: 680px;
+		margin: 0 auto;
+		padding: 0.35rem;
+		background: #fff;
+		border: 1px solid rgba(255, 255, 255, 0.85);
+		border-radius: 1rem;
+		box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.18);
+	}
+
+	.ask-home-input {
+		flex: 1;
+		min-width: 0;
+		padding: 0.7rem 0.9rem;
+		background: transparent;
+		color: #212529;
+		border: 0;
+		outline: 0;
+		font-size: 1rem;
+	}
+
+	.ask-home-input::placeholder {
+		color: #6c757d;
+	}
+
+	.ask-home-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		flex-shrink: 0;
+		padding: 0.7rem 1rem;
+		background: #212529;
+		color: #fff;
+		border: 0;
+		border-radius: 0.75rem;
+		font-weight: 600;
+		transition:
+			transform 160ms ease,
+			background-color 160ms ease;
+	}
+
+	.ask-home-cta:hover {
+		background: #343a40;
+		transform: translateY(-1px);
+	}
+
+	.ask-home-icon {
+		font-size: 1.1rem;
+		line-height: 1;
+	}
+
+	@media (max-width: 575.98px) {
+		.ask-home-form {
+			align-items: stretch;
+			flex-direction: column;
+			gap: 0.35rem;
+		}
+
+		.ask-home-cta {
+			justify-content: center;
+		}
+	}
+</style>

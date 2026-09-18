@@ -47,6 +47,7 @@ Don't judge them yet, instead, for each one, answer two questions:
 If neither has a clear answer, you've found something worth investigating.
 
 > ***Don't make unnecessary work more efficient...***
+>
 > ***...first find out whether it needs to exist.***
 
 ### Test Why the Work Exists
@@ -70,6 +71,7 @@ Be particularly suspicious of work where the answer is unclear or based on assum
 The objective isn't to prove that work is pointless; it's to find out whether the reason for doing it still exists.
 
 > ***“We've always done it” explains the history...***
+>
 > ***...it doesn't justify the future.***
 
 ### Decide What Happens Next
@@ -91,4 +93,5 @@ Pause a report for a month, cancel one recurring meeting or remove an unnecessar
 The goal isn't to remove work for the sake of it; it's to create capacity for work that actually matters.
 
 > ***Sometimes the easiest way to discover whether work is valuable...***
+>
 > ***...is to stop doing it.***

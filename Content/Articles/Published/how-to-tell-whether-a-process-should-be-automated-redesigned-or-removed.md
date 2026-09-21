@@ -22,7 +22,7 @@ Before asking "How could we automate this?", ask two simpler questions:
 
 Processes have a habit of surviving long after their original purpose has disappeared; an approval remains because something once went wrong, a spreadsheet exists because an old system couldn't do something and a report is still produced because somebody asked for it years ago.
 
-> ***So try completing one sentence: ***
+> ***So try completing one sentence:***
 >
 > ***This process exists because...***
 

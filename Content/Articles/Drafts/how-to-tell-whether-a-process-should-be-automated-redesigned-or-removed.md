@@ -53,7 +53,9 @@ Does this step contribute to the outcome, or does it exist because of the way th
 
 If most of the friction comes from moving information between systems, repeating predictable tasks or applying consistent rules, automation may help.
 
-> ***If the friction comes from unnecessary stages, unclear ownership or constant exceptions, redesign probably comes first and if parts of the process no longer contribute anything useful? Don't improve them; Remove them.***
+> ***If the friction comes from unnecessary stages, unclear ownership or constant exceptions, redesign probably comes first.
+>
+> ***If parts of the process no longer contribute anything useful? Don't improve them; Remove them.***
 
 ### Part 3) Automate, Redesign or Remove?
 

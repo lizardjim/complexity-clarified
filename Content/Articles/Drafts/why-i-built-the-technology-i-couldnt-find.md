@@ -75,7 +75,7 @@ That's the principle I've found increasingly useful:
 
 ### Technology should remove complexity
 
-We often talk about digital transformation as though adding technology inherently represents progress but it doesn't (or at least that's not always the case).
+We often talk about digital transformation as though adding technology inherently represents progress but that's not always the case.
 
 Every new system introduces something else that needs maintaining, understanding, integrating and eventually replacing.
 

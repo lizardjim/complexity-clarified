@@ -23,11 +23,13 @@ Before long, you're not simply running the business anymore; you're managing the
 
 This isn't really a software problem; it's an architectural one.
 
-Most technology is bought to solve individual problems. A business needs a CRM, so it buys a CRM. It needs email marketing, so it buys an email platform. It needs online bookings, so it adds a booking system.
+Most technology is bought to solve individual problems: 
 
-Each decision makes sense independently.
+- A business needs a CRM, so it buys a CRM. 
+- It needs email marketing, so it buys an email platform. 
+- It needs online bookings, so it adds a booking system.
 
-Collectively, they can create something nobody deliberately designed.
+Each decision makes sense independently but collectively, they can create something nobody deliberately designed.
 
 Data gets duplicated, integrations become dependencies, processes start adapting themselves around the limitations of the systems and spreadsheets appear wherever the gaps remain.
 
@@ -43,11 +45,7 @@ When I started building Complexity Clarified, I had the opportunity to approach 
 
 Rather than beginning with a list of products, I started with the information the business actually needed.
 
-An enquiry isn't an isolated object.
-
-It comes from a person.
-
-That person might become a contact or customer, they might choose to subscribe to something and they might interact with the business again later.
+An enquiry isn't an isolated object - it comes from a person. That person might become a contact or customer, they might choose to subscribe to something and they might interact with the business again later.
 
 Those aren't separate relationships simply because different software products traditionally manage them.
 
@@ -77,15 +75,11 @@ That's the principle I've found increasingly useful:
 
 ### Technology should remove complexity
 
-We often talk about digital transformation as though adding technology inherently represents progress.
-
-It doesn't.
+We often talk about digital transformation as though adding technology inherently represents progress but it doesn't (or at least that's not always the case).
 
 Every new system introduces something else that needs maintaining, understanding, integrating and eventually replacing.
 
-Sometimes that's absolutely worthwhile.
-
-Sometimes we've simply added another layer.
+Sometimes that's absolutely worthwhile but sometimes we've simply added another layer.
 
 Building the technology behind Complexity Clarified forced me to confront that distinction directly because I wasn't designing an abstract architecture; I had to use the thing myself.
 

@@ -11,19 +11,13 @@ title: Why I Built the Technology I Couldn't Find
 ---
 ## Why I Built the Technology I Couldn't Find
 
-There's no shortage of software for running a business.
+There's no shortage of software for running a business; you can find a system for managing customers, another for enquiries, another for email marketing, another for bookings, another for your website and countless tools designed to connect all of those systems together.
 
-You can find a system for managing customers, another for enquiries, another for email marketing, another for bookings, another for your website and countless tools designed to connect all of those systems together.
-
-Individually, many of them are excellent.
-
-The problem often appears when you start connecting them.
+Individually, many of them are excellent but the problem often appears when you start connecting them.
 
 One system owns the customer, another owns the subscriber, the website captures the enquiry and an integration moves information between them.
 
-Before long, you're not simply running the business anymore.
-
-You're managing the technology required to run the business.
+Before long, you're not simply running the business anymore; you're managing the technology required to run the business.
 
 ### Complexity between the systems
 

@@ -9,7 +9,7 @@ tags:
   - digital-transformation
 title: How to Tell Whether a Process Should Be Automated, Redesigned or Removed
 ---
-Part 1) Before You Automate Anything 
+## Part 1) Before You Automate Anything 
 
 When a process is slow, expensive or frustrating, the instinct is often to automate it - a workflow, an integration, a new system and, increasingly, AI.
 
@@ -34,7 +34,7 @@ If the process does have a legitimate purpose, the next question is different:
 
 How much of what happens inside it is actually necessary to achieve that purpose?
 
-Part 2) Understand What You're Actually Fixing 
+### Part 2) Understand What You're Actually Fixing 
 
 Once you've established that a process has a purpose, look at how it achieves it - this is where complexity tends to accumulate.
 
@@ -55,7 +55,7 @@ If most of the friction comes from moving information between systems, repeating
 
 If the friction comes from unnecessary stages, unclear ownership or constant exceptions, redesign probably comes first and if parts of the process no longer contribute anything useful?
 
-Part 3 — Automate, Redesign or Remove?
+### Part 3) Automate, Redesign or Remove?
 
 By now, you should have enough information to make the decision.
 

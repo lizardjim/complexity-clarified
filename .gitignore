@@ -26,3 +26,6 @@ yarn-error.log*
 # AI helper files
 AGENTS.md
 CLAUDE.md
+
+# Generated semantic-search data
+/data/

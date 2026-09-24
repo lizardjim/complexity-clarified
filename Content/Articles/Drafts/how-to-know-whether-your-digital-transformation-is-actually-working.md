@@ -34,3 +34,31 @@ It's:
 > ***What became measurably better because we delivered it?***
 
 That is a much harder question but it's also the one that matters.
+
+### Start With the Work, Not the Technology
+
+The easiest mistake is to measure the transformation through the thing you've implemented.
+
+- A new CRM gets measured by active users. 
+- A new portal by logins. 
+- An automation programme by the number of processes automated.
+
+Those numbers tell you whether the technology is being used, however, they don't necessarily tell you whether the work has improved.
+
+- Instead, look at what happens around the technology:
+- Has information stopped being copied between systems? 
+- Are fewer people involved in routine decisions? 
+- Have spreadsheets and workarounds disappeared? 
+- Does a customer request reach the right person faster?
+
+This is where transformation becomes visible.
+
+You don't need hundreds of KPIs. Start with a few simple questions:
+
+- How many steps does the work require?
+- How many people or teams does it pass through?
+- How often is information entered more than once?
+- How long does somebody wait for a decision?
+- How often does work come back because something went wrong?
+
+Measure those things before and after the change because if the technology is new but the work underneath it looks remarkably similar, you may have modernised the tools without transforming very much.

@@ -27,11 +27,10 @@ If a transformation is working, you should eventually be able to see it in the o
 
 The question isn't simply:
 
-Did we deliver what we planned?
+> ***Did we deliver what we planned?***
 
 It's:
 
-What became measurably better because we delivered it?
+> ***What became measurably better because we delivered it?***
 
-> ***That is a much harder question.***
-> ***It's also the one that matters.***
+That is a much harder question but it's also the one that matters.

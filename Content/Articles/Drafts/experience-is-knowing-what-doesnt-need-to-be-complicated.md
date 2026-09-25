@@ -31,3 +31,19 @@ Requirements get added because somebody thinks they might be useful, features re
 The agency then faithfully builds what it has been asked to build - the end result can be technically excellent and unnecessarily complicated.
 
 > ***Understanding the organisation isn't the same as understanding the work.***
+
+### Simplicity Comes From Better Judgement
+
+The answer isn't to remove expertise or stop asking questions - it's to ask better ones.
+
+- Does the customer actually need this? 
+- What problem does it solve? 
+- What happens if we don't build it? 
+- Are we improving the work or simply recreating what already exists?
+
+Experience makes those questions easier to answer because you've seen what happens afterwards.
+You've seen the features nobody uses, the processes that become workarounds and the sophisticated solutions that eventually need simplifying.
+
+That changes how you approach the work... you stop asking how much you could build and start asking how little you need to build well.
+
+> ***Simplicity isn't the absence of sophistication; it's knowing where sophistication adds no value.***

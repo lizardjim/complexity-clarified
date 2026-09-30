@@ -9,7 +9,7 @@ tags:
   - strategy
 title: Why Good Decisions Get Slower as Organisations Grow
 ---
-## The Decision Hasn’t Changed - The Organisation Has.
+## The Decision Hasn’t Changed - The Organisation Has.## 
 
 Small organisations can make decisions remarkably quickly. Someone identifies a problem, the right people discuss it, a decision is made and work starts - it really should be that simple.
 

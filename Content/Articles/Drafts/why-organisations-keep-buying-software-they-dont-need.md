@@ -46,3 +46,17 @@ None of that comes with a shiny dashboard of course... this is how technology ca
 
 > ***The organisation isn't necessarily making a bad technology decision.***
 > ***It might simply be making a technology decision too early.***
+
+### Software Doesn't Remove Complexity
+
+A new system rarely arrives in an empty organisation - it joins existing platforms, spreadsheets, databases, processes and years of accumulated workarounds.
+
+Every new system potentially introduces another integration, another source of data and another place people need to work.
+
+Sometimes that's of course necessary but if the original problem was complexity, adding another system can simply create more of it.
+
+The old spreadsheet survives because somebody still needs it or the existing system remains because another team depends on it. Data gets copied between all three and another workaround quietly appears.
+
+Six months later, the organisation has more technology than it started with... and remarkably, much the same problem.
+
+> ***Adding technology is not the same as removing complexity.***

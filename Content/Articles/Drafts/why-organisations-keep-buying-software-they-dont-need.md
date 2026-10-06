@@ -60,3 +60,22 @@ The old spreadsheet survives because somebody still needs it or the existing sys
 Six months later, the organisation has more technology than it started with... and remarkably, much the same problem.
 
 > ***Adding technology is not the same as removing complexity.***
+
+### Start With the Problem, Not the Product
+
+Before looking at another system, take software out of the conversation entirely and simply ask:
+
+- What is actually happening today? 
+- Where does the process slow down? 
+- Where is information duplicated? 
+- What are people doing manually... and why?
+
+You might discover that technology genuinely is the problem... but you might also discover unnecessary approvals, duplicated work, poor ownership or functionality you already have but nobody uses.
+
+Only then should technology come back into the conversation. Maybe you do need a new system but maybe you simply need better integrations, some simple automation or a redesigned process.
+
+Perhaps you need to stop doing something altogether.
+
+Software can be transformative when it solves the right problem. When it doesn't, you've simply bought another system for people to work around.
+
+> ***Understand the problem first. Buy the technology second.***

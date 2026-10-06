@@ -29,3 +29,20 @@ That question might reveal something less convenient; perhaps the process is unn
 A new system can automate a good process, it can also make a bad one faster.
 
 > ***Before buying software, understand what you’re actually trying to fix.***
+
+### Buying Something Feels Like Progress
+
+There is another reason organisations reach for software: buying something is tangible.
+
+A messy process is difficult to explain to senior leaders whilst a new platform is much easier.
+
+It has a name, a price, a project plan and usually a vendor promising how much simpler everything will become.
+
+More importantly, it looks like action.
+
+Fixing the underlying problem can be considerably less exciting - it might involve removing unnecessary approvals, deciding who actually owns something or getting different teams to agree on how a process should work.
+
+None of that comes with a shiny dashboard of course... this is how technology can become the solution before the problem has really been understood.
+
+> ***The organisation isn't necessarily making a bad technology decision.***
+> ***It might simply be making a technology decision too early.***

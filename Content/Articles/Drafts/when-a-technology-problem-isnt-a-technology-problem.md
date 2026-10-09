@@ -46,3 +46,33 @@ These problems rarely exist independently; poor ownership leads to inconsistent 
 
 > ***Technology doesn't create these organisational weaknesses, instead it often makes them more visible.***
 > ***Replacing the system without addressing them simply gives those weaknesses somewhere new to live.***
+
+### Diagnose Before You Digitise
+
+Replacing technology can feel like progress; there's a project plan, a budget, a supplier and a delivery date. 
+
+Something tangible is happening, and the organisation can point to an investment in improvement, however... activity isn't necessarily progress.
+
+Before committing to another system, organisations should ask some uncomfortable questions:
+
+- What specifically isn't working, and why?
+- Who is responsible for the outcome?
+- Are existing processes unnecessarily complicated?
+- Do departmental objectives encourage conflicting behaviours?
+- Is the underlying data accurate and reliable?
+- Could the problem be resolved without replacing the technology?
+
+These questions aren't particularly complicated, but answering them honestly can be difficult; they may expose decisions that were never made, responsibilities that were never assigned or processes that nobody thought to challenge.
+
+Of course, sometimes the technology genuinely is the problem - Systems become obsolete, integrations fail and software doesn't always meet changing business needs.
+
+But the mistake isn't replacing technology - it's assuming technology needs replacing before understanding why things aren't working.
+
+- A poorly designed process doesn't become effective because it's automated. 
+- Conflicting priorities don't disappear because departments share a platform. 
+- Unclear accountability doesn't improve because someone builds another dashboard.
+
+Technology can enable meaningful change, but it cannot substitute for the organisational decisions needed to make that change successful.
+
+> ***Ultimately, the question shouldn't be whether an organisation needs better technology - it should be whether the organisation understands the problem it's trying to solve.
+Technology doesn't change organisations... it reveals them.***

@@ -25,3 +25,25 @@ Perhaps the CRM contained poor data because nobody was responsible for maintaini
 None of these problems necessarily requires new technology yet replacing a system can feel easier than questioning the decisions, processes and responsibilities surrounding it.
 
 A new system is often the most expensive way of avoiding an uncomfortable conversation and unless those underlying problems are addressed, the organisation risks implementing the same dysfunction with a different interface.
+
+### When the Problem Isn't the System
+
+Technology rarely operates in isolation - it depends on the people, processes and decisions surrounding it. When those foundations are weak, even the best systems will struggle to deliver.
+
+There are five common problems that technology frequently gets blamed for:
+
+Ownership: Everyone uses the system, but nobody takes responsibility for its effectiveness. Problems persist because accountability is unclear or fragmented across departments.
+
+Processes: Inefficient ways of working become embedded in technology. Rather than questioning why something is done, organisations automate it and inadvertently make the inefficiency harder to change.
+
+Incentives: Teams are measured against different objectives. Sales prioritises closing deals, Finance demands accuracy, and Operations needs predictability. The system becomes a battleground for competing priorities.
+
+Data: Inconsistent definitions, incomplete records and poor data quality undermine confidence in reporting. The technology processes the information it's given, but cannot necessarily make that information meaningful.
+
+Decisions: Nobody has agreed what success looks like or which outcomes matter. Without clear direction, technology becomes a collection of features rather than a means of achieving something useful.
+
+These problems rarely exist independently; poor ownership leads to inconsistent processes, which produce unreliable data and ultimately undermine decision-making.
+
+Technology doesn't create these organisational weaknesses, instead it often makes them more visible.
+
+Replacing the system without addressing them simply gives those weaknesses somewhere new to live.

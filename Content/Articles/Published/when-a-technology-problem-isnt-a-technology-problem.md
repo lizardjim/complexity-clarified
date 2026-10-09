@@ -64,7 +64,7 @@ Before committing to another system, organisations should ask some uncomfortable
 
 These questions aren't particularly complicated, but answering them honestly can be difficult; they may expose decisions that were never made, responsibilities that were never assigned or processes that nobody thought to challenge.
 
-Of course, sometimes the technology genuinely is the problem - Systems become obsolete, integrations fail and software doesn't always meet changing business needs.
+Of course, sometimes the technology genuinely is the problem - systems become obsolete, integrations fail and software doesn't always meet changing business needs.
 
 But the mistake isn't replacing technology - it's assuming technology needs replacing before understanding why things aren't working.
 

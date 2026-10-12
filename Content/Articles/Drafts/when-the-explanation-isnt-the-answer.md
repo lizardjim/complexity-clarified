@@ -134,48 +134,48 @@ This can happen without anyone deliberately trying to avoid accountability. Peop
 
 These are understandable responses but they can create a culture in which defending a decision becomes more important than examining it... which can be dangerous.
 
-A well-made decision should be able to withstand reasonable questions about how it was reached.
-It shouldn't require everyone affected by it to accept the explanation without further examination.
-Nor should asking for clarification automatically make someone difficult.
+A well-made decision should be able to withstand reasonable questions about how it was reached, it shouldn't require everyone affected by it to accept the explanation without further examination but nor should asking for clarification automatically make someone difficult.
+
 There is, of course, a distinction between legitimate scrutiny and repeatedly challenging a decision simply because the outcome is unwelcome.
-Organisations aren't obliged to revisit every decision indefinitely.
-But that distinction is best established through evidence and clear reasoning, not assumptions about the motives of the person asking.
-Four questions that reveal more than another governance framework
+
+Organisations aren't obliged to revisit every decision indefinitely but that distinction is best established through evidence and clear reasoning, not assumptions about the motives of the person asking.
+
+**Four questions that reveal more than another governance framework**
+
 If an organisation wants to understand whether its decision-making processes are genuinely effective, it doesn't necessarily need another committee, approval stage or reporting template.
+
 It might simply need to answer four questions.
+
 1. What was actually decided?
 Not the broad strategic intention or the carefully worded announcement.
 What specific decision was made, and what did it change?
+
 2. When was it effectively decided?
 Not merely when formal approval was recorded.
 When did the organisation begin acting on the assumption that a particular outcome would happen?
 Were responsibilities, resources or priorities already being adjusted?
+
 3. Who could genuinely influence the outcome?
 Who had the authority to challenge the assumptions, propose alternatives or change the direction?
 Were those people involved while meaningful options remained available?
+
 4. What evidence demonstrates that alternatives were considered?
 Not simply a statement that alternatives were reviewed.
 What options existed? Why were they rejected? What information influenced the final decision?
 These aren't particularly complicated questions.
-But answering them can reveal a surprising amount about how an organisation actually operates.
-And, importantly, the answers might demonstrate that the original decision was entirely reasonable.
-That's the point.
-Scrutiny isn't about proving that a decision was wrong. It's about establishing why the decision was right — or recognising where it wasn't.
-The difference between being right and being able to explain why
-An organisation can make the right decision for the wrong reasons.
-It can also make a reasonable decision through a flawed process.
-And sometimes it can follow every required procedure while failing to examine the assumptions that mattered most.
-None of these possibilities is particularly comfortable.
-But organisational maturity isn't demonstrated by never making questionable decisions.
-It's demonstrated by having the confidence, capability and willingness to examine them.
-That requires more than carefully constructed explanations.
-It requires an understanding of how decisions develop, how responsibilities influence one another and how informal assumptions become formal organisational commitments.
-Most importantly, it requires recognising that questions aren't necessarily objections.
-Sometimes they're simply questions.
-Organisations spend considerable time explaining their decisions.
-They produce business cases, governance documents, consultation materials and carefully worded communications.
-Yet when someone asks how a decision was actually reached, the answer can be surprisingly difficult to obtain.
-Perhaps that's because explaining an outcome is easier than explaining the thinking that produced it.
-But the distinction matters.
-A decision can be legitimate without being particularly good. A process can be followed without being particularly useful. And an explanation can be technically accurate without answering the question that was asked.
+
+But answering them can reveal a surprising amount about how an organisation actually operates and, importantly, the answers might demonstrate that the original decision was entirely reasonable... but that's the point.
+
+Scrutiny isn't about proving that a decision was wrong; it's about establishing why the decision was right, or recognising where it wasn't.
+
+### The difference between being right and being able to explain why
+
+An organisation can make the right decision for the wrong reasons, follow every procedure and still overlook the assumptions that matter most.
+
+Organisational maturity isn't about never making questionable decisions; it's about being willing to examine them, however, organisations often invest more effort in defending outcomes than explaining how they were reached. 
+
+Business cases, governance documents and carefully worded communications can demonstrate that a process was followed without establishing whether it achieved anything meaningful and questions aren't necessarily objections... sometimes they're simply requests for clarity.
+
+A decision can be legitimate without being good, a process can be followed without being useful and an explanation can be accurate without answering the question.
+
 If an organisation cannot explain how it arrived at a decision, perhaps the problem isn't the person asking the question.

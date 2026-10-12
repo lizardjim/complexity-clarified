@@ -8,7 +8,7 @@ tags:
   - change
 title: When the Explanation Isn't the Answer
 ---
-Organisations are remarkably good at explaining their decisions - strategies change, operating models evolve and priorities shift. Sometimes resources need to be allocated differently. 
+Organisations are remarkably good at explaining their decisions - strategies change, operating models evolve and priorities shift. Sometimes resources need to be allocated differently.
 
 These are all familiar explanations, delivered through carefully prepared communications and supported by the language of business necessity and often, they're perfectly reasonable on the face of it.
 

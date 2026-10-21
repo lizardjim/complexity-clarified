@@ -23,3 +23,11 @@ We seem remarkably willing to mistake certainty for knowledge, particularly when
 The person who says "It's complicated" can sound indecisive... the person who says "I know exactly what we need to do" sounds like a leader.
 
 Unfortunately, they're not necessarily the same thing.
+
+### When Confidence Becomes a Liability
+
+The trouble starts when confidence becomes a substitute for understanding - decisions get made, strategies are announced and entire teams are sent off in pursuit of solutions to problems nobody has properly examined. Unfortunately, because the person making those decisions sounds so convincing, few people think to question them.
+
+Those who do are sometimes labelled difficult, negative or resistant to change. Eventually, reality intervenes and the strategy unravels, the assumptions prove questionable and the people who raised concerns are quietly asked to help fix the mess.
+
+Meanwhile, the person responsible is often already presenting their next big idea... with precisely the same confidence as the last one.

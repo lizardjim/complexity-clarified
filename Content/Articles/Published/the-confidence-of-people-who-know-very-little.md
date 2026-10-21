@@ -30,8 +30,8 @@ The trouble starts when confidence becomes a substitute for understanding - deci
 
 Those who do are sometimes labelled difficult, negative or resistant to change. Eventually, reality intervenes and the strategy unravels, the assumptions prove questionable and the people who raised concerns are quietly asked to help fix the mess.
 
-> ***Meanwhile, the person responsible is often already presenting their next big idea... ***
-> ***Same confidence, different disaster!***
+> ***Meanwhile, the person responsible is often already presenting their next big idea...
+Same confidence, different disaster!***
 
 ### The Value of Knowing What You Don't Know
 

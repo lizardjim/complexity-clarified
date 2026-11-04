@@ -65,17 +65,15 @@ A £50 expense might seem insignificant, but how much time and effort does an or
 
 > ***And that raises a question organisations rarely seem to ask: did we actually understand the work before deciding the position was unnecessary?***
 
-## Part Three: When Nobody Questions the Process
+### Part Three: When Nobody Questions the Process
 
 One of the more frustrating characteristics of large organisations is their tendency to follow established processes without questioning whether those processes still make sense.
 
-Systems generate reminders, departments chase outstanding actions, and employees follow procedures because that's what they're expected to do.
+Systems generate reminders, departments chase outstanding actions, and employees typically follow procedures because that's what they're expected to do... but processes don't understand context.
 
-But processes don't understand context.
+Processes don't recognise that responsibilities have changed, that organisational structures have been redesigned or that the person previously responsible no longer works there.
 
-They don't recognise that responsibilities have changed, that organisational structures have been redesigned or that the person previously responsible no longer works there.
-
-People are supposed to recognise those things.
+**People** are supposed to recognise those things.
 
 **The problem isn't that an automated system generated a reminder. It's that someone apparently decided contacting a former employee was a reasonable way to resolve it.**
 
@@ -83,8 +81,6 @@ This is where process compliance becomes a substitute for judgement.
 
 Rather than questioning why an issue remains unresolved, organisations can become preoccupied with ensuring the next procedural step is completed.
 
-The process continues, even when the logic supporting it has disappeared.
+The process continues, even when the logic supporting it has disappeared and perhaps that's the most revealing aspect of the entire situation.
 
-And perhaps that's the most revealing aspect of the entire situation.
-
-**The organisation knew how to chase the outstanding expense. What it apparently didn't know was who should be responsible for resolving it.**
+> ***The organisation knew how to chase the outstanding expense. What it apparently didn't know was who should be responsible for resolving it.***

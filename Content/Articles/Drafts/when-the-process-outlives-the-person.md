@@ -46,3 +46,45 @@ This distinction matters because this isn't fundamentally a story about expenses
 And it raises a much more uncomfortable question...
 
 > ***If an organisation decides a role is no longer necessary, but its processes continue to depend on the person who occupied that role, how well did it actually understand the work being done?***
+
+### Part Two: The Illusion of Efficiency
+
+Organisations are remarkably good at calculating the savings from removing positions but they're less effective at measuring the work that remains.
+
+Eliminating a role doesn't eliminate its responsibilities; systems still need maintaining, suppliers still need managing, and decisions still need to be made.
+
+The assumption is often that existing employees can absorb these responsibilities but absorbing work and taking ownership of it are two very different things.
+
+**A responsibility without a clearly identified owner hasn't been redistributed. It's simply been abandoned.**
+
+The financial savings are immediately visible, yet the resulting inefficiencies are not. They're dispersed across departments, hidden in administrative processes and absorbed into workloads.
+
+A £50 expense might seem insignificant, but how much time and effort does an organisation spend resolving something that should never have become a problem?
+
+**Reducing headcount doesn't necessarily reduce workload. Sometimes it simply makes the remaining work more complicated.**
+
+> ***And that raises a question organisations rarely seem to ask: did we actually understand the work before deciding the position was unnecessary?***
+
+## Part Three: When Nobody Questions the Process
+
+One of the more frustrating characteristics of large organisations is their tendency to follow established processes without questioning whether those processes still make sense.
+
+Systems generate reminders, departments chase outstanding actions, and employees follow procedures because that's what they're expected to do.
+
+But processes don't understand context.
+
+They don't recognise that responsibilities have changed, that organisational structures have been redesigned or that the person previously responsible no longer works there.
+
+People are supposed to recognise those things.
+
+**The problem isn't that an automated system generated a reminder. It's that someone apparently decided contacting a former employee was a reasonable way to resolve it.**
+
+This is where process compliance becomes a substitute for judgement.
+
+Rather than questioning why an issue remains unresolved, organisations can become preoccupied with ensuring the next procedural step is completed.
+
+The process continues, even when the logic supporting it has disappeared.
+
+And perhaps that's the most revealing aspect of the entire situation.
+
+**The organisation knew how to chase the outstanding expense. What it apparently didn't know was who should be responsible for resolving it.**
